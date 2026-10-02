@@ -1,0 +1,16 @@
+{
+  "title": "Cross-border joint high net load warnings: research code and derived evaluation data",
+  "upload_type": "software",
+  "description": "Research code and author-derived evaluation data for synchronous high net load monitoring in Germany-Luxembourg, France and Belgium, with DK1/DK2 transfers. Portable reconstruction recomputes evaluation from released hourly probabilities, event indicators and forecast-only review plans, then regenerates block-bootstrap contrasts and publication figures. No raw provider MW series, weather grids, price series, fitted models or unpublished manuscript are deposited. Software is MIT licensed; author-derived data are CC BY 4.0 with retained third-party terms and attribution as detailed in DATA_LICENSES.md. This is delayed historical replay, not independently validated live operational availability. Version 1.0.0 is prepared for an author-created release; no DOI is asserted here.",
+  "creators": [
+    {
+      "name": "Zhang, Junjie",
+      "affiliation": "Shanghai Academy of Global Governance & Area Studies; School of Economics and Finance, Shanghai International Studies University, Shanghai 201620, China",
+      "orcid": "0009-0004-8821-4018"
+    }
+  ],
+  "version": "1.0.0",
+  "license": "mit",
+  "access_right": "open",
+  "keywords": ["probabilistic forecasting", "joint net load events", "cross-border electricity", "forecast-only warning allocation", "reproducibility"]
+}

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="510.23622pt" height="351.250394pt" viewBox="0 0 510.23622 351.250394" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-02T17:30:36.641529</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.1, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 351.250394 
+L 510.23622 351.250394 
+L 510.23622 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="line2d_1">
+    <path d="M 8.503937 49.606299 
+L 501.732283 49.606299 
+" clip-path="url(#p7997a64597)" style="fill: none; stroke: #202020; stroke-width: 0.65"/>
+   </g>
+   <g id="line2d_2">
+    <path d="M 8.503937 78.727559 
+L 501.732283 78.727559 
+" clip-path="url(#p7997a64597)" style="fill: none; stroke: #202020; stroke-width: 0.45"/>
+   </g>
+   <g id="line2d_3">
+    <path d="M 8.503937 156.812598 
+L 501.732283 156.812598 
+" clip-path="url(#p7997a64597)" style="fill: none; stroke: #202020; stroke-width: 0.65"/>
+   </g>
+   <g id="line2d_4">
+    <path d="M 8.503937 196.497638 
+L 501.732283 196.497638 
+" clip-path="url(#p7997a64597)" style="fill: none; stroke: #202020; stroke-width: 0.65"/>
+   </g>
+   <g id="line2d_5">
+    <path d="M 8.503937 225.618898 
+L 501.732283 225.618898 
+" clip-path="url(#p7997a64597)" style="fill: none; stroke: #202020; stroke-width: 0.45"/>
+   </g>
+   <g id="line2d_6">
+    <path d="M 8.503937 342.746457 
+L 501.732283 342.746457 
+" clip-path="url(#p7997a64597)" style="fill: none; stroke: #202020; stroke-width: 0.65"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 8px; font-family: 'Arial'; text-anchor: start; fill: #202020" x="8.503937" y="15.078625" transform="rotate(-0 8.503937 15.078625)">Table 4 | Local-weather Danish transfer at q90</text>
+   </g>
+   <g id="text_2">
+    <text style="font-weight: 700; font-size: 8px; font-family: 'Arial'; text-anchor: start; fill: #202020" x="8.503937" y="39.124363" transform="rotate(-0 8.503937 39.124363)">a  Joint probability loss</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Arial'; text-anchor: start; fill: #202020" x="12.755906" y="61.535835" transform="rotate(-0 12.755906 61.535835)">Model</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Arial'; fill: #202020" transform="translate(226.931734 61.576851)">DE–LU / FR / DK1</text>
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Arial'; fill: #202020" transform="translate(252.590015 70.54521)">Brier loss</text>
+   </g>
+   <g id="text_5">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Arial'; fill: #202020" transform="translate(439.530159 61.576851)">DE–LU / FR / DK2</text>
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Arial'; fill: #202020" transform="translate(465.18844 70.54521)">Brier loss</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: start; fill: #202020" x="12.755906" y="90.665845" transform="rotate(-0 12.755906 90.665845)">M0</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: end; fill: #202020" x="284.88189" y="90.665845" transform="rotate(-0 284.88189 90.665845)">0.048746</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: end; fill: #202020" x="497.480315" y="90.664205" transform="rotate(-0 497.480315 90.664205)">0.053430</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: start; fill: #202020" x="12.755906" y="110.229761" transform="rotate(-0 12.755906 110.229761)">M1</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: end; fill: #202020" x="284.88189" y="110.185464" transform="rotate(-0 284.88189 110.185464)">0.048503</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: end; fill: #202020" x="497.480315" y="110.185464" transform="rotate(-0 497.480315 110.185464)">0.053080</text>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: start; fill: #202020" x="12.755906" y="129.751021" transform="rotate(-0 12.755906 129.751021)">M2</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: end; fill: #202020" x="284.88189" y="129.708365" transform="rotate(-0 284.88189 129.708365)">0.048747</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: end; fill: #202020" x="497.480315" y="129.706724" transform="rotate(-0 497.480315 129.706724)">0.053463</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: start; fill: #202020" x="12.755906" y="149.227984" transform="rotate(-0 12.755906 149.227984)">M3</text>
+   </g>
+   <g id="text_16">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: end; fill: #202020" x="284.88189" y="149.229625" transform="rotate(-0 284.88189 149.229625)">0.048525</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: end; fill: #202020" x="497.480315" y="149.227984" transform="rotate(-0 497.480315 149.227984)">0.053104</text>
+   </g>
+   <g id="text_18">
+    <text style="font-weight: 700; font-size: 8px; font-family: 'Arial'; text-anchor: start; fill: #202020" x="8.503937" y="186.810701" transform="rotate(-0 8.503937 186.810701)">b  Fixed-rule review allocation</text>
+   </g>
+   <g id="text_19">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Arial'; fill: #202020" transform="translate(12.755906 208.427174)">New</text>
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Arial'; fill: #202020" transform="translate(12.755906 216.787408)">area</text>
+   </g>
+   <g id="text_20">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Arial'; text-anchor: start; fill: #202020" x="49.606299" y="208.427174" transform="rotate(-0 49.606299 208.427174)">Rule</text>
+   </g>
+   <g id="text_21">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Arial'; fill: #202020" transform="translate(124.975502 208.427174)">Native</text>
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Arial'; fill: #202020" transform="translate(129.648002 217.436549)">slots</text>
+   </g>
+   <g id="text_22">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Arial'; fill: #202020" transform="translate(214.582434 208.427174)">Event hits</text>
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Arial'; fill: #202020" transform="translate(208.372121 216.78358)">(DK-pivotal)</text>
+   </g>
+   <g id="text_23">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Arial'; fill: #202020" transform="translate(288.990615 207.731549)">Native early spells</text>
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Arial'; fill: #202020" transform="translate(319.750146 216.78358)">(fraction)</text>
+   </g>
+   <g id="text_24">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Arial'; fill: #202020" transform="translate(367.936935 208.46819)">Common</text>
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Arial'; fill: #202020" transform="translate(393.212404 217.477565)">B</text>
+   </g>
+   <g id="text_25">
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Arial'; fill: #202020" transform="translate(450.797971 207.731549)">Matched early</text>
+    <text style="font-weight: 700; font-size: 7px; font-family: 'Arial'; fill: #202020" transform="translate(466.741565 216.091783)">coverage</text>
+   </g>
+   <g id="text_26">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: start; fill: #202020" x="12.755906" y="237.59984" transform="rotate(-0 12.755906 237.59984)">DK1</text>
+   </g>
+   <g id="text_27">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: start; fill: #202020" x="49.606299" y="237.557184" transform="rotate(-0 49.606299 237.557184)">P0</text>
+   </g>
+   <g id="text_28">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: end; fill: #202020" x="145.984252" y="237.557184" transform="rotate(-0 145.984252 237.557184)">1450</text>
+   </g>
+   <g id="text_29">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: end; fill: #202020" x="248.031496" y="236.895465" transform="rotate(-0 248.031496 236.895465)">290 (117)</text>
+   </g>
+   <g id="text_30">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: end; fill: #202020" x="350.07874" y="236.895465" transform="rotate(-0 350.07874 236.895465)">35/71 (49.3%)</text>
+   </g>
+   <g id="text_31">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: end; fill: #202020" x="398.267717" y="237.555543" transform="rotate(-0 398.267717 237.555543)">432</text>
+   </g>
+   <g id="text_32">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: end; fill: #202020" x="497.480315" y="237.539684" transform="rotate(-0 497.480315 237.539684)">20.6%</text>
+   </g>
+   <g id="text_33">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: start; fill: #202020" x="12.755906" y="257.1211" transform="rotate(-0 12.755906 257.1211)">DK1</text>
+   </g>
+   <g id="text_34">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: start; fill: #202020" x="49.606299" y="257.1211" transform="rotate(-0 49.606299 257.1211)">P1</text>
+   </g>
+   <g id="text_35">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: end; fill: #202020" x="145.984252" y="257.078444" transform="rotate(-0 145.984252 257.078444)">469</text>
+   </g>
+   <g id="text_36">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: end; fill: #202020" x="248.031496" y="256.416725" transform="rotate(-0 248.031496 256.416725)">255 (97)</text>
+   </g>
+   <g id="text_37">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: end; fill: #202020" x="350.07874" y="256.416725" transform="rotate(-0 350.07874 256.416725)">32/71 (45.1%)</text>
+   </g>
+   <g id="text_38">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: end; fill: #202020" x="398.267717" y="257.076803" transform="rotate(-0 398.267717 257.076803)">432</text>
+   </g>
+   <g id="text_39">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: end; fill: #202020" x="497.480315" y="257.060944" transform="rotate(-0 497.480315 257.060944)">43.4%</text>
+   </g>
+   <g id="text_40">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: start; fill: #202020" x="12.755906" y="276.64236" transform="rotate(-0 12.755906 276.64236)">DK1</text>
+   </g>
+   <g id="text_41">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: start; fill: #202020" x="49.606299" y="276.64236" transform="rotate(-0 49.606299 276.64236)">P2</text>
+   </g>
+   <g id="text_42">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: end; fill: #202020" x="145.984252" y="276.598063" transform="rotate(-0 145.984252 276.598063)">432</text>
+   </g>
+   <g id="text_43">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: end; fill: #202020" x="248.031496" y="275.937985" transform="rotate(-0 248.031496 275.937985)">189 (78)</text>
+   </g>
+   <g id="text_44">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: end; fill: #202020" x="350.07874" y="275.937985" transform="rotate(-0 350.07874 275.937985)">33/71 (46.5%)</text>
+   </g>
+   <g id="text_45">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: end; fill: #202020" x="398.267717" y="276.598063" transform="rotate(-0 398.267717 276.598063)">432</text>
+   </g>
+   <g id="text_46">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: end; fill: #202020" x="497.480315" y="276.582203" transform="rotate(-0 497.480315 276.582203)">46.5%</text>
+   </g>
+   <g id="text_47">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: start; fill: #202020" x="12.755906" y="296.16362" transform="rotate(-0 12.755906 296.16362)">DK2</text>
+   </g>
+   <g id="text_48">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: start; fill: #202020" x="49.606299" y="296.120963" transform="rotate(-0 49.606299 296.120963)">P0</text>
+   </g>
+   <g id="text_49">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: end; fill: #202020" x="145.984252" y="296.120963" transform="rotate(-0 145.984252 296.120963)">1450</text>
+   </g>
+   <g id="text_50">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: end; fill: #202020" x="248.031496" y="295.459245" transform="rotate(-0 248.031496 295.459245)">321 (146)</text>
+   </g>
+   <g id="text_51">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: end; fill: #202020" x="350.07874" y="295.459245" transform="rotate(-0 350.07874 295.459245)">40/75 (53.3%)</text>
+   </g>
+   <g id="text_52">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: end; fill: #202020" x="398.267717" y="296.120963" transform="rotate(-0 398.267717 296.120963)">492</text>
+   </g>
+   <g id="text_53">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: end; fill: #202020" x="497.480315" y="296.103463" transform="rotate(-0 497.480315 296.103463)">25.2%</text>
+   </g>
+   <g id="text_54">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: start; fill: #202020" x="12.755906" y="315.684879" transform="rotate(-0 12.755906 315.684879)">DK2</text>
+   </g>
+   <g id="text_55">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: start; fill: #202020" x="49.606299" y="315.684879" transform="rotate(-0 49.606299 315.684879)">P1</text>
+   </g>
+   <g id="text_56">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: end; fill: #202020" x="145.984252" y="315.642223" transform="rotate(-0 145.984252 315.642223)">517</text>
+   </g>
+   <g id="text_57">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: end; fill: #202020" x="248.031496" y="314.980504" transform="rotate(-0 248.031496 314.980504)">294 (128)</text>
+   </g>
+   <g id="text_58">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: end; fill: #202020" x="350.07874" y="314.980504" transform="rotate(-0 350.07874 314.980504)">33/75 (44.0%)</text>
+   </g>
+   <g id="text_59">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: end; fill: #202020" x="398.267717" y="315.642223" transform="rotate(-0 398.267717 315.642223)">492</text>
+   </g>
+   <g id="text_60">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: end; fill: #202020" x="497.480315" y="315.624723" transform="rotate(-0 497.480315 315.624723)">43.2%</text>
+   </g>
+   <g id="text_61">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: start; fill: #202020" x="12.755906" y="335.206139" transform="rotate(-0 12.755906 335.206139)">DK2</text>
+   </g>
+   <g id="text_62">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: start; fill: #202020" x="49.606299" y="335.206139" transform="rotate(-0 49.606299 335.206139)">P2</text>
+   </g>
+   <g id="text_63">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: end; fill: #202020" x="145.984252" y="335.163483" transform="rotate(-0 145.984252 335.163483)">492</text>
+   </g>
+   <g id="text_64">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: end; fill: #202020" x="248.031496" y="334.501764" transform="rotate(-0 248.031496 334.501764)">216 (102)</text>
+   </g>
+   <g id="text_65">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: end; fill: #202020" x="350.07874" y="334.501764" transform="rotate(-0 350.07874 334.501764)">36/75 (48.0%)</text>
+   </g>
+   <g id="text_66">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: end; fill: #202020" x="398.267717" y="335.163483" transform="rotate(-0 398.267717 335.163483)">492</text>
+   </g>
+   <g id="text_67">
+    <text style="font-size: 7px; font-family: 'Arial'; text-anchor: end; fill: #202020" x="497.480315" y="335.145983" transform="rotate(-0 497.480315 335.145983)">48.0%</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p7997a64597">
+   <rect x="0" y="0" width="510.23622" height="351.250394"/>
+  </clipPath>
+ </defs>
+</svg>

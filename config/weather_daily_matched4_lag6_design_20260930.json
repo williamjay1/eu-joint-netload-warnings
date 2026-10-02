@@ -1,0 +1,122 @@
+{
+  "status": "recorded_before_formal_2022_2023_margin_scores",
+  "version": "1.0-lag6-daily-matched-four-pre-development",
+  "selector_profile": "daily_matched4",
+  "candidate_tag": "daily_lag_matched_v1",
+  "candidates": [
+    {
+      "family": "additive",
+      "calibration_days": 30,
+      "calibration_mode": "daily",
+      "daily_calibration_days": 30
+    },
+    {
+      "family": "additive",
+      "calibration_days": 60,
+      "calibration_mode": "daily",
+      "daily_calibration_days": 60
+    },
+    {
+      "family": "lightgbm",
+      "calibration_days": 30,
+      "calibration_mode": "daily",
+      "daily_calibration_days": 30
+    },
+    {
+      "family": "lightgbm",
+      "calibration_days": 60,
+      "calibration_mode": "daily",
+      "daily_calibration_days": 60
+    }
+  ],
+  "fixed_load_lag_days": [
+    14,
+    21
+  ],
+  "lag_features_count": 6,
+  "raw_fit": "expanding from 2019; endpoint quarter origin minus raw holdout and nominal 7d embargo",
+  "daily_G": "interval END <= daily issue minus 7d; window 30 or 60d clipped at raw-fit endpoint",
+  "GAM_parameters": {
+    "alpha": 10.0,
+    "n_knots": 5,
+    "mean_smooth_features": [
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53
+    ],
+    "mean_extrapolation": "constant",
+    "scale_smooth_features": [
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53
+    ],
+    "scale_exclude_features": [
+      17,
+      56,
+      57,
+      58,
+      61,
+      62,
+      63,
+      66,
+      67,
+      68
+    ],
+    "scale_extrapolation": "constant"
+  },
+  "lightgbm_parameters": {},
+  "threshold_mode": "adaptive_trend",
+  "calibration_choice": "development marginal IQS and recorded calibration diagnostics only",
+  "no_joint_score_selection": true,
+  "sealed_outcomes_inspected": false,
+  "exploratory_basis": "2021 numerical, extrapolation, daily calibration and load-lag diagnostics; 2021 is not a blinded evaluation",
+  "comparison_boundary": "Different raw windows change F and G; same-F pure-G comparisons are separate 2021 pilots",
+  "rationale": "Short rolling recalibration addresses seasonal drift; lag14/21 improves recent-load information without violating delayed-label availability",
+  "calibration_claim": "Only equivalent diagnostics support calibrated wording; precision_insufficient remains explicit",
+  "paths": {
+    "raw": "F:/AcademicData/eu_joint_netload/raw",
+    "computation": "."
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "history_years": 2,
+  "embargo_days": 7,
+  "minimum_pit_rows": 168,
+  "l2": 0.001,
+  "maxiter": 2000,
+  "df_candidates": [
+    3,
+    5,
+    8,
+    15,
+    30,
+    "inf"
+  ],
+  "linear_columns": [
+    "season_sin",
+    "season_cos",
+    "hour_sin",
+    "hour_cos",
+    "weekend"
+  ],
+  "smooth_columns": [
+    "common_temperature",
+    "common_temperature_spread",
+    "common_land_wind",
+    "common_land_wind_spread",
+    "common_marine_wind",
+    "common_marine_wind_spread",
+    "common_solar",
+    "common_solar_spread"
+  ],
+  "interactions": [
+    [
+      "common_temperature",
+      "common_land_wind"
+    ],
+    [
+      "common_temperature",
+      "common_solar"
+    ]
+  ],
+  "n_knots": 4,
+  "release_delay_hours": 12.0,
+  "n_analogs": 50,
+  "checkerboard_seed": 2701,
+  "include_ecc": true,
+  "ecc_members": 20,
+  "ecc_weather_columns": [
+    "t2m",
+    "wind_speed",
+    "marine_wind_speed",
+    "dswrf"
+  ],
+  "ecc_calendar_columns": [
+    "year_sin_1",
+    "year_cos_1",
+    "year_sin_2",
+    "year_cos_2",
+    "year_sin_3",
+    "year_cos_3",
+    "hour_sin_1",
+    "hour_cos_1",
+    "hour_sin_2",
+    "hour_cos_2",
+    "weekday_0",
+    "weekday_1",
+    "weekday_2",
+    "weekday_3",
+    "weekday_4",
+    "weekday_5",
+    "weekday_6",
+    "years_since_2019",
+    "holiday_DE_previous",
+    "holiday_DE_today",
+    "holiday_DE_next",
+    "holiday_LU_previous",
+    "holiday_LU_today",
+    "holiday_LU_next",
+    "holiday_FR_previous",
+    "holiday_FR_today",
+    "holiday_FR_next",
+    "holiday_BE_previous",
+    "holiday_BE_today",
+    "holiday_BE_next"
+  ],
+  "ecc_linear_weather_columns": [],
+  "ecc_smooth_weather_columns": [
+    "t2m",
+    "wind_speed",
+    "marine_wind_speed",
+    "dswrf"
+  ],
+  "ecc_ridge_alpha": 10.0,
+  "threshold_available_time": "2021-01-01T00:00:00+00:00",
+  "include_event_baselines": true,
+  "include_pit_diagnostics": true,
+  "include_pair_products": true,
+  "pit_diagnostic_levels": [
+    0.9,
+    0.95
+  ],
+  "minimum_event_rows": 168,
+  "minimum_each_event_class": 5,
+  "event_logistic_C": 1.0,
+  "integration_tolerance": 1e-06,
+  "integration_backend": "elliptical_path",
+  "integration_initial_maxpts": 16384,
+  "integration_max_maxpts": 4194304,
+  "integration_seed": 91723
+}

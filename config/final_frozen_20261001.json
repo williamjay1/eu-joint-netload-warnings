@@ -1,0 +1,1084 @@
+{
+  "status": "frozen",
+  "test_outcomes_inspected": false,
+  "frozen_at_utc": "2026-10-01T04:24:56.761843+00:00",
+  "prepared_utc": "2026-10-01T04:23:39.298118+00:00",
+  "configuration_version": "1.1-final-review-contract-compiler-preserves-calibration-uncertainty",
+  "synthetic_metadata_only": false,
+  "audit_scope": "Electricity source QA, missingness, units, alignment and conditional nighttime reconstruction flags were inspected; 2024-2025 joint event labels, forecasting comparisons and model scores were not inspected before final strategy locking",
+  "legacy_test_outcomes_false_semantics": "Legacy code field denotes no prior test-event or forecast-score inspection at freeze; it does not claim no previous access to source-quality observations or flags",
+  "not_preregistered": true,
+  "core_protocol": {
+    "path": ".\\config\\protocol_v3_core_20261001.json",
+    "sha256": "23ad571f7fa7259b338dba05ec196c4b2f40933e4e40191347962f28354c6c5d"
+  },
+  "selected_development_strategy": {
+    "margins": {
+      "calibration_status": "precision_insufficient",
+      "qualified": false,
+      "original_calibration_selection_status": "precision_insufficient",
+      "original_selector_chosen_is_null": true,
+      "predictive_decision_status": "selected_for_controlled_prediction_with_calibration_uncertainty",
+      "calibrated_claim_supported": false,
+      "selection_evidence_boundary": "planning_pointwise_equivalence_screen_not_proof_of_perfect_or_simultaneous_conditional_calibration",
+      "decision_claim_boundary": "European comparison controls shared recalibrated marginal forecasts and weather-conditioned Gaussian; ideal-marginal identification is provided by separately labelled simulations, not asserted for observations.",
+      "predictive_selection_reason": "Lowest prespecified marginal truncated-IQS in both development years, no supported material calibration departure; conditional calibration equivalence remains imprecise. Preserve original qualification failure and evaluate the fixed predictive component without a perfect-calibration or physical-tail-attribution claim.",
+      "joint_event_scores_used_for_marginal_selection": false,
+      "test_outcomes_opened_for_selection": false,
+      "not_a_claim_of_perfect_or_simultaneous_calibration": true
+    },
+    "Gaussian": {
+      "name": "Gaussian_lean_l2_0.001",
+      "basis": "lean",
+      "l2": 0.001
+    },
+    "Gaussian_selection_uncertainty_boundary": "These development CIs do not correct the six-way selection; formal claims use sealed testing"
+  },
+  "weather_panel_builder": {
+    "script_version": "1.1-prespecified-known-total-load-UTC-lags",
+    "code_sha256": {
+      "weather_panel_builder.py": "28cbcb32b4cf2e144dabecfeccae89051b3bc1ba560e0b9e356c9378c028b637",
+      "forecast_design.py": "de160a4ac987e598930ee7d57835882d00590da144dfd49e9f324447300ae539"
+    },
+    "target_start_minimum": "2019-01-01T00:00:00+00:00",
+    "target_end_maximum_exclusive": "2026-01-01T00:00:00+00:00",
+    "native_source_paths": {
+      "development": ".\\datasets\\data_observations_native_v3_night_candidate_2019_2023.parquet",
+      "sealed": ".\\datasets\\data_observations_native_v4_night_candidate_2024_2025_sealed.parquet"
+    },
+    "native_source_sha256_policy": "source_file_hashes_recorded_in_assembly_manifest_after_test_gate",
+    "base_margin_feature_count": 69,
+    "margin_feature_count": 75,
+    "load_lag_policy": {
+      "enabled": true,
+      "load_lag_days": [
+        14,
+        21
+      ],
+      "columns": [
+        "provider_load_lag14d_utc_DE_LU",
+        "provider_load_lag21d_utc_DE_LU",
+        "provider_load_lag14d_utc_FR",
+        "provider_load_lag21d_utc_FR",
+        "provider_load_lag14d_utc_BE",
+        "provider_load_lag21d_utc_BE"
+      ],
+      "indexing": "target_UTC_interval_start_minus_exact_integer_days_no_interpolation",
+      "availability": "source_interval_END_plus_7d_at_or_before_target_UTC_day_minus_12h",
+      "revised_vintage_boundary": "Historical final/revised provider values; their publication vintages are not authenticated",
+      "missing_values": "remain_NaN_no_backfill_or_interpolation",
+      "column_order": "zone_major_DE_LU_FR_BE_then_ascending_days_append_after_base69",
+      "additive_basis": "new_load_lags_linear_in_mean_and_scale_not_splines_unless_scale_explicitly_excluded_by_frozen_model",
+      "comparator_use": "lags_only_in_shared_single_zone_F_all_models_use_the_same_issued_calibrated_margins",
+      "C7_ECC_use": "independent_weather_plus_calendar_rank_template_applied_to_shared_F_no_member_specific_F_recomputation",
+      "C8_analog_use": "existing_joint_weather_basis_and_shared_forward_PIT_not_a_new_lag_feature_schema",
+      "member_weather_and_joint_feature_columns_unchanged": true
+    },
+    "weather_members": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "grid": "common_integer_1deg",
+    "weather_lead_base_hours": 24,
+    "weather_endpoint_steps": [
+      24,
+      30,
+      36,
+      42,
+      48
+    ],
+    "weather_release_policy": "initialization_plus_12h_retrospective_assumption",
+    "holiday_library_version": "0.105",
+    "test_gate": "exact_builder_contract_status_frozen_test_outcomes_inspected_false_valid_clock_before_sealed_value_reads"
+  },
+  "prequential_margins": {
+    "script_version": "1.5-quarterly-F-optional-past-only-daily-G",
+    "family": "additive",
+    "calibration_days": 60,
+    "calibration_mode": "daily",
+    "daily_calibration_days": 60,
+    "raw_holdout_days": 60,
+    "effective_daily_window_days": 60,
+    "daily_calibration_contract": {
+      "raw_F_schedule": "quarterly_raw_end_origin_minus_calibration_days_minus_embargo_days",
+      "issue_time": "target_UTC_day_minus_12_hours",
+      "label_cutoff": "daily_issue_minus_7_days",
+      "window_start_inclusive": "max_daily_cutoff_minus_effective_daily_window_days_raw_fit_end_exclusive",
+      "label_qualification": "target_interval_end_at_or_before_daily_cutoff",
+      "minimum_effective_rows": 100,
+      "first_day_window_span_days": 59.5,
+      "past_query_labels": "permitted_only_after_their_interval_end_satisfies_daily_cutoff",
+      "raw_PIT_cache": "incremental_only_newly_available_selected_rows_no_future_raw_PIT",
+      "saved_G": "one_calibrator_per_UTC_target_day_first_G_legacy_field_nonrepresentative"
+    },
+    "embargo_days": 7,
+    "raw_training_start": "2019-01-01T00:00:00+00:00",
+    "raw_fit_excludes_calibration_window": true,
+    "same_raw_model_for_calibration_and_prediction": true,
+    "calibration_numerical_contract": "1.0-dual-tail-no-query-epsilon-clipping",
+    "query_probability_epsilon_clipping": false,
+    "beta_MLE_input_clip_epsilon": 1e-08,
+    "test_policy": "quarterly_F_daily_G_past_only_parameters_strategy_locked",
+    "model_parameters": {
+      "alpha": 10.0,
+      "n_knots": 5,
+      "mean_smooth_features": [
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53
+      ],
+      "mean_extrapolation": "constant",
+      "scale_smooth_features": [
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53
+      ],
+      "scale_exclude_features": [
+        17,
+        56,
+        57,
+        58,
+        61,
+        62,
+        63,
+        66,
+        67,
+        68
+      ],
+      "scale_extrapolation": "constant"
+    },
+    "minimum_raw_rows": 1000,
+    "minimum_calibration_rows": 100,
+    "reference_min_samples": 100,
+    "threshold_mode": "adaptive_trend",
+    "threshold_reference_end_exclusive": null,
+    "threshold_reference_available_time": null,
+    "threshold_eligibility_clock": "quarter_frozen_threshold_fitted_from_labels_ending_origin_minus_7_days_available_at_first_daily_issue",
+    "adaptive_threshold_settings": {
+      "trend": true,
+      "history_calendar_years": 3,
+      "minimum_observed_days": 365,
+      "minimum_coverage": 0.8,
+      "regularization_alpha": 0.0001,
+      "quantiles": [
+        0.9,
+        0.95
+      ],
+      "quantile_ordering": "paired_prediction_rearrangement",
+      "solver_time_limit_seconds_per_zone_quantile": 120.0,
+      "solver_threads": 2,
+      "weather_inputs_used": false
+    },
+    "feature_spec_sha256": "4d08ac7897d8d78b9bc9e45077387a30f731910cd5cfae3d6f1f40d2e0e9f040",
+    "code_sha256": {
+      "prequential_margins.py": "bcc497c0b0a236c49f5e3b33080cc929ce181f8b3f6fb19dc48078a1aef006b3",
+      "margins.py": "86828a5e123d99c60315bea05453ca643588c9cc3502ae600fef61f244c2010c",
+      "forecast_design.py": "de160a4ac987e598930ee7d57835882d00590da144dfd49e9f324447300ae539",
+      "adaptive_thresholds.py": "d7bb75e0618addb0c667b37c0f6f1f7f5cbf3a6f772b9df42572aad4632e3103",
+      "adaptive_threshold_cache.py": "455a55273a63b97cfd65c93af32349b05ff6fb1335a5212a879931b82689807a"
+    }
+  },
+  "joint_forward_runner": {
+    "script_version": "1.8-independent-C7-known-calendar",
+    "settings": {
+      "history_years": 2,
+      "embargo_days": 7,
+      "minimum_pit_rows": 168,
+      "l2": 0.001,
+      "maxiter": 2000,
+      "df_candidates": [
+        3,
+        5,
+        8,
+        15,
+        30,
+        "inf"
+      ],
+      "linear_columns": [
+        "season_sin",
+        "season_cos",
+        "hour_sin",
+        "hour_cos",
+        "weekend"
+      ],
+      "smooth_columns": [
+        "common_temperature",
+        "common_temperature_spread",
+        "common_land_wind",
+        "common_land_wind_spread",
+        "common_marine_wind",
+        "common_marine_wind_spread",
+        "common_solar",
+        "common_solar_spread"
+      ],
+      "interactions": [
+        [
+          "common_temperature",
+          "common_land_wind"
+        ],
+        [
+          "common_temperature",
+          "common_solar"
+        ]
+      ],
+      "n_knots": 4,
+      "release_delay_hours": 12.0,
+      "n_analogs": 50,
+      "checkerboard_seed": 2701,
+      "include_ecc": true,
+      "ecc_members": 20,
+      "ecc_weather_columns": [
+        "t2m",
+        "wind_speed",
+        "marine_wind_speed",
+        "dswrf"
+      ],
+      "ecc_calendar_columns": [
+        "year_sin_1",
+        "year_cos_1",
+        "year_sin_2",
+        "year_cos_2",
+        "year_sin_3",
+        "year_cos_3",
+        "hour_sin_1",
+        "hour_cos_1",
+        "hour_sin_2",
+        "hour_cos_2",
+        "weekday_0",
+        "weekday_1",
+        "weekday_2",
+        "weekday_3",
+        "weekday_4",
+        "weekday_5",
+        "weekday_6",
+        "years_since_2019",
+        "holiday_DE_previous",
+        "holiday_DE_today",
+        "holiday_DE_next",
+        "holiday_LU_previous",
+        "holiday_LU_today",
+        "holiday_LU_next",
+        "holiday_FR_previous",
+        "holiday_FR_today",
+        "holiday_FR_next",
+        "holiday_BE_previous",
+        "holiday_BE_today",
+        "holiday_BE_next"
+      ],
+      "ecc_linear_weather_columns": [],
+      "ecc_smooth_weather_columns": [
+        "t2m",
+        "wind_speed",
+        "marine_wind_speed",
+        "dswrf"
+      ],
+      "ecc_ridge_alpha": 10.0,
+      "threshold_available_time": "2021-01-01T00:00:00+00:00",
+      "include_event_baselines": true,
+      "include_pit_diagnostics": true,
+      "include_pair_products": true,
+      "pit_diagnostic_levels": [
+        0.9,
+        0.95
+      ],
+      "minimum_event_rows": 168,
+      "minimum_each_event_class": 5,
+      "event_logistic_C": 1.0,
+      "integration_tolerance": 1e-06,
+      "integration_backend": "elliptical_path",
+      "integration_initial_maxpts": 16384,
+      "integration_max_maxpts": 262144,
+      "integration_seed": 91723
+    },
+    "qnames": [
+      "q90",
+      "q95"
+    ],
+    "zones": [
+      "DE_LU",
+      "FR",
+      "BE"
+    ],
+    "PIT_history_start": "2021-01-01T00:00:00+00:00",
+    "maximum_input_end_exclusive": "2026-01-01T00:00:00+00:00",
+    "test_policy": "quarterly_F_daily_G_past_only_parameters_strategy_locked",
+    "marginal_calibration_mode": "daily",
+    "marginal_daily_calibration_contract": {
+      "raw_F_schedule": "quarterly_raw_end_origin_minus_calibration_days_minus_embargo_days",
+      "issue_time": "target_UTC_day_minus_12_hours",
+      "label_cutoff": "daily_issue_minus_7_days",
+      "window_start_inclusive": "max_daily_cutoff_minus_effective_daily_window_days_raw_fit_end_exclusive",
+      "label_qualification": "target_interval_end_at_or_before_daily_cutoff",
+      "minimum_effective_rows": 100,
+      "first_day_window_span_days": 59.5,
+      "past_query_labels": "permitted_only_after_their_interval_end_satisfies_daily_cutoff",
+      "raw_PIT_cache": "incremental_only_newly_available_selected_rows_no_future_raw_PIT",
+      "saved_G": "one_calibrator_per_UTC_target_day_first_G_legacy_field_nonrepresentative"
+    },
+    "weather_feature_schema": [
+      {
+        "name": "season_sin",
+        "type": "double"
+      },
+      {
+        "name": "season_cos",
+        "type": "double"
+      },
+      {
+        "name": "hour_sin",
+        "type": "double"
+      },
+      {
+        "name": "hour_cos",
+        "type": "double"
+      },
+      {
+        "name": "weekend",
+        "type": "double"
+      },
+      {
+        "name": "common_temperature",
+        "type": "double"
+      },
+      {
+        "name": "common_temperature_spread",
+        "type": "double"
+      },
+      {
+        "name": "common_land_wind",
+        "type": "double"
+      },
+      {
+        "name": "common_land_wind_spread",
+        "type": "double"
+      },
+      {
+        "name": "common_marine_wind",
+        "type": "double"
+      },
+      {
+        "name": "common_marine_wind_spread",
+        "type": "double"
+      },
+      {
+        "name": "common_solar",
+        "type": "double"
+      },
+      {
+        "name": "common_solar_spread",
+        "type": "double"
+      }
+    ],
+    "weather_feature_schema_sha256": "2390e13dbdcbfb6024e1c90167df7eba1dec34fd8a4d6e2fb48b27fce604c81c",
+    "weather_feature_spec_sha256": "d2aae7c7ce019d8aa911f72221ab2b2346aeca89d55fef8fe197761a74f7379e",
+    "ecc_calendar_contract": {
+      "mode": "independent_known_calendar",
+      "columns": [
+        "year_sin_1",
+        "year_cos_1",
+        "year_sin_2",
+        "year_cos_2",
+        "year_sin_3",
+        "year_cos_3",
+        "hour_sin_1",
+        "hour_cos_1",
+        "hour_sin_2",
+        "hour_cos_2",
+        "weekday_0",
+        "weekday_1",
+        "weekday_2",
+        "weekday_3",
+        "weekday_4",
+        "weekday_5",
+        "weekday_6",
+        "years_since_2019",
+        "holiday_DE_previous",
+        "holiday_DE_today",
+        "holiday_DE_next",
+        "holiday_LU_previous",
+        "holiday_LU_today",
+        "holiday_LU_next",
+        "holiday_FR_previous",
+        "holiday_FR_today",
+        "holiday_FR_next",
+        "holiday_BE_previous",
+        "holiday_BE_today",
+        "holiday_BE_next"
+      ],
+      "schema": [
+        {
+          "name": "year_sin_1",
+          "type": "double"
+        },
+        {
+          "name": "year_cos_1",
+          "type": "double"
+        },
+        {
+          "name": "year_sin_2",
+          "type": "double"
+        },
+        {
+          "name": "year_cos_2",
+          "type": "double"
+        },
+        {
+          "name": "year_sin_3",
+          "type": "double"
+        },
+        {
+          "name": "year_cos_3",
+          "type": "double"
+        },
+        {
+          "name": "hour_sin_1",
+          "type": "double"
+        },
+        {
+          "name": "hour_cos_1",
+          "type": "double"
+        },
+        {
+          "name": "hour_sin_2",
+          "type": "double"
+        },
+        {
+          "name": "hour_cos_2",
+          "type": "double"
+        },
+        {
+          "name": "weekday_0",
+          "type": "double"
+        },
+        {
+          "name": "weekday_1",
+          "type": "double"
+        },
+        {
+          "name": "weekday_2",
+          "type": "double"
+        },
+        {
+          "name": "weekday_3",
+          "type": "double"
+        },
+        {
+          "name": "weekday_4",
+          "type": "double"
+        },
+        {
+          "name": "weekday_5",
+          "type": "double"
+        },
+        {
+          "name": "weekday_6",
+          "type": "double"
+        },
+        {
+          "name": "years_since_2019",
+          "type": "double"
+        },
+        {
+          "name": "holiday_DE_previous",
+          "type": "double"
+        },
+        {
+          "name": "holiday_DE_today",
+          "type": "double"
+        },
+        {
+          "name": "holiday_DE_next",
+          "type": "double"
+        },
+        {
+          "name": "holiday_LU_previous",
+          "type": "double"
+        },
+        {
+          "name": "holiday_LU_today",
+          "type": "double"
+        },
+        {
+          "name": "holiday_LU_next",
+          "type": "double"
+        },
+        {
+          "name": "holiday_FR_previous",
+          "type": "double"
+        },
+        {
+          "name": "holiday_FR_today",
+          "type": "double"
+        },
+        {
+          "name": "holiday_FR_next",
+          "type": "double"
+        },
+        {
+          "name": "holiday_BE_previous",
+          "type": "double"
+        },
+        {
+          "name": "holiday_BE_today",
+          "type": "double"
+        },
+        {
+          "name": "holiday_BE_next",
+          "type": "double"
+        }
+      ],
+      "schema_sha256": "eae16a062730661bc3abd811b7f26cb646e06583afe4f5fdeae5e607d225d88b",
+      "feature_spec_sha256": "7e97adcf0d93c21f7e61b949844ad8fd714028218ee29ff13015822ff8f3edce",
+      "eligibility_policy": "same_common_query_mask; calendar_missing_is_hard_failure_requires_upstream_repair",
+      "does_not_enter_R_or_C8_basis": true
+    },
+    "marginal_settings_sha256": "8a304361c874d73c2755af79b3a5c37a96902353fb4b6d06b0a1fe5d73363f06",
+    "marginal_feature_spec_sha256": "4d08ac7897d8d78b9bc9e45077387a30f731910cd5cfae3d6f1f40d2e0e9f040",
+    "code_sha256": {
+      "joint_forward_runner.py": "34c2e50bec6db4a5a69233891a629c6e5ab296c1bea9c69a3cb17e65c5e94d1a",
+      "conditional_features.py": "8d5dcb04e066e008dc05f59e6367b0e8d315b5be8f5139f1f4f79efb851955e9",
+      "dependence.py": "81fe8eed98ba64a1c7d8e91d2dc304e9994904c4d7a4a737981aa584fed2dce2",
+      "weather_rank_template.py": "9f92924c5ea4816750ace59c0234d25ae93bd59e388798d33263d719beb481ba",
+      "prequential_margins.py": "bcc497c0b0a236c49f5e3b33080cc929ce181f8b3f6fb19dc48078a1aef006b3",
+      "margins.py": "86828a5e123d99c60315bea05453ca643588c9cc3502ae600fef61f244c2010c",
+      "forecast_design.py": "de160a4ac987e598930ee7d57835882d00590da144dfd49e9f324447300ae539",
+      "adaptive_thresholds.py": "d7bb75e0618addb0c667b37c0f6f1f7f5cbf3a6f772b9df42572aad4632e3103",
+      "adaptive_threshold_cache.py": "455a55273a63b97cfd65c93af32349b05ff6fb1335a5212a879931b82689807a",
+      "elliptical_event_fast.py": "04b115fd70377a66027fe875388b74231cda784dcceb151fa576a17136d3ef27",
+      "joint_pair_products.py": "f2577ac15ab78f62f1cb8b2b947c2162fe3ee58bde5fa31e11fb3af03aa5698e"
+    }
+  },
+  "joint_result_adapter": {
+    "script_version": "1.1-frozen-evaluation-window-full-source-audit",
+    "protocol": {
+      "path": ".\\config\\protocol_v3_core_20261001.json",
+      "sha256": "23ad571f7fa7259b338dba05ec196c4b2f40933e4e40191347962f28354c6c5d"
+    },
+    "code_sha256": {
+      "joint_result_adapter.py": "b67cfb6276b9cee961cc2485d7a9e39c0830c19288e32655f6bee45cd9391cf7",
+      "joint_forward_runner.py": "34c2e50bec6db4a5a69233891a629c6e5ab296c1bea9c69a3cb17e65c5e94d1a",
+      "conditional_features.py": "8d5dcb04e066e008dc05f59e6367b0e8d315b5be8f5139f1f4f79efb851955e9",
+      "evaluation.py": "a5b94f4d907ff8e18f14ba50f9660f0392842cd39ced85dbd5768502435486df",
+      "evaluate_predictions.py": "a7459fb27cdcead710fbfc561e35306f81bc10c511fe8c82c1f023d795aac99a",
+      "calibration_diagnostics.py": "ac81e22c535c2e94fb73c9a5af3897da277cadc456843397033740f3f0b95ac5",
+      "monitoring_uncertainty.py": "64e4a1a6f65aec0afcd79ba9b44f41ad37cfc1fe2b0674be3034e675a2e1612f"
+    },
+    "include_all_baselines": true,
+    "evaluation_window": {
+      "mode": "explicit",
+      "start": "2024-01-01T00:00:00+00:00",
+      "end_exclusive": "2026-01-01T00:00:00+00:00"
+    },
+    "products": [
+      {
+        "key": "physical_q90_ge2_C1_C8",
+        "domain": "physical",
+        "level": "q90",
+        "event_kind": "ge2",
+        "models": [
+          "C1_independent",
+          "C2_static_gaussian",
+          "C3_dynamic_gaussian",
+          "C4_static_t_shared_R",
+          "C5_dynamic_t_shared_R",
+          "C6_dynamic_t_refit_R",
+          "C7_weather_checkerboard",
+          "C8_analog_checkerboard"
+        ],
+        "eligibility_column": "forecast_eligible_q90"
+      },
+      {
+        "key": "physical_q90_all3_C1_C8",
+        "domain": "physical",
+        "level": "q90",
+        "event_kind": "all3",
+        "models": [
+          "C1_independent",
+          "C2_static_gaussian",
+          "C3_dynamic_gaussian",
+          "C4_static_t_shared_R",
+          "C5_dynamic_t_shared_R",
+          "C6_dynamic_t_refit_R",
+          "C7_weather_checkerboard",
+          "C8_analog_checkerboard"
+        ],
+        "eligibility_column": "forecast_eligible_q90"
+      },
+      {
+        "key": "physical_q90_DE_LU_FR_C1_C8",
+        "domain": "physical",
+        "level": "q90",
+        "event_kind": "DE_LU_FR",
+        "models": [
+          "C1_independent",
+          "C2_static_gaussian",
+          "C3_dynamic_gaussian",
+          "C4_static_t_shared_R",
+          "C5_dynamic_t_shared_R",
+          "C6_dynamic_t_refit_R",
+          "C7_weather_checkerboard",
+          "C8_analog_checkerboard"
+        ],
+        "eligibility_column": "forecast_eligible_q90"
+      },
+      {
+        "key": "physical_q90_DE_LU_BE_C1_C8",
+        "domain": "physical",
+        "level": "q90",
+        "event_kind": "DE_LU_BE",
+        "models": [
+          "C1_independent",
+          "C2_static_gaussian",
+          "C3_dynamic_gaussian",
+          "C4_static_t_shared_R",
+          "C5_dynamic_t_shared_R",
+          "C6_dynamic_t_refit_R",
+          "C7_weather_checkerboard",
+          "C8_analog_checkerboard"
+        ],
+        "eligibility_column": "forecast_eligible_q90"
+      },
+      {
+        "key": "physical_q90_FR_BE_C1_C8",
+        "domain": "physical",
+        "level": "q90",
+        "event_kind": "FR_BE",
+        "models": [
+          "C1_independent",
+          "C2_static_gaussian",
+          "C3_dynamic_gaussian",
+          "C4_static_t_shared_R",
+          "C5_dynamic_t_shared_R",
+          "C6_dynamic_t_refit_R",
+          "C7_weather_checkerboard",
+          "C8_analog_checkerboard"
+        ],
+        "eligibility_column": "forecast_eligible_q90"
+      },
+      {
+        "key": "physical_q95_ge2_C1_C8",
+        "domain": "physical",
+        "level": "q95",
+        "event_kind": "ge2",
+        "models": [
+          "C1_independent",
+          "C2_static_gaussian",
+          "C3_dynamic_gaussian",
+          "C4_static_t_shared_R",
+          "C5_dynamic_t_shared_R",
+          "C6_dynamic_t_refit_R",
+          "C7_weather_checkerboard",
+          "C8_analog_checkerboard"
+        ],
+        "eligibility_column": "forecast_eligible_q95"
+      },
+      {
+        "key": "physical_q95_all3_C1_C8",
+        "domain": "physical",
+        "level": "q95",
+        "event_kind": "all3",
+        "models": [
+          "C1_independent",
+          "C2_static_gaussian",
+          "C3_dynamic_gaussian",
+          "C4_static_t_shared_R",
+          "C5_dynamic_t_shared_R",
+          "C6_dynamic_t_refit_R",
+          "C7_weather_checkerboard",
+          "C8_analog_checkerboard"
+        ],
+        "eligibility_column": "forecast_eligible_q95"
+      },
+      {
+        "key": "physical_q95_DE_LU_FR_C1_C8",
+        "domain": "physical",
+        "level": "q95",
+        "event_kind": "DE_LU_FR",
+        "models": [
+          "C1_independent",
+          "C2_static_gaussian",
+          "C3_dynamic_gaussian",
+          "C4_static_t_shared_R",
+          "C5_dynamic_t_shared_R",
+          "C6_dynamic_t_refit_R",
+          "C7_weather_checkerboard",
+          "C8_analog_checkerboard"
+        ],
+        "eligibility_column": "forecast_eligible_q95"
+      },
+      {
+        "key": "physical_q95_DE_LU_BE_C1_C8",
+        "domain": "physical",
+        "level": "q95",
+        "event_kind": "DE_LU_BE",
+        "models": [
+          "C1_independent",
+          "C2_static_gaussian",
+          "C3_dynamic_gaussian",
+          "C4_static_t_shared_R",
+          "C5_dynamic_t_shared_R",
+          "C6_dynamic_t_refit_R",
+          "C7_weather_checkerboard",
+          "C8_analog_checkerboard"
+        ],
+        "eligibility_column": "forecast_eligible_q95"
+      },
+      {
+        "key": "physical_q95_FR_BE_C1_C8",
+        "domain": "physical",
+        "level": "q95",
+        "event_kind": "FR_BE",
+        "models": [
+          "C1_independent",
+          "C2_static_gaussian",
+          "C3_dynamic_gaussian",
+          "C4_static_t_shared_R",
+          "C5_dynamic_t_shared_R",
+          "C6_dynamic_t_refit_R",
+          "C7_weather_checkerboard",
+          "C8_analog_checkerboard"
+        ],
+        "eligibility_column": "forecast_eligible_q95"
+      },
+      {
+        "key": "diagnostic_pit_u90_ge2_C1_C8",
+        "domain": "diagnostic_pit",
+        "level": "u90",
+        "event_kind": "ge2",
+        "models": [
+          "C1_independent",
+          "C2_static_gaussian",
+          "C3_dynamic_gaussian",
+          "C4_static_t_shared_R",
+          "C5_dynamic_t_shared_R",
+          "C6_dynamic_t_refit_R",
+          "C7_weather_checkerboard",
+          "C8_analog_checkerboard"
+        ],
+        "eligibility_column": "diagnostic_pit_forecast_eligible_u90"
+      },
+      {
+        "key": "diagnostic_pit_u90_all3_C1_C8",
+        "domain": "diagnostic_pit",
+        "level": "u90",
+        "event_kind": "all3",
+        "models": [
+          "C1_independent",
+          "C2_static_gaussian",
+          "C3_dynamic_gaussian",
+          "C4_static_t_shared_R",
+          "C5_dynamic_t_shared_R",
+          "C6_dynamic_t_refit_R",
+          "C7_weather_checkerboard",
+          "C8_analog_checkerboard"
+        ],
+        "eligibility_column": "diagnostic_pit_forecast_eligible_u90"
+      },
+      {
+        "key": "diagnostic_pit_u95_ge2_C1_C8",
+        "domain": "diagnostic_pit",
+        "level": "u95",
+        "event_kind": "ge2",
+        "models": [
+          "C1_independent",
+          "C2_static_gaussian",
+          "C3_dynamic_gaussian",
+          "C4_static_t_shared_R",
+          "C5_dynamic_t_shared_R",
+          "C6_dynamic_t_refit_R",
+          "C7_weather_checkerboard",
+          "C8_analog_checkerboard"
+        ],
+        "eligibility_column": "diagnostic_pit_forecast_eligible_u95"
+      },
+      {
+        "key": "diagnostic_pit_u95_all3_C1_C8",
+        "domain": "diagnostic_pit",
+        "level": "u95",
+        "event_kind": "all3",
+        "models": [
+          "C1_independent",
+          "C2_static_gaussian",
+          "C3_dynamic_gaussian",
+          "C4_static_t_shared_R",
+          "C5_dynamic_t_shared_R",
+          "C6_dynamic_t_refit_R",
+          "C7_weather_checkerboard",
+          "C8_analog_checkerboard"
+        ],
+        "eligibility_column": "diagnostic_pit_forecast_eligible_u95"
+      },
+      {
+        "key": "physical_q90_ge2_all11",
+        "domain": "physical",
+        "level": "q90",
+        "event_kind": "ge2",
+        "models": [
+          "C1_independent",
+          "C2_static_gaussian",
+          "C3_dynamic_gaussian",
+          "C4_static_t_shared_R",
+          "C5_dynamic_t_shared_R",
+          "C6_dynamic_t_refit_R",
+          "C7_weather_checkerboard",
+          "C8_analog_checkerboard",
+          "C0_climatology",
+          "C9_event_calibrated_C3",
+          "C10_direct_logistic"
+        ],
+        "eligibility_column": "forecast_eligible_q90"
+      },
+      {
+        "key": "physical_q95_ge2_all11",
+        "domain": "physical",
+        "level": "q95",
+        "event_kind": "ge2",
+        "models": [
+          "C1_independent",
+          "C2_static_gaussian",
+          "C3_dynamic_gaussian",
+          "C4_static_t_shared_R",
+          "C5_dynamic_t_shared_R",
+          "C6_dynamic_t_refit_R",
+          "C7_weather_checkerboard",
+          "C8_analog_checkerboard",
+          "C0_climatology",
+          "C9_event_calibrated_C3",
+          "C10_direct_logistic"
+        ],
+        "eligibility_column": "forecast_eligible_q95"
+      }
+    ],
+    "metrics": {
+      "reliability_edges": [
+        0.0,
+        0.005,
+        0.01,
+        0.02,
+        0.05,
+        0.1,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1.0
+      ],
+      "bootstrap_repetitions": 2000
+    },
+    "primary": {
+      "product": "physical_q90_ge2_C1_C8",
+      "contrast": [
+        "C5_dynamic_t_shared_R",
+        "C3_dynamic_gaussian"
+      ]
+    },
+    "other_contrasts": "descriptive_pointwise_CI_no_Holm_or_confirmatory_family_claim",
+    "label_rule": "strict_greater_than_all_three_labels_and_thresholds_finite_else_NaN",
+    "forecast_rows": "exact_runner_index_audited_then_frozen_window_and_declared_eligibility_never_model_specific_finite_mask",
+    "C9_alert_rank_alias": {
+      "C9_event_calibrated_C3": "C3_dynamic_gaussian"
+    },
+    "existing_evaluator_fixed_metrics": {
+      "alert_K": [
+        1,
+        2,
+        4
+      ],
+      "primary_K": 2,
+      "calendar_block_days": [
+        7,
+        14,
+        28
+      ],
+      "process_gap_days": [
+        0,
+        1,
+        2
+      ],
+      "daily_Brier": "complete_24_known_label_days_equal_day_mean",
+      "primary_CI": "paired_14_day_year_quarter_blocks",
+      "additional_CI": "7_28_day_and_14_day_whole_year_descriptive"
+    }
+  },
+  "measurement_evaluation_sensitivity": {
+    "script_version": "1.0-fixed-issued-probabilities-alternative-observation-labels",
+    "code_sha256": {
+      "measurement_evaluation_sensitivity.py": "b7db5379b995200f4450776cd4432173d9fbc0d5fd895da7b99d86ad74fd9429"
+    },
+    "observation_sources": {
+      "strict_observed": {
+        "path": ".\\datasets\\data_observations_native_v3_strict_2024_2025_sealed.parquet",
+        "sha256": "2b3bb04a183c524daf62c6c56a42ba594a5689c238c3b1c61443f266d655a708"
+      },
+      "night_candidate": {
+        "path": ".\\datasets\\data_observations_native_v4_night_candidate_2024_2025_sealed.parquet",
+        "sha256": "009ff78415226fb80fcafb8fa86582ee01ee6b0f4c116d401c3cdd42dbefe3e1"
+      },
+      "night_rule_audit": {
+        "path": ".\\results\\sealed_observation_night_rule_20260930T023716231974Z.csv",
+        "sha256": "a3c376f044b7cb3edeca39ba5e48c15ec17e57a64a944d8bd29513bcdb09cfb7"
+      }
+    },
+    "modes": [
+      "strict_observed",
+      "night_pv1",
+      "night_pv5",
+      "rte_minus30min",
+      "rte_plus30min"
+    ],
+    "main_products": [
+      "physical_q90_ge2_C1_C8",
+      "physical_q95_ge2_C1_C8"
+    ],
+    "native_schema": [
+      "timestamp",
+      "zone",
+      "net_load_mw"
+    ],
+    "night_flag": "solar_night_reconstructed",
+    "quarter_audit_schema": [
+      "timestamp",
+      "eligible_conditional_reconstruction"
+    ],
+    "perturbation": "BE net load minus quarter_PV_MW * eligible_reconstructed_quarter_count / 4; quarter_PV_MW in [1,5]",
+    "labels": "all_three_observations_and_primary_issued_thresholds_finite_else_NaN; strict_greater_than; at_least_two",
+    "probabilities": "all_main_model_float64_probability_bits_copied_unchanged; eligible_numerical_failure_fatal",
+    "thresholds": "unchanged_primary_issued_q90_q95_thresholds; no_threshold_refit",
+    "metrics": "unchanged_main_models_contrasts_alert_rank_aliases_reliability_bootstrap_and_evaluation_window; descriptive_sensitivity",
+    "optional_RTE": "both_declared_minus30_and_plus30_candidates_only_from_matching_frozen_rte_shift_sensitivity_report",
+    "claim_boundary": "Fixed issued forecasts under alternative observation conventions; this is not a refitted forecasting pipeline or certified measurement truth."
+  },
+  "execution_plan": {
+    "shared_history_start": "2021-01-01T00:00:00+00:00",
+    "joint_runner_start": "2022-01-01T00:00:00+00:00",
+    "joint_runner_end_exclusive": "2026-01-01T00:00:00+00:00",
+    "test_marginal_start": "2024-01-01T00:00:00+00:00",
+    "test_marginal_end_exclusive": "2026-01-01T00:00:00+00:00",
+    "evaluation_window": [
+      "2024-01-01T00:00:00+00:00",
+      "2026-01-01T00:00:00+00:00"
+    ],
+    "C9_warmup": "Earlier-quarter C3 outputs from the same full 2022--2025 runner chain; only 2024--2025 is scored",
+    "joint_auxiliary_support_code_sha256": "4d4307ca75fa67a7b15eb5fd44056cb1f41b56ea8ca13ee8fe7e2e019424e094",
+    "ecc_calendar_feature_spec_sha256": "7e97adcf0d93c21f7e61b949844ad8fd714028218ee29ff13015822ff8f3edce",
+    "C7_calendar_source": "Separate full 30-column common deterministic calendar; no load lag; independent of R(X)",
+    "require_future_assembled_margin_spec_bytes_identical_to_locked_development_spec": true
+  },
+  "primary_claim": {
+    "fixed_test_window": [
+      "2024-01-01T08:00:00+08:00",
+      "2026-01-01T08:00:00+08:00"
+    ],
+    "Brier": "Equal weight to complete 24-known-label UTC days; identical row and day set across compared models",
+    "primary_uncertainty": "Paired 14-calendar-day resampling with year-quarter strata, 2000 repetitions",
+    "uncertainty_sensitivity": "7/28-calendar-day and whole-year-stratified 14-day intervals, descriptive",
+    "reliability": "Fixed bins from the adapter contract; pointwise calendar-block intervals",
+    "alert_budget": "Top 1, 2 or 4 hourly warnings within each issued target day; primary K=2; deterministic UTC-time tie break",
+    "monitoring": "Hour misses and false alerts; event-spell any-hit, first-day and first-six-elapsed-hour detection, with issuance/onset lead definitions kept distinct",
+    "spells": "Active event days joined across one observed empty day; gap 0/2 sensitivities; missing days break spells and uncertain boundaries are reported separately",
+    "meteorological_independence_boundary": "Spells are event-process proxies, not independently certified weather systems; repeated hours are not independent findings",
+    "planned_minimum_important_relative_Brier_gain": 0.03,
+    "minimum_gain_interpretation": "A planning benchmark chosen before test scores, not a guaranteed effect, an established industry threshold or proof of operator utility",
+    "primary_direction": "Negative C5-C3 Brier difference favors C5; report effect, interval and calibration/monitoring together",
+    "secondary_inference": "All other products, contrasts, years, dependence degrees of freedom, monitoring and sensitivity summaries are descriptive pointwise evidence; no simultaneous family or Holm-adjusted claim"
+  },
+  "metadata_only_compile": {
+    "time_columns_decoded": 0,
+    "value_columns_decoded": 0,
+    "schema_and_binary_hash_inspection_only": true
+  },
+  "freeze_commit_policy": "Only root explicitly commits a fresh final file after actual selection/source stability; templates grant no test access",
+  "rte_shift_sensitivity": {
+    "script_version": "1.0-original-half-hour-explicit-shifts",
+    "test_years": [
+      2024,
+      2025
+    ],
+    "base_table": ".\\datasets\\data_observations_native_v4_night_candidate_2024_2025_sealed.parquet",
+    "base_table_sha256": "009ff78415226fb80fcafb8fa86582ee01ee6b0f4c116d401c3cdd42dbefe3e1",
+    "shifts_minutes": [
+      -30,
+      30
+    ],
+    "shift_all_FR_components_jointly": [
+      "load_mw",
+      "wind_total_mw",
+      "solar_mw"
+    ],
+    "aggregation": "Complete two-original-half-hour arithmetic mean after timestamp relabelling",
+    "minimum_genuine_readings_per_component_per_hour": 2,
+    "interpolation_or_zero_filling": false,
+    "negative_published_power_retained": true,
+    "DE_LU_BE_rows_unchanged": true,
+    "preceding_boundary_context": "Last original 2023 half-hour allowed; no 2026 following value is invented or requested",
+    "purpose": "Prespecified measurement robustness; never select timestamp convention by joint performance",
+    "code_sha256": {
+      "rte_shift_sensitivity.py": "2aad5f5b5a13f0fe97511c6f9545a0572e96fc0cdd1978c78bf4091c58268d29",
+      "data_normalize_observations.py": "87ad3dd4d12cf5b95dc10b10fd9dfe1aa0d2be062949e63dda7b86b28d604b78"
+    }
+  },
+  "committed_from_review": {
+    "path": ".\\results\\final_protocol_actual_review_20261001\\final_freeze_review.json",
+    "sha256": "8dbfa8b2000685f103cf291cc1742bf15fbc7f4688cedb85fdc9926c1b8ca1fa"
+  }
+}

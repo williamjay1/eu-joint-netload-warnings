@@ -1,0 +1,162 @@
+{
+  "protocol_version": "3.0-core-pretest-review-20261001",
+  "status": "core_protocol_review_not_a_test_unlock",
+  "study_type": "Retrospective empirical probabilistic forecasting with a held-out chronological evaluation; not a causal study or preregistered study",
+  "target_journal": "Energy Science & Engineering, Original Research",
+  "research_question": "Does an alternative finite-threshold dependence shape add reproducible joint warning skill beyond the same single-zone recalibrated forecasts and a competitive weather-dependent Gaussian copula?",
+  "main_contribution": "Controlled predictive-component evidence about incremental finite-event probability and monitoring performance with documented marginal-calibration uncertainty; ideal marginal calibration is examined separately in explicitly labelled simulations",
+  "claim_boundaries": [
+    "Provider-reported residual electricity load is not outage, loss-of-load, EENS, actual reserve deficit or an operational adequacy probability",
+    "C3 and C5 share R(X) and theoretical conditional pairwise Kendall tau; they do not necessarily share physical Pearson correlations",
+    "A finite t degree of freedom is not proof of asymptotic physical tail dependence or an unobserved meteorological mechanism",
+    "A fixed physical seasonal threshold can lie in the central part of a weather-conditional marginal distribution",
+    "Measured skill and error rates do not certify real operator utility or historical production availability",
+    "Development calibration qualification was precision_insufficient; no supported material departure does not prove conditional equivalence. European data do not alone identify a physical tail mechanism after perfectly calibrated margins.",
+    "Ideal-marginal simulations, if executed, identify component behavior under their stated data-generating assumptions and do not establish perfect European calibration."
+  ],
+  "regions": [
+    "DE_LU",
+    "FR",
+    "BE"
+  ],
+  "electricity": {
+    "target": "provider-reported load minus wind generation minus solar generation, in MW",
+    "providers": {
+      "DE_LU": "SMARD DE-LU",
+      "FR": "RTE mainland France excluding Corsica",
+      "BE": "Elia load/wind/PV, including source-specific Sotel footprint"
+    },
+    "native_resolution": {
+      "DE_LU": "hourly energy normalized to MW",
+      "FR": "two original half-hour readings per UTC hour",
+      "BE": "four original quarter-hour readings per UTC hour"
+    },
+    "boundary_policy": "Provider boundaries and self-consumption definitions are documented; perfectly identical gross-demand boundaries are not asserted",
+    "primary_night_PV_rule": "Only flagged originally missing Belgian 23:45 local quarter-hours with zero original neighbors and conservative solar-elevation bound below -6 degrees are assigned zero",
+    "reconstructed_PV_is_observed_truth": false,
+    "missing_unqualified_components": "Retain NaN; no interpolation or silent zero filling",
+    "negative_published_generation": "Retained"
+  },
+  "history_and_selection": {
+    "initial_training_and_exploratory_history": "2019-01-01 through 2021-12-31",
+    "development": "2022-01-01 through 2023-12-31",
+    "held_out_outcomes_and_model_scores": "2024-01-01 through 2025-12-31",
+    "historical_exploration_disclosure": "2021 numerical, extrapolation, rolling calibration and lag diagnostics informed the recorded final four-candidate strategy; 2021 is not a blinded evaluation",
+    "marginal_choice": "The completed daily_matched4 development comparison selected additive raw60/daily-G60 for lowest marginal truncated-IQS in both development years; preserve the original selector precision_insufficient and chosen=null, together with a separate explicit predictive decision and its evidence boundary",
+    "marginal_selection_target": "Marginal normalized truncated integrated quantile score and recorded calibration evidence, never joint-event score",
+    "Gaussian_choice": "Actual 2023 q90 at-least-two equal-complete-day Brier among lean/rich weather bases crossed with l2 0.001, 0.01, 0.1; tie within 1e-10 favors fewer features then larger l2",
+    "selection_adjusted_test": "All strategy choices are fixed before test event labels and forecast scores are examined",
+    "not_preregistered": true,
+    "test_preinspection_scope": "Electricity source QA, missingness, units, alignment and conditional nighttime reconstruction flags were inspected; 2024-2025 joint event labels, forecasting comparisons and model scores were not inspected before final strategy locking",
+    "test_outcomes_inspected_false_semantics": "Legacy code field denotes no prior test-event or forecast-score inspection at freeze; it does not claim no previous access to source-quality observations or flags",
+    "retrospective_forecast_semantics": "Forward parameter fits respect target cutoffs conditional on the development-selected strategy; these are not archived historically issued operational forecasts",
+    "marginal_qualification": "Approximate recalibration with uncertainty; the independent predictive decision does not certify all conditional margins equivalent or remove the observed-calibration limitation",
+    "Gaussian_numerical_execution_repair": "After rich/l2=0.001 reached the original 400-iteration cap without convergence, the complete unchanged 24 candidate-quarter development grid was restarted at a common 2000 cap before final selection or held-out scores; objective, tolerances, features, penalties and selection rule unchanged. This is an execution repair, not a methodological innovation."
+  },
+  "weather": {
+    "primary_source": "NOAA GEFS public operational archive",
+    "TIGGE_was_acquired": false,
+    "members": "Common perturbed members 1 through 20",
+    "initialization": "00:00 UTC on target day minus one",
+    "issue": "12:00 UTC on target day minus one",
+    "target": "All 24 hourly intervals of the next UTC day",
+    "weather_leads_hours": [
+      24,
+      30,
+      36,
+      42,
+      48
+    ],
+    "availability_assumption": "Initialization plus 12 hours; original public first-arrival timestamps are not exhaustively certified",
+    "market_boundary": "Issue is after the standard day-ahead auction; no bidding-performance claim",
+    "features": "Temperature, terrestrial and fixed marine-box wind speed, native six-hour mean downward shortwave radiation; mean/spread and named zone contrasts",
+    "spatial_support": "Common integer-degree nodes, modern 0.5-degree source fields subsampled; fractional projected polygon-area weights; not native one-degree cell averaging",
+    "geographic_boundary": "Country polygons and fixed marine boxes approximate electrical service areas; marine boxes are not EEZ or capacity-weighted footprints",
+    "upgrade_boundary": "GEFS upgrade and archive grid changes are disclosed; common members/nodes do not remove model-version changes",
+    "unrun_weather_alternatives": "Age-60-hour and native-grid alternatives are outside this locked core protocol and are not represented as completed robustness checks"
+  },
+  "availability_and_fitting": {
+    "observation_vintages": "Historical final/revised provider records; original release vintages are not authenticated",
+    "raw_F": "Expanding from 2019, quarterly; fit endpoint equals quarter origin minus selected raw holdout days minus nominal seven-day embargo",
+    "daily_G": "Same quarterly F; rolling selected 30/60-day window with interval END at or before each target day's issue minus seven days, clipped at raw-fit endpoint; minimum 100 valid rows",
+    "quarterly_R_and_threshold_cutoff": "Quarter origin minus seven days with interval END qualification; this is 6.5 days before the first issue at origin minus 12 hours",
+    "dependence_history": "Two preceding calendar years of shared forward PITs and named weather features",
+    "load_lags": "Provider total load at exact target UTC hour minus 14 and 21 days, source interval END plus seven days at or before issue; six linear shared-F features appended after the original 69",
+    "lag_vintage_boundary": "Revised labels under the declared availability assumption; not certified historical data vintages",
+    "test_parameter_updates": "Only legally available past observations may update quarterly F/R/threshold and daily G under the locked strategy; no tuning on held-out scores"
+  },
+  "events": {
+    "physical_threshold": "Selected quarterly past-only adaptive seasonal quantile with slow trend, same-hour daily Fourier structure and three-calendar-year history; no weather covariate in threshold",
+    "primary": "At least two of three zones exceed their issued q90 thresholds in the same UTC hour",
+    "operator": "strict greater than; equality is false",
+    "physical_secondary": "q95, all-three events and the three fixed zone-pair projections of the same fitted three-zone distribution",
+    "constant_V_diagnostics": "PIT u90/u95 at-least-two and all-three events, explicitly separate from physical threshold warnings",
+    "unknown_label": "If any of the three observations or relevant issued thresholds is unavailable, event remains NaN even for a pair projection",
+    "daily_any_hour_probability": "Outside scope"
+  },
+  "comparisons": {
+    "same_margins": "Every comparator consumes exactly the same issued recalibrated F/G and physical-threshold CDF table; conditional calibration uncertainty is shared and reported",
+    "core": [
+      "C1 independent",
+      "C2 static Gaussian",
+      "C3 dynamic weather Gaussian",
+      "C4 static t sharing C2 R",
+      "C5 dynamic t sharing C3 R",
+      "C6 dynamic t refitting R",
+      "C7 weather checkerboard ranks",
+      "C8 analog checkerboard"
+    ],
+    "additional": [
+      "C0 seasonal climatology",
+      "C9 positive monotone recalibration of C3 event probabilities",
+      "C10 direct event logistic regression"
+    ],
+    "primary_contrast": "C5_dynamic_t_shared_R minus C3_dynamic_gaussian on physical q90 at-least-two Brier",
+    "t_degrees_of_freedom": "3, 5, 8, 15, 30, infinity; choose by past-only pseudo-likelihood, retain exact Gaussian infinity boundary",
+    "C7": "Four member weather variables with all 30 common deterministic calendar and provider-holiday fields in a separate table; fit a past-only rank template and apply its ranks to shared recalibrated F; calendar includes no observed load lag and does not enter R(X) or C8",
+    "C8": "50 prior analogs using the selected common weather basis and shared forward PITs",
+    "C9": "Uses earlier-quarter C3 forecasts from the same 2022-2025 runner chain; top-K ranking must alias C3 exactly",
+    "no_model_specific_missingness": "Known common-feature eligibility controls forecast rows; an eligible numerical probability failure is fatal"
+  },
+  "numerics": {
+    "backend": "elliptical_path",
+    "tolerance": 1e-06,
+    "interpretation": "Reported integration discrepancy is a convergence diagnostic, not a rigorous mathematical probability error bound"
+  },
+  "evaluation": {
+    "fixed_test_window": [
+      "2024-01-01T08:00:00+08:00",
+      "2026-01-01T08:00:00+08:00"
+    ],
+    "Brier": "Equal weight to complete 24-known-label UTC days; identical row and day set across compared models",
+    "primary_uncertainty": "Paired 14-calendar-day resampling with year-quarter strata, 2000 repetitions",
+    "uncertainty_sensitivity": "7/28-calendar-day and whole-year-stratified 14-day intervals, descriptive",
+    "reliability": "Fixed bins from the adapter contract; pointwise calendar-block intervals",
+    "alert_budget": "Top 1, 2 or 4 hourly warnings within each issued target day; primary K=2; deterministic UTC-time tie break",
+    "monitoring": "Hour misses and false alerts; event-spell any-hit, first-day and first-six-elapsed-hour detection, with issuance/onset lead definitions kept distinct",
+    "spells": "Active event days joined across one observed empty day; gap 0/2 sensitivities; missing days break spells and uncertain boundaries are reported separately",
+    "meteorological_independence_boundary": "Spells are event-process proxies, not independently certified weather systems; repeated hours are not independent findings",
+    "planned_minimum_important_relative_Brier_gain": 0.03,
+    "minimum_gain_interpretation": "A planning benchmark chosen before test scores, not a guaranteed effect, an established industry threshold or proof of operator utility",
+    "primary_direction": "Negative C5-C3 Brier difference favors C5; report effect, interval and calibration/monitoring together",
+    "secondary_inference": "All other products, contrasts, years, dependence degrees of freedom, monitoring and sensitivity summaries are descriptive pointwise evidence; no simultaneous family or Holm-adjusted claim"
+  },
+  "measurement_sensitivity": {
+    "modes": [
+      "strict_observed",
+      "night_pv1",
+      "night_pv5",
+      "rte_minus30min",
+      "rte_plus30min"
+    ],
+    "night_PV_scaling": "BE hourly net load minus 1 or 5 MW times the number of flagged original reconstructed quarters divided by four",
+    "RTE": "Original half-hour timestamps shifted jointly by minus/plus 30 minutes with complete two-reading hourly aggregation and unchanged other zones",
+    "claim": "Fixed issued forecasts under alternative observation conventions; label-only changes under unchanged primary thresholds, probabilities, models, ranking and evaluation window; no whole-pipeline refit claim"
+  },
+  "reproducibility": {
+    "storage": "Immutable raw sources on F; scripts, feature caches, training, checkpoints and results on D",
+    "new_outputs_only": true,
+    "AI_use": "Research design, literature retrieval, code, validation, analysis and manuscript assistance; actual usage disclosed without claiming AI was limited to language polishing",
+    "publication_evidence": "Only verified numerical outputs support empirical claims; no synthetic result is presented as European observed evidence"
+  }
+}

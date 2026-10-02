@@ -1,0 +1,9 @@
+﻿Check,Specification,Result / scope,Detail
+Stricter monitoring level,q95; rules unchanged,Gate advantage retained in all three combinations; dependence/priority increments unresolved,S10–S12
+Process definition,0/1/2 inactive-day bridges,q90 matched gate gains 17.96–23.62 pp; point estimates descriptive,S10–S12
+Temporal uncertainty,7/14/28-day blocks,Gate pointwise intervals above zero at both thresholds and in all three primary combinations,S10–S12
+French timestamps,Original/−30/+30 minutes,q90 gate gain 17.02–18.25 pp on 722 common days; priority may reverse,S10.6
+Danish weather input,Primary local versus fixed macro,Macro q90 gate gains 17.32/12.73 pp; primary input not selected by score,S11–S12
+Added complexity,Fixed P1 on M0–M3; annual P2/P1,No stable added native early coverage from t; original priority difference +8 spells in 2024/−6 in 2025,S10.4–S12
+Multiplicity,Six q90 contrasts in each named family,Gate Holm-adjusted p=0.003; t/priority not supported; post-revision check,S12
+Rule parameters,"Gates 0.25/0.19, cap two, cooldown six",Fixed transfer across years/thresholds/regions; no new neighbourhood optimisation or robustness claim,S10–S12

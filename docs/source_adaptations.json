@@ -1,0 +1,82 @@
+{
+  "scope": "public portable wrapper and path changes; scientific core unchanged",
+  "pipeline_changes": [
+    {
+      "script": "data_download_observations.py",
+      "changes": "root/raw work paths resolve from clone; model/policy logic unchanged"
+    },
+    {
+      "script": "data_normalize_observations.py",
+      "changes": "root/raw work paths resolve from clone; model/policy logic unchanged"
+    },
+    {
+      "script": "data_build_native_v3.py",
+      "changes": "root/raw work paths resolve from clone; model/policy logic unchanged"
+    },
+    {
+      "script": "gefs_download.py",
+      "changes": "root/raw work paths resolve from clone; model/policy logic unchanged"
+    },
+    {
+      "script": "gefs_regional_features.py",
+      "changes": "root/raw work paths resolve from clone; model/policy logic unchanged"
+    },
+    {
+      "script": "weather_panel_builder.py",
+      "changes": "root/raw work paths resolve from clone; model/policy logic unchanged"
+    },
+    {
+      "script": "prequential_margins.py",
+      "changes": "root/raw work paths resolve from clone; model/policy logic unchanged"
+    },
+    {
+      "script": "upgrade_data_audit_20261002.py",
+      "changes": "root/raw work paths resolve from clone; model/policy logic unchanged"
+    },
+    {
+      "script": "upgrade_margin_dependence_20261002.py",
+      "changes": "root/raw work paths resolve from clone; model/policy logic unchanged"
+    },
+    {
+      "script": "upgrade_external_transfer_20261002.py",
+      "changes": "root/raw work paths resolve from clone; model/policy logic unchanged"
+    },
+    {
+      "script": "upgrade_sensitivity_20261002.py",
+      "changes": "root/raw work paths resolve from clone; model/policy logic unchanged"
+    }
+  ],
+  "table_renderer": "table cells loaded from released JSON instead of unpublished manuscript",
+  "plot_outputs": "all three renderers write to generated/nature_visual_redesign_20261002; SciencePlots styles and fixed figure inputs are read from results without overwriting released reference files",
+  "empty_process_boundary": "summarise preserves record columns when no event processes exist; expected covered count remains zero and coverage remains undefined (NaN); results with observed processes are unchanged",
+  "no_new_training": true,
+  "release_path_configuration": {
+    "scripts": [
+      "adaptive_thresholds.py",
+      "adaptive_threshold_cache.py",
+      "conditional_features.py",
+      "data_build_native_v3.py",
+      "data_download_observations.py",
+      "data_normalize_observations.py",
+      "gefs_download.py",
+      "gefs_regional_features.py",
+      "joint_forward_runner.py",
+      "margins.py",
+      "prequential_margins.py",
+      "upgrade_data_audit_20261002.py",
+      "upgrade_external_transfer_20261002.py",
+      "upgrade_external_warning_policies_20261002.py",
+      "upgrade_margin_dependence_20261002.py",
+      "upgrade_sensitivity_20261002.py",
+      "upgrade_warning_policies_20261002.py",
+      "weather_panel_builder.py",
+      "weather_rank_template.py"
+    ],
+    "changes": "clone/work/raw roots and drive-letter storage guards adapted to equivalent configured subtrees; no forecasting mathematics or rule-selection changes",
+    "work_environment_variable": "EU_NETLOAD_WORK_ROOT",
+    "raw_environment_variable": "EU_NETLOAD_RAW_ROOT",
+    "raw_default": "Windows: F:/AcademicData/eu_joint_netload/raw; other systems: <work>/raw; explicitly override EU_NETLOAD_RAW_ROOT when necessary",
+    "full_refit_rerun": false,
+    "frozen_source_hash_warning": "path adaptations change source hashes; a fresh full fit must rebuild its own documented provenance contracts, not claim historical code hashes"
+  }
+}

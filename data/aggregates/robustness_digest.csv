@@ -1,0 +1,85 @@
+kind,profile,zone,q,gap_days,common_slots,processes,gate_minus_quota_pp,priority_minus_gate_pp,inference,block_days,ci_low_pp,ci_high_pp,label_convention,score_domain,contrast,difference_pp
+bridging,original,DE_LU_FR_BE,q90,0.0,572.0,93.0,18.09356547680503,6.333269932507612,descriptive point contrast; no added bridging-adjusted significance test,,,,,,,
+bridging,original,DE_LU_FR_BE,q90,1.0,572.0,71.0,18.34057076993932,4.71380680320101,descriptive point contrast; no added bridging-adjusted significance test,,,,,,,
+bridging,original,DE_LU_FR_BE,q90,2.0,572.0,51.0,19.642645887567994,4.110506481182235,descriptive point contrast; no added bridging-adjusted significance test,,,,,,,
+bridging,original,DE_LU_FR_BE,q95,0.0,371.0,71.0,20.37066045301762,4.380658723148612,descriptive point contrast; no added bridging-adjusted significance test,,,,,,,
+bridging,original,DE_LU_FR_BE,q95,1.0,371.0,61.0,22.64926892005623,5.076316374806073,descriptive point contrast; no added bridging-adjusted significance test,,,,,,,
+bridging,original,DE_LU_FR_BE,q95,2.0,371.0,51.0,21.564410098569212,11.433306729365016,descriptive point contrast; no added bridging-adjusted significance test,,,,,,,
+block_length,original,DE_LU_FR_BE,q90,,,,18.34057076993931,,pointwise calendar-block interval; not a second confirmatory test,7.0,11.866349731080517,24.389558531645505,,,,
+block_length,original,DE_LU_FR_BE,q90,,,,18.34057076993931,,pointwise calendar-block interval; not a second confirmatory test,14.0,13.08596860096609,24.862118091440976,,,,
+block_length,original,DE_LU_FR_BE,q90,,,,18.34057076993931,,pointwise calendar-block interval; not a second confirmatory test,28.0,15.460737160845037,25.443572089652783,,,,
+block_length,original,DE_LU_FR_BE,q95,,,,22.64926892005622,,pointwise calendar-block interval; not a second confirmatory test,7.0,15.065500435184012,29.97594905458364,,,,
+block_length,original,DE_LU_FR_BE,q95,,,,22.64926892005622,,pointwise calendar-block interval; not a second confirmatory test,14.0,15.995981712185369,30.811608295200465,,,,
+block_length,original,DE_LU_FR_BE,q95,,,,22.64926892005622,,pointwise calendar-block interval; not a second confirmatory test,28.0,16.741428579238356,28.946029890301766,,,,
+bridging,local,DK1,q90,0.0,432.0,91.0,19.53380877600449,4.82384599163313,descriptive point contrast; no added bridging-adjusted significance test,,,,,,,
+bridging,local,DK1,q90,1.0,432.0,71.0,22.778101970968066,3.1179037485529912,descriptive point contrast; no added bridging-adjusted significance test,,,,,,,
+bridging,local,DK1,q90,2.0,432.0,57.0,23.62461968868673,1.8205674922089299,descriptive point contrast; no added bridging-adjusted significance test,,,,,,,
+bridging,local,DK1,q95,0.0,250.0,67.0,21.31711843049929,4.0437618969980935,descriptive point contrast; no added bridging-adjusted significance test,,,,,,,
+bridging,local,DK1,q95,1.0,250.0,58.0,22.18795663299047,4.457956863531532,descriptive point contrast; no added bridging-adjusted significance test,,,,,,,
+bridging,local,DK1,q95,2.0,250.0,49.0,20.34969744471154,2.97654031111656,descriptive point contrast; no added bridging-adjusted significance test,,,,,,,
+bridging,local,DK2,q90,0.0,492.0,94.0,17.97470072174527,6.1529996725051,descriptive point contrast; no added bridging-adjusted significance test,,,,,,,
+bridging,local,DK2,q90,1.0,492.0,75.0,17.96334195906232,4.833676432386769,descriptive point contrast; no added bridging-adjusted significance test,,,,,,,
+bridging,local,DK2,q90,2.0,492.0,57.0,20.15346415383204,0.9114820698456705,descriptive point contrast; no added bridging-adjusted significance test,,,,,,,
+bridging,local,DK2,q95,0.0,280.0,71.0,27.340047547079337,-2.630712073948599,descriptive point contrast; no added bridging-adjusted significance test,,,,,,,
+bridging,local,DK2,q95,1.0,280.0,59.0,28.33481099185853,-3.4787644388371506,descriptive point contrast; no added bridging-adjusted significance test,,,,,,,
+bridging,local,DK2,q95,2.0,280.0,49.0,29.023666747420428,-4.333154860479799,descriptive point contrast; no added bridging-adjusted significance test,,,,,,,
+block_length,local,DK1,q90,,,,22.77810197096806,,pointwise calendar-block interval; not a second confirmatory test,7.0,17.033761040577865,29.372339491416472,,,,
+block_length,local,DK1,q90,,,,22.77810197096806,,pointwise calendar-block interval; not a second confirmatory test,14.0,16.050300583925857,27.575549139805283,,,,
+block_length,local,DK1,q90,,,,22.77810197096806,,pointwise calendar-block interval; not a second confirmatory test,28.0,15.683938483623672,24.815690705818856,,,,
+block_length,local,DK1,q95,,,,22.18795663299046,,pointwise calendar-block interval; not a second confirmatory test,7.0,11.602328589198123,29.53019456511629,,,,
+block_length,local,DK1,q95,,,,22.18795663299046,,pointwise calendar-block interval; not a second confirmatory test,14.0,10.65014201657801,27.050490658871272,,,,
+block_length,local,DK1,q95,,,,22.18795663299046,,pointwise calendar-block interval; not a second confirmatory test,28.0,10.213877186210437,24.236806685272523,,,,
+block_length,local,DK2,q90,,,,17.96334195906233,,pointwise calendar-block interval; not a second confirmatory test,7.0,11.630732646954147,24.18547902980702,,,,
+block_length,local,DK2,q90,,,,17.96334195906233,,pointwise calendar-block interval; not a second confirmatory test,14.0,11.620043131252999,23.544185657536037,,,,
+block_length,local,DK2,q90,,,,17.96334195906233,,pointwise calendar-block interval; not a second confirmatory test,28.0,11.509615241874291,24.466217109498263,,,,
+block_length,local,DK2,q95,,,,28.33481099185852,,pointwise calendar-block interval; not a second confirmatory test,7.0,19.786533121522147,37.16741073492809,,,,
+block_length,local,DK2,q95,,,,28.33481099185852,,pointwise calendar-block interval; not a second confirmatory test,14.0,20.429412015556363,36.19705478141723,,,,
+block_length,local,DK2,q95,,,,28.33481099185852,,pointwise calendar-block interval; not a second confirmatory test,28.0,22.289332819894465,35.57701829668286,,,,
+bridging,macro,DK1,q90,0.0,442.0,91.0,15.207163978968858,12.056984166765883,descriptive point contrast; no added bridging-adjusted significance test,,,,,,,
+bridging,macro,DK1,q90,1.0,442.0,71.0,17.320136616968817,12.394245628556122,descriptive point contrast; no added bridging-adjusted significance test,,,,,,,
+bridging,macro,DK1,q90,2.0,442.0,57.0,16.89392639228376,13.382409124197803,descriptive point contrast; no added bridging-adjusted significance test,,,,,,,
+bridging,macro,DK1,q95,0.0,258.0,67.0,21.25332869485238,6.826379851763692,descriptive point contrast; no added bridging-adjusted significance test,,,,,,,
+bridging,macro,DK1,q95,1.0,258.0,58.0,21.781576005747553,7.77390241271419,descriptive point contrast; no added bridging-adjusted significance test,,,,,,,
+bridging,macro,DK1,q95,2.0,258.0,49.0,21.47890478393904,7.028678159319979,descriptive point contrast; no added bridging-adjusted significance test,,,,,,,
+bridging,macro,DK2,q90,0.0,466.0,94.0,14.961240331034187,12.816511869929482,descriptive point contrast; no added bridging-adjusted significance test,,,,,,,
+bridging,macro,DK2,q90,1.0,466.0,75.0,12.728667475795117,14.307478886648312,descriptive point contrast; no added bridging-adjusted significance test,,,,,,,
+bridging,macro,DK2,q90,2.0,466.0,57.0,14.106070540930082,16.793211647578925,descriptive point contrast; no added bridging-adjusted significance test,,,,,,,
+bridging,macro,DK2,q95,0.0,286.0,71.0,19.9490762411979,11.713671861678627,descriptive point contrast; no added bridging-adjusted significance test,,,,,,,
+bridging,macro,DK2,q95,1.0,286.0,59.0,18.01458128647686,15.582784679513928,descriptive point contrast; no added bridging-adjusted significance test,,,,,,,
+bridging,macro,DK2,q95,2.0,286.0,49.0,17.75134093426511,16.717045863658576,descriptive point contrast; no added bridging-adjusted significance test,,,,,,,
+block_length,macro,DK1,q90,,,,17.32013661696881,,pointwise calendar-block interval; not a second confirmatory test,7.0,11.800416093586161,23.333450674694454,,,,
+block_length,macro,DK1,q90,,,,17.32013661696881,,pointwise calendar-block interval; not a second confirmatory test,14.0,10.66628458728994,21.471545652077868,,,,
+block_length,macro,DK1,q90,,,,17.32013661696881,,pointwise calendar-block interval; not a second confirmatory test,28.0,10.64938024000948,20.024154139319254,,,,
+block_length,macro,DK1,q95,,,,21.78157600574755,,pointwise calendar-block interval; not a second confirmatory test,7.0,13.44375980585924,30.630644430993815,,,,
+block_length,macro,DK1,q95,,,,21.78157600574755,,pointwise calendar-block interval; not a second confirmatory test,14.0,12.714362688153127,28.450462574452985,,,,
+block_length,macro,DK1,q95,,,,21.78157600574755,,pointwise calendar-block interval; not a second confirmatory test,28.0,11.682738145799135,26.618101150834683,,,,
+block_length,macro,DK2,q90,,,,12.728667475795119,,pointwise calendar-block interval; not a second confirmatory test,7.0,6.28247456924911,18.28337506203607,,,,
+block_length,macro,DK2,q90,,,,12.728667475795119,,pointwise calendar-block interval; not a second confirmatory test,14.0,6.459512444459508,17.56059404035734,,,,
+block_length,macro,DK2,q90,,,,12.728667475795119,,pointwise calendar-block interval; not a second confirmatory test,28.0,8.063105572841916,17.69029124203232,,,,
+block_length,macro,DK2,q95,,,,18.01458128647686,,pointwise calendar-block interval; not a second confirmatory test,7.0,10.277773893360893,25.95856733522134,,,,
+block_length,macro,DK2,q95,,,,18.01458128647686,,pointwise calendar-block interval; not a second confirmatory test,14.0,10.08845639192368,25.090282561282628,,,,
+block_length,macro,DK2,q95,,,,18.01458128647686,,pointwise calendar-block interval; not a second confirmatory test,28.0,10.239498784364597,22.84681520750556,,,,
+French_label_timing,original,DE_LU_FR_BE,q90,,572.0,,,,unchanged issued probabilities and alert plans; label sensitivity only,,13.08596860096609,24.862118091440976,original,native_label_domain,P1_risk_gate minus P0_forced_top2,18.34057076993931
+French_label_timing,original,DE_LU_FR_BE,q90,,572.0,,,,unchanged issued probabilities and alert plans; label sensitivity only,,-4.704442086939004,19.723113081803913,original,native_label_domain,P2_risk_rise_cooldown minus P1_risk_gate,4.7138068032010105
+French_label_timing,original,DE_LU_FR_BE,q90,,571.0,,,,unchanged issued probabilities and alert plans; label sensitivity only,,11.599294011871015,22.18790649467895,rte_minus30min,native_label_domain,P1_risk_gate minus P0_forced_top2,17.018040850216632
+French_label_timing,original,DE_LU_FR_BE,q90,,571.0,,,,unchanged issued probabilities and alert plans; label sensitivity only,,-6.722689928291972,15.720799088170253,rte_minus30min,native_label_domain,P2_risk_rise_cooldown minus P1_risk_gate,0.59018915691473
+French_label_timing,original,DE_LU_FR_BE,q90,,572.0,,,,unchanged issued probabilities and alert plans; label sensitivity only,,12.509346732306692,24.048693312790608,rte_plus30min,native_label_domain,P1_risk_gate minus P0_forced_top2,17.92724444567563
+French_label_timing,original,DE_LU_FR_BE,q90,,572.0,,,,unchanged issued probabilities and alert plans; label sensitivity only,,-6.57380698298637,17.26047408472243,rte_plus30min,native_label_domain,P2_risk_rise_cooldown minus P1_risk_gate,3.49973622900023
+French_label_timing,original,DE_LU_FR_BE,q90,,571.0,,,,unchanged issued probabilities and alert plans; label sensitivity only,,12.996005550118245,24.75103715034588,original,common_three_label_domain,P1_risk_gate minus P0_forced_top2,18.245565877387328
+French_label_timing,original,DE_LU_FR_BE,q90,,571.0,,,,unchanged issued probabilities and alert plans; label sensitivity only,,-4.652604391153411,19.761809479640405,original,common_three_label_domain,P2_risk_rise_cooldown minus P1_risk_gate,4.75764797383131
+French_label_timing,original,DE_LU_FR_BE,q90,,571.0,,,,unchanged issued probabilities and alert plans; label sensitivity only,,11.599294011871015,22.18790649467895,rte_minus30min,common_three_label_domain,P1_risk_gate minus P0_forced_top2,17.018040850216632
+French_label_timing,original,DE_LU_FR_BE,q90,,571.0,,,,unchanged issued probabilities and alert plans; label sensitivity only,,-6.722689928291972,15.720799088170253,rte_minus30min,common_three_label_domain,P2_risk_rise_cooldown minus P1_risk_gate,0.59018915691473
+French_label_timing,original,DE_LU_FR_BE,q90,,571.0,,,,unchanged issued probabilities and alert plans; label sensitivity only,,12.428335333100145,23.933361045287732,rte_plus30min,common_three_label_domain,P1_risk_gate minus P0_forced_top2,17.82730912382409
+French_label_timing,original,DE_LU_FR_BE,q90,,571.0,,,,unchanged issued probabilities and alert plans; label sensitivity only,,-6.519031819509463,17.292914401685522,rte_plus30min,common_three_label_domain,P2_risk_rise_cooldown minus P1_risk_gate,3.54745584172015
+French_label_timing,original,DE_LU_FR_BE,q95,,371.0,,,,unchanged issued probabilities and alert plans; label sensitivity only,,15.995981712185369,30.811608295200465,original,native_label_domain,P1_risk_gate minus P0_forced_top2,22.64926892005622
+French_label_timing,original,DE_LU_FR_BE,q95,,371.0,,,,unchanged issued probabilities and alert plans; label sensitivity only,,-10.560119060579915,18.57048434829616,original,native_label_domain,P2_risk_rise_cooldown minus P1_risk_gate,5.07631637480607
+French_label_timing,original,DE_LU_FR_BE,q95,,371.0,,,,unchanged issued probabilities and alert plans; label sensitivity only,,17.042238064977568,30.881923492357515,rte_minus30min,native_label_domain,P1_risk_gate minus P0_forced_top2,22.45311325599207
+French_label_timing,original,DE_LU_FR_BE,q95,,371.0,,,,unchanged issued probabilities and alert plans; label sensitivity only,,-10.624790328496218,17.40815672253406,rte_minus30min,native_label_domain,P2_risk_rise_cooldown minus P1_risk_gate,4.87009632862854
+French_label_timing,original,DE_LU_FR_BE,q95,,371.0,,,,unchanged issued probabilities and alert plans; label sensitivity only,,16.74419253899001,31.429040335747338,rte_plus30min,native_label_domain,P1_risk_gate minus P0_forced_top2,22.571868367204768
+French_label_timing,original,DE_LU_FR_BE,q95,,371.0,,,,unchanged issued probabilities and alert plans; label sensitivity only,,-10.531342578703294,18.248026968701065,rte_plus30min,native_label_domain,P2_risk_rise_cooldown minus P1_risk_gate,7.062354069681021
+French_label_timing,original,DE_LU_FR_BE,q95,,371.0,,,,unchanged issued probabilities and alert plans; label sensitivity only,,15.943867579394263,30.73253343469698,original,common_three_label_domain,P1_risk_gate minus P0_forced_top2,22.58681753350089
+French_label_timing,original,DE_LU_FR_BE,q95,,371.0,,,,unchanged issued probabilities and alert plans; label sensitivity only,,-10.560119060579915,18.57048434829616,original,common_three_label_domain,P2_risk_rise_cooldown minus P1_risk_gate,5.07631637480607
+French_label_timing,original,DE_LU_FR_BE,q95,,371.0,,,,unchanged issued probabilities and alert plans; label sensitivity only,,17.042238064977568,30.881923492357515,rte_minus30min,common_three_label_domain,P1_risk_gate minus P0_forced_top2,22.45311325599207
+French_label_timing,original,DE_LU_FR_BE,q95,,371.0,,,,unchanged issued probabilities and alert plans; label sensitivity only,,-10.624790328496218,17.40815672253406,rte_minus30min,common_three_label_domain,P2_risk_rise_cooldown minus P1_risk_gate,4.87009632862854
+French_label_timing,original,DE_LU_FR_BE,q95,,371.0,,,,unchanged issued probabilities and alert plans; label sensitivity only,,16.68645480100929,31.34239161690279,rte_plus30min,common_three_label_domain,P1_risk_gate minus P0_forced_top2,22.50993835767825
+French_label_timing,original,DE_LU_FR_BE,q95,,371.0,,,,unchanged issued probabilities and alert plans; label sensitivity only,,-10.531342578703294,18.248026968701065,rte_plus30min,common_three_label_domain,P2_risk_rise_cooldown minus P1_risk_gate,7.062354069681021

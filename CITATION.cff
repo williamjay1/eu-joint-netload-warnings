@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "Please cite the released software version and its Zenodo DOI when available."
+type: software
+title: "Cross-border joint high net load warnings: research code and derived evaluation data"
+version: 1.0.0
+authors:
+  - family-names: Zhang
+    given-names: Junjie
+    orcid: "https://orcid.org/0009-0004-8821-4018"
+    affiliation: "Shanghai Academy of Global Governance & Area Studies; School of Economics and Finance, Shanghai International Studies University, Shanghai 201620, China"
+    email: junjiezhang2024@shisu.edu.cn
+repository-code: "https://github.com/williamjay1/eu-joint-netload-warnings"
+license: MIT
+abstract: "Code and author-derived evaluation data for cross-border synchronous high net load monitoring. Software is MIT licensed; derived data and retained third-party terms are described in DATA_LICENSES.md. The portable reconstruction verifies issued-forecast scores, forecast-only review plans, intact event processes and block-bootstrap comparisons without refitting models or asserting historical real-time availability."
+keywords:
+  - probabilistic forecasting
+  - net load
+  - joint events
+  - electricity
+  - forecast evaluation
+  - warning allocation

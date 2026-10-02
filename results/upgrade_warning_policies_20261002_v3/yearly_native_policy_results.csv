@@ -1,0 +1,13 @@
+zone,q,year,policy,complete_days,review_slots,event_hour_hits,zero_alert_days,processes_by_onset_year,processes_first6_hit,processes_any_hit,first6_coverage,spells_retained_across_year_boundary
+DE_LU_FR_BE,q90,2024,P0_forced_top2,363,726,216,0,39,18,36,0.46153846153846156,True
+DE_LU_FR_BE,q90,2024,P1_risk_gate,363,356,203,177,39,15,35,0.38461538461538464,True
+DE_LU_FR_BE,q90,2024,P2_risk_rise_cooldown,363,334,169,166,39,23,37,0.5897435897435898,True
+DE_LU_FR_BE,q90,2025,P0_forced_top2,362,724,125,0,32,17,29,0.53125,True
+DE_LU_FR_BE,q90,2025,P1_risk_gate,362,262,119,224,32,17,28,0.53125,True
+DE_LU_FR_BE,q90,2025,P2_risk_rise_cooldown,362,238,90,205,32,11,26,0.34375,True
+DE_LU_FR_BE,q95,2024,P0_forced_top2,363,726,122,0,38,14,33,0.3684210526315789,True
+DE_LU_FR_BE,q95,2024,P1_risk_gate,363,254,114,232,38,13,32,0.34210526315789475,True
+DE_LU_FR_BE,q95,2024,P2_risk_rise_cooldown,363,233,80,217,38,16,27,0.42105263157894735,True
+DE_LU_FR_BE,q95,2025,P0_forced_top2,362,724,66,0,23,15,20,0.6521739130434783,True
+DE_LU_FR_BE,q95,2025,P1_risk_gate,362,151,52,278,23,12,17,0.5217391304347826,True
+DE_LU_FR_BE,q95,2025,P2_risk_rise_cooldown,362,138,35,261,23,11,15,0.4782608695652174,True

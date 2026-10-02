@@ -1,0 +1,8 @@
+{
+  "alpha": 10.0,
+  "n_knots": 5,
+  "scale_exclude_features": [
+    17
+  ],
+  "scale_extrapolation": "constant"
+}

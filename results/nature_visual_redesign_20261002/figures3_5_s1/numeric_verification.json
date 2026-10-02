@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "figure": "figure3_workload_early_coverage_tradeoff",
+      "rows_verified": 9,
+      "status": "exact_numeric_agreement_to_1e-15"
+    },
+    {
+      "figure": "figure4_annual_native_workload_and_coverage",
+      "rows_verified": 12,
+      "status": "exact_numeric_agreement_to_1e-15"
+    },
+    {
+      "figure": "figure5_transfer_gate_and_dependence_contrasts",
+      "rows_verified": 3,
+      "status": "exact_numeric_agreement_to_1e-15"
+    },
+    {
+      "figure": "figureS1_priority_examples",
+      "cases_verified": 2,
+      "status": "same_onsets_windows_truth_counts_and_planned_hours"
+    }
+  ],
+  "no_model_refitting": true,
+  "layout_does_not_modify_data": true,
+  "float_tolerance": 1e-15
+}

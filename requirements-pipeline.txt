@@ -1,0 +1,17 @@
+numpy==2.5.3
+pandas==3.0.6
+scipy==1.18.0
+scikit-learn==1.9.0
+pyarrow==25.0.0
+matplotlib==3.11.1
+requests==2.34.2
+lightgbm==4.7.0
+shapely==2.1.2
+pyproj==3.7.2
+eccodes==2.48.0
+cfgrib==0.9.15.1
+patsy==1.0.2
+statsmodels==0.14.6
+holidays==0.105
+astral>=3.2
+pyshp==3.1.6

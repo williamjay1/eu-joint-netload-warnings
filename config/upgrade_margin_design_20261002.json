@@ -1,0 +1,42 @@
+{
+  "version": "1.0-fixed-grid-weekly-beta-shared-R-event-selection",
+  "6_cell_weather_cutpoints_from_2021_only": {
+    "cool": {
+      "land_wind_median_2021": 3.497289202721499,
+      "temperature_q25_2021": 2.3639913181400565,
+      "reference_rows": 4368
+    },
+    "warm": {
+      "land_wind_median_2021": 3.0565557990487298,
+      "temperature_q25_2021": 10.732901371012455,
+      "reference_rows": 4392
+    }
+  },
+  "grid": "cool October-March/warm April-September x low_wind_cold/low_wind_other/higher_wind",
+  "weather_cutpoints_frozen_for_2022_onward": true,
+  "conditional_map": "monotone Beta CDF of already-calibrated issued PIT",
+  "map_update": "weekly Monday; first actual issue in week minus seven days label cutoff",
+  "map_history_days": 365,
+  "minimum_cell_days": 28,
+  "minimum_cell_hours": 168,
+  "fixed_logshape_penalty": 4,
+  "history_day_weight": "equal days; hourly mean log-PIT within day",
+  "sparse_cell": "identity; no outcome-driven adjacent pooling",
+  "R_policy": "original C3 original issued PIT quarter fits; exactly same R all four cells",
+  "nu_candidates": [
+    "3",
+    "5",
+    "8",
+    "15",
+    "30",
+    "inf"
+  ],
+  "nu_selection": "primary q90 equal mean Brier loss across original and conditional-margin predictions; chronological accumulated development, weekly embargo; larger nu breaks ties",
+  "2024_2025_selection": "one development-selected nu fixed for all eight quarters; development labels end 2023-12-25 interval cutoff",
+  "q95": "same selected q90 nu, no separate secondary tuning",
+  "test_reuse": "2024-2025 already inspected; new evaluation is reanalysis",
+  "numerics": "existing elliptical path tolerance 1e-6; replicate/order discrepancies are convergence proxies, not certified exact bounds",
+  "cdf_machine_saturation_clip": 1e-12,
+  "pointwise_probability_perturbation_coupling_max": 3e-12,
+  "raw_files_modified": false
+}

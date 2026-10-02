@@ -1,0 +1,86 @@
+{
+  "design": {
+    "version": "1.2-pooled-ratio-three-profile-three-state",
+    "selector_sha256": "026053ef9b2517650829b1a87b8b21f69eb3752b235ee3a7c6431b871ad96a92",
+    "profile": "daily_matched4",
+    "settings": {
+      "block_days": 14,
+      "repetitions": 2000,
+      "minimum_group_days": 56,
+      "minimum_group_hours": 336,
+      "seed": 20260930
+    },
+    "allowed_years": [
+      2022,
+      2023
+    ],
+    "candidates": [
+      {
+        "candidate_id": "additive_raw30_daily30",
+        "family": "additive",
+        "calibration_days": 30,
+        "calibration_mode": "daily",
+        "daily_calibration_days": 30
+      },
+      {
+        "candidate_id": "additive_raw60_daily60",
+        "family": "additive",
+        "calibration_days": 60,
+        "calibration_mode": "daily",
+        "daily_calibration_days": 60
+      },
+      {
+        "candidate_id": "lightgbm_raw30_daily30",
+        "family": "lightgbm",
+        "calibration_days": 30,
+        "calibration_mode": "daily",
+        "daily_calibration_days": 30
+      },
+      {
+        "candidate_id": "lightgbm_raw60_daily60",
+        "family": "lightgbm",
+        "calibration_days": 60,
+        "calibration_mode": "daily",
+        "daily_calibration_days": 60
+      }
+    ],
+    "daily_profile_scope": "raw30_dailyG30_and_raw60_dailyG60_F_training_differs_common_target_comparison",
+    "complete_quarters_required": 8,
+    "selection_by_joint_event_or_dependence_score": false,
+    "scale_and_weather_reference": {
+      "start": "2019-01-01T00:00:00+00:00",
+      "end_exclusive": "2020-12-25T00:00:00+00:00",
+      "scale": "zone_IQR_same_all_profile_candidates",
+      "weather_bins": "zone_specific_forecast_mean_tertiles_fitted_only_in_reference"
+    },
+    "common_sample": "all_profile_candidates_all_three_zones_finite_PIT_quantiles_labels_weather_then_complete_24h_UTC_days",
+    "tail_tolerances": {
+      "0.9": 0.02,
+      "0.95": 0.015
+    },
+    "tolerances_are": "prespecified_planning_equivalence_envelopes_not_universal_calibration_truth",
+    "primary_equivalence_screen": "each_zone_pooled_and_each_weather_low_middle_high_PIT_CDF_and_quantile_coverage_q90_q95_CI_entirely_inside_tolerance",
+    "secondary_veto": "material_CI_departure_global_full_PIT_or_year_season_tail_or_central_interval",
+    "CI_evidence_classes": {
+      "equivalence_supported": "whole_pointwise_CI_inside_planning_envelope",
+      "material_departure_supported": "whole_pointwise_CI_outside_envelope",
+      "imprecise": "CI_overlaps_envelope_boundary_or_insufficient_data_not_evidence_of_miscalibration"
+    },
+    "calibration_statuses": {
+      "equivalent": "equivalence_supported",
+      "material_failure": "material_departure_supported",
+      "precision_insufficient": "imprecise"
+    },
+    "interval_method": "paired_contiguous_calendar_blocks_fixed_each_year_quarter_length_pooled_sampled_sums_over_pooled_sampled_group_counts_missing_days_retained",
+    "interval_unusable_draw": "only_combined_sampled_group_count_zero_not_each_quarter_group_absence",
+    "interval_sensitivity": "same_draws_original_fixed_quarter_group_hour_weights_all_original_active_quarters_nonempty_no_sensitivity_selection",
+    "interval_scope": "pointwise_not_simultaneous_no_hourly_IID_pvalues",
+    "ranking": "qualified_candidates_equal_zone_mean_IQR_normalized_2_integral_pinball_005_995",
+    "score_scope": "truncated_integrated_quantile_score_not_full_support_CRPS",
+    "yearly_stability": "report_year_specific_scores_and_rankings_without_reselecting_per_year",
+    "no_qualified_candidate": "precision_insufficient_if_any_candidate_has_no_supported_material_departure_otherwise_needs_repair_no_forced_calibrated_label",
+    "best_predictive_candidate": "separate_lowest_marginal_IQS_with_its_own_truthful_calibration_status_no_calibrated_claim_unless_qualified",
+    "closest_candidate": "fewest_primary_material_departures_then_primary_imprecise_counts_then_normalized_score_then_candidate_id"
+  },
+  "written_before_prediction_panel_value_load": true
+}

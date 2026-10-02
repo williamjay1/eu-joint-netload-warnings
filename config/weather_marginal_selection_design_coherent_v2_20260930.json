@@ -1,0 +1,87 @@
+{
+  "design": {
+    "version": "1.1-coherent-margins-five-past-calibration-windows",
+    "settings": {
+      "block_days": 14,
+      "repetitions": 2000,
+      "minimum_group_days": 56,
+      "minimum_group_hours": 336,
+      "seed": 20260930
+    },
+    "allowed_years": [
+      2022,
+      2023
+    ],
+    "candidates": [
+      {
+        "family": "additive",
+        "calibration_days": 30
+      },
+      {
+        "family": "additive",
+        "calibration_days": 60
+      },
+      {
+        "family": "additive",
+        "calibration_days": 90
+      },
+      {
+        "family": "additive",
+        "calibration_days": 180
+      },
+      {
+        "family": "additive",
+        "calibration_days": 365
+      },
+      {
+        "family": "lightgbm",
+        "calibration_days": 30
+      },
+      {
+        "family": "lightgbm",
+        "calibration_days": 60
+      },
+      {
+        "family": "lightgbm",
+        "calibration_days": 90
+      },
+      {
+        "family": "lightgbm",
+        "calibration_days": 180
+      },
+      {
+        "family": "lightgbm",
+        "calibration_days": 365
+      }
+    ],
+    "complete_quarters_required": 8,
+    "selection_by_joint_event_or_dependence_score": false,
+    "scale_and_weather_reference": {
+      "start": "2019-01-01T00:00:00+00:00",
+      "end_exclusive": "2020-12-25T00:00:00+00:00",
+      "scale": "zone_IQR_same_all_ten_candidates",
+      "weather_bins": "zone_specific_forecast_mean_tertiles_fitted_only_in_reference"
+    },
+    "common_sample": "all_ten_all_three_zones_finite_PIT_quantiles_labels_weather_then_complete_24h_UTC_days",
+    "tail_tolerances": {
+      "0.9": 0.02,
+      "0.95": 0.015
+    },
+    "tolerances_are": "prespecified_planning_equivalence_envelopes_not_universal_calibration_truth",
+    "primary_equivalence_screen": "each_zone_pooled_and_each_weather_low_middle_high_PIT_CDF_and_quantile_coverage_q90_q95_CI_entirely_inside_tolerance",
+    "secondary_veto": "material_CI_departure_global_full_PIT_or_year_season_tail_or_central_interval",
+    "CI_evidence_classes": {
+      "equivalence_supported": "whole_pointwise_CI_inside_planning_envelope",
+      "material_departure_supported": "whole_pointwise_CI_outside_envelope",
+      "imprecise": "CI_overlaps_envelope_boundary_or_insufficient_data_not_evidence_of_miscalibration"
+    },
+    "interval_method": "paired_contiguous_moving_calendar_blocks_within_year_quarter_original_group_hour_weights_missing_days_retained",
+    "interval_scope": "pointwise_not_simultaneous_no_hourly_IID_pvalues",
+    "ranking": "qualified_candidates_equal_zone_mean_IQR_normalized_2_integral_pinball_005_995",
+    "score_scope": "truncated_integrated_quantile_score_not_full_support_CRPS",
+    "yearly_stability": "report_year_specific_scores_and_rankings_without_reselecting_per_year",
+    "no_qualified_candidate": "needs_repair_with_distinct_material_departure_and_imprecise_reasons_no_forced_calibrated_label",
+    "closest_candidate": "fewest_primary_material_departures_then_primary_imprecise_counts_then_normalized_score_then_candidate_id"
+  },
+  "written_before_prediction_panel_value_load": true
+}

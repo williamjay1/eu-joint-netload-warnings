@@ -1,0 +1,292 @@
+{
+  "1": {
+    "caption": "Electricity observations and monitoring boundaries, 2019–2025. All outcomes are hourly MW on a common UTC clock. The event is simultaneous exceedance of provider-specific seasonal q90 levels in at least two study areas; q95 is secondary.",
+    "blocks": [
+      {
+        "headers": [
+          "Area",
+          "Provider / native resolution used",
+          "Important accounting boundary"
+        ],
+        "rows": [
+          [
+            "Germany–Luxembourg",
+            "SMARD / hourly energy",
+            "Grid load excludes pumping and PV self-consumption"
+          ],
+          [
+            "France",
+            "RTE eCO2mix / 30 minutes",
+            "Metropolitan area excluding Corsica; network losses included, pumping excluded"
+          ],
+          [
+            "Belgium",
+            "Elia / 15 minutes",
+            "Control-area load with distributed estimation; Sotel overlap retained"
+          ],
+          [
+            "DK1 and DK2",
+            "Energinet settlement / hourly energy",
+            "Separate bidding areas; self-consumption overlap corrected; all reported wind/PV retained"
+          ]
+        ]
+      }
+    ]
+  },
+  "2": {
+    "caption": "Original-region q90 review allocation over 725 scored days. Native counts precede exact expected coverage after uniform label-blind retention to 572 slots. Forecast-complete days lacking later labels are allocated but excluded from this score domain.",
+    "blocks": [
+      {
+        "headers": [
+          "Rule",
+          "Native slots",
+          "Event hours selected",
+          "False-alert fraction",
+          "Native early spells",
+          "Expected early coverage at 572 slots"
+        ],
+        "rows": [
+          [
+            "P0 compulsory top2",
+            "1450",
+            "341",
+            "76.5%",
+            "35/71",
+            "24.8%"
+          ],
+          [
+            "P1 probability gate",
+            "618",
+            "322",
+            "47.9%",
+            "32/71",
+            "43.2%"
+          ],
+          [
+            "P2 risk-rise/cooldown",
+            "572",
+            "259",
+            "54.7%",
+            "34/71",
+            "47.9%"
+          ]
+        ]
+      }
+    ]
+  },
+  "3": {
+    "caption": "q90 probability loss in the controlled comparison. Development contains 715 complete days and reanalysis 725. Lower Brier loss is better. All M0–M3 rows share thresholds, weather, samples and correlation matrices. F1 denotes the additional conditional map, not certified calibration. References are earlier fitted forecasts.",
+    "blocks": [
+      {
+        "headers": [
+          "Model",
+          "Specification",
+          "Development Brier",
+          "Reanalysis Brier"
+        ],
+        "rows": [
+          [
+            "M0",
+            "F0 + Gaussian",
+            "0.029064",
+            "0.060191"
+          ],
+          [
+            "M1",
+            "F1 + same Gaussian",
+            "0.028552",
+            "0.060598"
+          ],
+          [
+            "M2",
+            "F0 + selected t",
+            "0.029071",
+            "0.060186"
+          ],
+          [
+            "M3",
+            "F1 + same selected t",
+            "0.028557",
+            "0.060579"
+          ],
+          [
+            "Reference",
+            "Independence",
+            "0.028965",
+            "0.061084"
+          ],
+          [
+            "Reference",
+            "Direct logistic",
+            "0.040411",
+            "0.071668"
+          ]
+        ]
+      }
+    ]
+  },
+  "4": {
+    "caption": "Primary local-weather Danish transfer at q90. Panel A uses the same 17,400 score hours in each combination. Panel B reports native detections and expected coverage at a combination-specific common workload; parenthesised hits are Danish-pivotal subsets.",
+    "blocks": [
+      {
+        "headers": [
+          "Model",
+          "DE–LU/FR/DK1 Brier",
+          "DE–LU/FR/DK2 Brier"
+        ],
+        "rows": [
+          [
+            "M0",
+            "0.048746",
+            "0.053430"
+          ],
+          [
+            "M1",
+            "0.048503",
+            "0.053080"
+          ],
+          [
+            "M2",
+            "0.048747",
+            "0.053463"
+          ],
+          [
+            "M3",
+            "0.048525",
+            "0.053104"
+          ]
+        ]
+      },
+      {
+        "headers": [
+          "New area",
+          "Rule",
+          "Native review slots",
+          "Event hits (DK-pivotal subset)",
+          "Native first-six-hour spells",
+          "Common B",
+          "Matched early coverage"
+        ],
+        "rows": [
+          [
+            "DK1",
+            "P0",
+            "1450",
+            "290 (117)",
+            "35/71 (49.3%)",
+            "432",
+            "20.6%"
+          ],
+          [
+            "DK1",
+            "P1",
+            "469",
+            "255 (97)",
+            "32/71 (45.1%)",
+            "432",
+            "43.4%"
+          ],
+          [
+            "DK1",
+            "P2",
+            "432",
+            "189 (78)",
+            "33/71 (46.5%)",
+            "432",
+            "46.5%"
+          ],
+          [
+            "DK2",
+            "P0",
+            "1450",
+            "321 (146)",
+            "40/75 (53.3%)",
+            "492",
+            "25.2%"
+          ],
+          [
+            "DK2",
+            "P1",
+            "517",
+            "294 (128)",
+            "33/75 (44.0%)",
+            "492",
+            "43.2%"
+          ],
+          [
+            "DK2",
+            "P2",
+            "492",
+            "216 (102)",
+            "36/75 (48.0%)",
+            "492",
+            "48.0%"
+          ]
+        ]
+      }
+    ]
+  },
+  "5": {
+    "caption": "Sensitivity of the main interpretation. Full contrasts remain in supporting tables; sensitivity rows are descriptive unless a specific interval/test is stated. The finite-family check does not cover every sensitivity comparison.",
+    "blocks": [
+      {
+        "headers": [
+          "Check",
+          "Specification",
+          "Result / scope",
+          "Detail"
+        ],
+        "rows": [
+          [
+            "Stricter monitoring level",
+            "q95; rules unchanged",
+            "Gate advantage retained in all three combinations; dependence/priority increments unresolved",
+            "S10–S12"
+          ],
+          [
+            "Process definition",
+            "0/1/2 inactive-day bridges",
+            "q90 matched gate gains 17.96–23.62 pp; point estimates descriptive",
+            "S10–S12"
+          ],
+          [
+            "Temporal uncertainty",
+            "7/14/28-day blocks",
+            "Gate pointwise intervals above zero at both thresholds and in all three primary combinations",
+            "S10–S12"
+          ],
+          [
+            "French timestamps",
+            "Original/−30/+30 minutes",
+            "q90 gate gain 17.02–18.25 pp on 722 common days; priority may reverse",
+            "S10.6"
+          ],
+          [
+            "Danish weather input",
+            "Primary local versus fixed macro",
+            "Macro q90 gate gains 17.32/12.73 pp; primary input not selected by score",
+            "S11–S12"
+          ],
+          [
+            "Added complexity",
+            "Fixed P1 on M0–M3; annual P2/P1",
+            "No stable added native early coverage from t; original priority difference +8 spells in 2024/−6 in 2025",
+            "S10.4–S12"
+          ],
+          [
+            "Multiplicity",
+            "Six q90 contrasts in each named family",
+            "Gate Holm-adjusted p=0.003; t/priority not supported; post-revision check",
+            "S12"
+          ],
+          [
+            "Rule parameters",
+            "Gates 0.25/0.19, cap two, cooldown six",
+            "Fixed transfer across years/thresholds/regions; no new neighbourhood optimisation or robustness claim",
+            "S10–S12"
+          ]
+        ]
+      }
+    ]
+  }
+}
