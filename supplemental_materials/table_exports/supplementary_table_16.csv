@@ -1,0 +1,13 @@
+Threshold,Year,Policy,Slots,Event-hour hits,First-six-hour processes
+q90,2024,P0_forced_top2,726,216,18/39
+q90,2024,P1_risk_gate,356,203,15/39
+q90,2024,P2_risk_rise_cooldown,334,169,23/39
+q90,2025,P0_forced_top2,724,125,17/32
+q90,2025,P1_risk_gate,262,119,17/32
+q90,2025,P2_risk_rise_cooldown,238,90,11/32
+q95,2024,P0_forced_top2,726,122,14/38
+q95,2024,P1_risk_gate,254,114,13/38
+q95,2024,P2_risk_rise_cooldown,233,80,16/38
+q95,2025,P0_forced_top2,724,66,15/23
+q95,2025,P1_risk_gate,151,52,12/23
+q95,2025,P2_risk_rise_cooldown,138,35,11/23

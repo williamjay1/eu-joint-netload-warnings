@@ -1,0 +1,6 @@
+Convention,Complete days,q90 difference and 95% interval ×10⁻6,q95 difference and 95% interval ×10⁻6
+Strict observed records,437,"+3.5351 [−9.1528, +14.5286]","−0.5414 [−7.5664, +4.1683]"
+Flagged night solar assigned 1 MW,725,"+0.0736 [−10.0811, +7.1561]","−2.7787 [−9.3875, +1.2488]"
+Flagged night solar assigned 5 MW,725,"+0.0736 [−10.0811, +7.1561]","−2.7787 [−9.3875, +1.2488]"
+French timestamps −30 minutes,722,"−2.2125 [−11.6788, +5.0854]","−1.0954 [−7.7150, +3.9629]"
+French timestamps +30 minutes,725,"+1.0493 [−9.2548, +7.2064]","−2.0340 [−8.9275, +2.3066]"

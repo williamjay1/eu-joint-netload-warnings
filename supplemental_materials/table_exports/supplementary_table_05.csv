@@ -1,0 +1,6 @@
+Generating mechanism,Gaussian Brier,shared R t Brier,Mean difference,95% Monte Carlo interval,Finite degrees of freedom
+Dynamic Gaussian,0.06697900,0.06698039,+0.000001392,"[+0.000000283, +0.000002500]",20/100
+matched R t5,0.07190664,0.07188449,−0.000022155,"[−0.000035903, −0.000008408]",100/100
+matched R t8,0.07008500,0.07007885,−0.000006149,"[−0.000015168, +0.000002869]",100/100
+Omitted Gaussian weather state,0.06119732,0.06131180,+0.000114475,"[+0.000086763, +0.000142187]",100/100
+"Erroneous margins, Gaussian copula",0.06704282,0.06704420,+0.000001376,"[−0.000001232, +0.000003984]",92/100

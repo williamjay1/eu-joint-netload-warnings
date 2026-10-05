@@ -1,0 +1,9 @@
+Zone,UTC year,Accounting component,Hours,Median MW,95th percentile MW,Maximum MW,Median hourly share of gross,95th percentile hourly share
+DK1,2024,Commercial self-consumption,8784,47.85,123.05,169.85,1.85%,4.16%
+DK1,2024,Solar self-consumption,8784,1.24,125.10,445.55,0.05%,4.07%
+DK1,2025,Commercial self-consumption,8760,68.69,206.76,294.07,2.40%,6.32%
+DK1,2025,Solar self-consumption,8760,1.20,100.69,331.75,0.04%,3.07%
+DK2,2024,Commercial self-consumption,8784,16.37,47.89,67.87,0.90%,2.81%
+DK2,2024,Solar self-consumption,8784,0.30,90.74,226.72,0.02%,5.19%
+DK2,2025,Commercial self-consumption,8760,17.57,62.85,88.89,0.96%,3.40%
+DK2,2025,Solar self-consumption,8760,0.36,102.18,298.62,0.02%,5.41%

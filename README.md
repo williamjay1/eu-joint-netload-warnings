@@ -1,6 +1,6 @@
 # Cross-border joint high net load warnings
 
-Research code and derived evaluation data accompanying *Joint high net load warnings and review allocation under marginal uncertainty: A cross-border European case study*.
+Research code, derived evaluation data and externally hosted supplemental materials accompanying *Joint High Net Load Warnings and Review Allocation under Marginal Uncertainty in Europe*.
 
 Author: **Junjie Zhang**, Shanghai International Studies University. [ORCID](https://orcid.org/0009-0004-8821-4018). Contact: junjiezhang2024@shisu.edu.cn.
 
@@ -30,6 +30,7 @@ The renderers use the actual SciencePlots Nature style files at GitHub commit `b
 
 ## Repository contents
 
+- `supplemental_materials/`: the externally hosted supplemental document (Sections S1–S15), Fig. S1 and unchanged CSV table exports. Its [index](supplemental_materials/README.md) maps file names to the actual supplementary labels; the 26 `supplementary_table_*.csv` exports are not Tables S1–S26.
 - `data/hourly/`: model-produced probabilities, joint event flags, issued-review plans and event-process IDs. No raw load, generation, weather grids, prices, personal data or credentials.
 - `data/aggregates/`: evaluation sufficient statistics and fixed reference inference/sensitivity summaries.
 - `data/reference/` and selected `results/`: original compact score, policy and contrast tables used for numerical readback and drawing.
@@ -53,5 +54,5 @@ The later Holm analysis is an explicitly post hoc check within four six-contrast
 
 Author-written software is under the MIT license; see `LICENSE`. Author-derived evaluation data have their own terms in `DATA_LICENSES.md`, with source attribution and retained third-party rights. The repository license is not a blanket relicense of provider data or Arial. SciencePlots style files retain their own MIT notice.
 
-`CITATION.cff` describes the software; `.zenodo.json` prepares author-controlled Zenodo metadata. No article DOI or repository DOI is asserted in these files. Version 1.0.0 is prepared; the author will connect the repository to Zenodo and create the tagged release. Cite the actual released version and its Zenodo DOI when that record exists.
+`CITATION.cff` describes the software; `.zenodo.json` records author-controlled archive metadata. The existing software/data version v1.0.0 is archived at [Zenodo, DOI 10.5281/zenodo.23100589](https://doi.org/10.5281/zenodo.23100589). That DOI identifies the existing code and derived-data deposit. The supplemental document and CSV exports added to the GitHub repository for the ASCE submission are hosted separately in [`supplemental_materials/`](supplemental_materials/README.md); they are not claimed to be included in that earlier Zenodo deposit. No new DOI or software version is assigned by this hosting update.
 

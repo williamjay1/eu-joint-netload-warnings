@@ -1,3 +1,15 @@
+# 既有归档与补充材料托管状态（2026-10-06）
+
+作者已完成代码和派生评价数据的 Zenodo 1.0.0 归档，正式版本 DOI 为 [10.5281/zenodo.23100589](https://doi.org/10.5281/zenodo.23100589)。GitHub 标签 `v1.0.0` 保留原版本。
+
+本次新加入 `supplemental_materials/` 的补充 PDF、Fig. S1、26 CSV 导出及10支持表单独托管在 GitHub；不能把它们说成已包含在旧 Zenodo DOI 中。期刊稿件使用具体提交版本链接定位这些文件。本次没有创建新的 GitHub release 或 Zenodo DOI。
+
+后续若作者希望将新补充材料归档到 Zenodo，应由作者建立新的版本并核对完整文件，再使用真实的新版本 DOI。不要覆盖原1.0.0归档。
+
+## 2026-10-02 首次归档准备流程（历史记录）
+
+以下为已完成的首次归档流程，保留作记录，不应再次创建 `v1.0.0`。
+
 # 由作者完成 Zenodo 归档
 
 仓库：[williamjay1/eu-joint-netload-warnings](https://github.com/williamjay1/eu-joint-netload-warnings)。已准备 `CITATION.cff` 和 `.zenodo.json`；此准备没有创建 Zenodo 记录、DOI 或 GitHub release。

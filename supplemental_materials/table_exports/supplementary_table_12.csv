@@ -1,0 +1,5 @@
+Synthetic mechanism,Finite selected ν,Compatibility alone,Final flag,95% flag-rate interval
+Correct Gaussian,34/100,0/100,0/100,"[0.0%, 3.6%]"
+Gaussian with marginal error,27/100,0/100,0/100,"[0.0%, 3.6%]"
+True t5,99/100,70/100,70/100,"[60.0%, 78.8%]"
+Hidden Gaussian-weather mixture,54/100,36/100,0/100,"[0.0%, 3.6%]"

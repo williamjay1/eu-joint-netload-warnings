@@ -1,8 +1,10 @@
 cff-version: 1.2.0
-message: "Please cite the released software version and its Zenodo DOI when available."
+message: "Please cite the archived software version 1.0.0 using its Zenodo DOI. This DOI does not include the subsequently added supplemental manuscript files."
 type: software
 title: "Cross-border joint high net load warnings: research code and derived evaluation data"
 version: 1.0.0
+doi: "10.5281/zenodo.23100589"
+date-released: "2026-10-02"
 authors:
   - family-names: Zhang
     given-names: Junjie

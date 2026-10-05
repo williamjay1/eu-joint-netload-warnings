@@ -1,0 +1,12 @@
+Model,q90 Brier,q95 Brier
+C0 Rolling event climatology,0.111399388,0.055556609
+C1 Independence,0.061083921,0.037213114
+C2 Static Gaussian,0.060207273,0.037156215
+C3 Weather dependent Gaussian,0.060190612,0.037109448
+"C4 Static t, shared R",0.060207995,0.037147607
+"C5 Weather dependent t, shared R",0.060190686,0.037106669
+"C6 Weather dependent t, refitted R",0.060192295,0.037106117
+C7 Weather member checkerboard,0.061393299,0.037695350
+C8 Historical analog checkerboard,0.060277424,0.037067037
+C9 Event recalibrated C3,0.061484792,0.037081744
+C10 Direct logistic event prediction,0.071667514,0.045014430

@@ -1,0 +1,17 @@
+Period,Threshold,Model,Complete days,Event hours,Brier
+development,q90,M0,715,675,0.029064210
+development,q90,M1,715,675,0.028552284
+development,q90,M2,715,675,0.029070923
+development,q90,M3,715,675,0.028557321
+development,q95,M0,715,308,0.014398478
+development,q95,M1,715,308,0.014181040
+development,q95,M2,715,308,0.014402240
+development,q95,M3,715,308,0.014185469
+reanalysis,q90,M0,725,2105,0.060190612
+reanalysis,q90,M1,725,2105,0.060597924
+reanalysis,q90,M2,725,2105,0.060186141
+reanalysis,q90,M3,725,2105,0.060578659
+reanalysis,q95,M0,725,1001,0.037109448
+reanalysis,q95,M1,725,1001,0.037155451
+reanalysis,q95,M2,725,1001,0.037072008
+reanalysis,q95,M3,725,1001,0.037110642
