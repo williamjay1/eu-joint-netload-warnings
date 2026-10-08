@@ -283,7 +283,7 @@ The study uses public electricity and weather records and simulations. It involv
 
 ## Data and code availability
 
-The research code and the derived evaluation data that support this study are openly available in Zenodo, version 1.1.0, DOI 10.5281/zenodo.23229890 (concept DOI 10.5281/zenodo.23100588 for all versions). That record contains the revision pipeline and the derivative evaluation tables for the selective review comparisons, the policy and cost analysis, the marginal perturbation screens, the known mechanism simulations and the transfer endpoints, together with parameter logs and the numerical ledger. An earlier release of the same archive remains available under the same concept DOI. Provider material stays subject to its source terms, and the package distinguishes evaluation on the fixed forecast streams from the complete source data refitting pipeline.
+The research code and the derived evaluation data that support this study are openly available in Zenodo, version 1.1.2, DOI 10.5281/zenodo.23230336 (concept DOI 10.5281/zenodo.23100588 for all versions). That record contains the revision pipeline and the derivative evaluation tables for the selective review comparisons, the policy and cost analysis, the marginal perturbation screens, the known mechanism simulations and the transfer endpoints, together with parameter logs and the numerical ledger. An earlier release of the same archive remains available under the same concept DOI. Provider material stays subject to its source terms, and the package distinguishes evaluation on the fixed forecast streams from the complete source data refitting pipeline.
 
 ## Use of AI tools
 
@@ -340,4 +340,4 @@ van der Wiel, K.; Bloomfield, H. C.; Lee, R. W.; Stoop, L. P.; Blackport, R.; Sc
 Ziegel, J. F.; Gneiting, T. (2014). Copula Calibration. Electron. J. Stat., 8(2), 2619–2638. [Source](https://doi.org/10.1214/14-EJS964).
 
 
-Zhang, J. (2026). From joint probability forecasts to selective review: research code and derived evaluation data (Version 1.1.0) [Software and derived evaluation data]. Zenodo. [Source](https://doi.org/10.5281/zenodo.23229890).
+Zhang, J. (2026). From joint probability forecasts to selective review: research code and derived evaluation data (Version 1.1.2) [Software and derived evaluation data]. Zenodo. [Source](https://doi.org/10.5281/zenodo.23230336).

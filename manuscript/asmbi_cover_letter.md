@@ -12,7 +12,7 @@ Three analyses support the contribution. Native workload and early-process cover
 
 This decision-oriented evaluation fits the journal's interest in stochastic modeling with industrial applications and complements its recent work on multivariate electricity-market forecasting. The manuscript explicitly identifies the added 2024–2025 analyses as retrospective reanalyses, separates review slots from measured staff time, and distinguishes historical replay from verified live information availability. Supporting Information provides full specifications and result tables; the reproducibility package distinguishes analysis of archived forecasts from complete source-data refitting.
 
-There was no external funding. I declare no competing interests. The study uses public records and simulations and involves no human participants. AI assistance is disclosed according to its actual role. I take responsibility for the submitted evidence and text.
+The research code and the derived evaluation data are openly available in Zenodo, version 1.1.2, DOI 10.5281/zenodo.23230336. There was no external funding. I declare no competing interests. The study uses public records and simulations and involves no human participants. AI assistance is disclosed according to its actual role. I take responsibility for the submitted evidence and text.
 
 Sincerely,
 
