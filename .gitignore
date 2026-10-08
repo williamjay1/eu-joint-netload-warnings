@@ -30,3 +30,6 @@ results/nature_visual_redesign_20261002/tables/tables_manifest.json
 *.zip
 *.tiff
 *.eps
+
+PACKAGE_MANIFEST.json
+README_DELIVERY.md

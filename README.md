@@ -81,3 +81,10 @@ Earlier versions: 1.0.0 (10.5281/zenodo.23100589) and 1.0.1 (10.5281/zenodo.2316
 
 Version 1.1.0 is archived at DOI 10.5281/zenodo.23229890; the concept DOI 10.5281/zenodo.23100588 resolves to the newest version.
 Version 1.0.1 remains at 10.5281/zenodo.23168553 and version 1.0.0 at 10.5281/zenodo.23100589.
+
+## Scope of this deposit
+
+This archive is the reproducibility package: analysis code, released analysis inputs, generated result
+tables and figures, the numerical ledger and the parameter logs. It contains no journal submission files,
+no cover letter and no duplicated table exports. The manuscript sources under `manuscript/` are included
+only as documentation of the document build.

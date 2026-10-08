@@ -1,9 +1,0 @@
-Threshold,Forecast,Native slots,Selected event hours,Early processes
-q90,M0,618,322,32/71
-q90,M1,619,327,31/71
-q90,M2,616,320,31/71
-q90,M3,613,326,31/71
-q95,M0,405,166,25/61
-q95,M1,405,169,25/61
-q95,M2,404,167,25/61
-q95,M3,406,170,25/61

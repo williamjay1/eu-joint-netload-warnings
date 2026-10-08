@@ -1,7 +1,0 @@
-Purpose,Location
-Understand the monitoring target and data,"S1, S2, S8, S11"
-Reproduce forecasts and controlled comparisons,"S2 to S4, S9, S11"
-Evaluate allocation and measurement sensitivities,"S5, S7, S10, S11"
-Inspect diagnostic mechanisms and uncertainty,"S6, S9, S12"
-Assess the operating interface and new price context,S13
-"Locate complete tables, figures and reproduction commands",S14 and the accompanying package
