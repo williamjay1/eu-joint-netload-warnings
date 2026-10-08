@@ -1,0 +1,157 @@
+[
+  {
+    "number": 1,
+    "title": "Marginal calibration and conditional positions of seasonal thresholds",
+    "rows": 264,
+    "panels": {
+      "A_threshold_residuals": 168,
+      "B_CDF_quantiles": 24,
+      "C_seasonal_CDF_positions": 36,
+      "D_2022_residual_scale": 36
+    },
+    "file": "Table_S1.csv"
+  },
+  {
+    "number": 2,
+    "title": "Four-cell probability scores, paired contrasts and reliability support",
+    "rows": 576,
+    "panels": {
+      "A_scores": 48,
+      "B_paired_contrasts": 48,
+      "C_reliability_bins": 480
+    },
+    "file": "Table_S2.csv"
+  },
+  {
+    "number": 3,
+    "title": "Deterministic convergence and independent randomized CDF checks",
+    "rows": 108,
+    "panels": {
+      "A_full_q90_convergence": 4,
+      "B_independent_reference": 96,
+      "C_plan_invariance": 8
+    },
+    "file": "Table_S3.csv"
+  },
+  {
+    "number": 4,
+    "title": "Complete native policy evaluation and cost comparisons",
+    "rows": 58143,
+    "panels": {
+      "A_native_counts": 312,
+      "B_native_paired_contrasts": 432,
+      "C_selection_categories": 312,
+      "D_development_gates": 24,
+      "E_cost_curves": 41184,
+      "F_paired_cost_contrasts": 15840,
+      "G_lost_early_processes": 3,
+      "H_previous_native_and_thinning_gap_sensitivity": 36
+    },
+    "file": "Table_S4.csv"
+  },
+  {
+    "number": 5,
+    "title": "Same-gate ranking and cooldown factorial ablation",
+    "rows": 408,
+    "panels": {
+      "A_native_ablation": 192,
+      "B_paired_ablation": 216
+    },
+    "file": "Table_S5.csv"
+  },
+  {
+    "number": 6,
+    "title": "Learned targets, mature chronological development and primary contrasts",
+    "rows": 2024,
+    "panels": {
+      "A_target_support": 12,
+      "B_regularization_validation": 42,
+      "C_quarterly_refits": 112,
+      "D_native_learned_policy_counts": 123,
+      "E_target_specific_scores": 34,
+      "F_primary_paired_contrasts": 63,
+      "G_primary_paired_cost_contrasts": 1638
+    },
+    "file": "Table_S6.csv"
+  },
+  {
+    "number": 7,
+    "title": "Annual and quarterly workload, target-specific scores and calibration",
+    "rows": 6006,
+    "panels": {
+      "A_native_year_quarter": 3120,
+      "B_2023_native_development": 1872,
+      "C_annual_learned_policies": 246,
+      "D_quarterly_scores": 272,
+      "E_quarterly_paired_scores": 224,
+      "F_annual_calibration_bins": 272
+    },
+    "file": "Table_S7.csv"
+  },
+  {
+    "number": 8,
+    "title": "Continuous-box sufficient certificates and finite-path summaries",
+    "rows": 8,
+    "panels": {
+      "A_continuous_box_certificates": 4,
+      "B_finite_path_summary": 4
+    },
+    "file": "Table_S8.csv"
+  },
+  {
+    "number": 9,
+    "title": "Complete constant-sign paths and shared-matrix copula list changes",
+    "rows": 36,
+    "panels": {
+      "A_eight_corner_paths": 32,
+      "B_copula_list_changes": 4
+    },
+    "file": "Table_S9.csv"
+  },
+  {
+    "number": 10,
+    "title": "Known-mechanism simulations, counterexample and Monte Carlo precision",
+    "rows": 827,
+    "panels": {
+      "narrow_means_MCSE": 72,
+      "narrow_near_minus_far_paired": 198,
+      "narrow_temporal_fixture": 2,
+      "narrow_phase_fixture": 2,
+      "wide_means_MCSE": 72,
+      "wide_near_minus_far_paired": 198,
+      "wide_temporal_fixture": 2,
+      "wide_phase_fixture": 2,
+      "previous_formal_Gaussian_t_metrics": 140,
+      "previous_formal_Gaussian_t_paired": 23,
+      "previous_formal_selected_df": 12,
+      "previous_known_state_high": 52,
+      "previous_known_state_lower": 52
+    },
+    "file": "Table_S10.csv"
+  },
+  {
+    "number": 11,
+    "title": "Danish pivotal endpoints and assumed-availability price benchmarks",
+    "rows": 688,
+    "panels": {
+      "A_original_Danish_pivotal_endpoints": 416,
+      "B_learned_pivotal_endpoints": 98,
+      "C_price_and_control_native_counts": 102,
+      "D_price_and_control_scores": 28,
+      "E_paired_Danish_contrasts": 42,
+      "F_price_exposure": 2
+    },
+    "file": "Table_S11.csv"
+  },
+  {
+    "number": 12,
+    "title": "Information contracts and reproduction inventory",
+    "rows": 63,
+    "panels": {
+      "A_input_inventory": 9,
+      "B_prediction_target_list_inventory": 39,
+      "C_information_and_inference_contract": 15
+    },
+    "file": "Table_S12.csv"
+  }
+]

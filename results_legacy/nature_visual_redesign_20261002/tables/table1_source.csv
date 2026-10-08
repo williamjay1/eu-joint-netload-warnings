@@ -1,0 +1,5 @@
+﻿Area,Provider / native resolution used,Important accounting boundary
+Germany–Luxembourg,SMARD / hourly energy,Grid load excludes pumping and PV self-consumption
+France,RTE eCO2mix / 30 minutes,"Metropolitan area excluding Corsica; network losses included, pumping excluded"
+Belgium,Elia / 15 minutes,Control-area load with distributed estimation; Sotel overlap retained
+DK1 and DK2,Energinet settlement / hourly energy,Separate bidding areas; self-consumption overlap corrected; all reported wind/PV retained

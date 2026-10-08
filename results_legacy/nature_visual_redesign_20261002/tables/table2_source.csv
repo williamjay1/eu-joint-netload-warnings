@@ -1,0 +1,4 @@
+﻿Rule,Native slots,Event hours selected,False-alert fraction,Native early spells,Expected early coverage at 572 slots
+P0 compulsory top2,1450,341,76.5%,35/71,24.8%
+P1 probability gate,618,322,47.9%,32/71,43.2%
+P2 risk-rise/cooldown,572,259,54.7%,34/71,47.9%

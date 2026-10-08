@@ -15,8 +15,8 @@ Source attributions:
 
 Transformations include temporal alignment and aggregation, source-specific accounting, net-load construction, seasonal event thresholds, weather extraction/interpolation, model fitting/calibration, event labelling, review-plan construction and statistical summarisation. Consult the methods, source map and schema for exact definitions; transformations differ by source and are not applied uniformly.
 
-This release does not contain raw provider archives, original MW/weather-grid/price time series, model objects or credentials. Source records remain governed by their original terms. Data are revised-archive delayed replay data; publication of these outputs does not certify original real-time availability.
+This local revision package contains derivative forecast/diagnostic tables, regional weather summaries and public Energinet price extracts needed to fit the supplementary controls, with the provider attribution and terms above retained. It excludes raw GEFS grids, full provider download archives, original fitted-model objects and credentials. Some processed marginal diagnostic tables retain net-load measurements; their underlying provider terms still apply. Source records remain governed by their original terms. Data are revised-archive delayed replay data; publication of these outputs does not certify original real-time availability.
 
 Third-party plotting styles: SciencePlots, commit b9b16959570bd2fbc9ff5118bacc423c3bddd592, MIT, Copyright (c) 2018 John Garrett. Preserve the accompanying licence text and attribution: https://github.com/garrettj403/SciencePlots.
 
-Licence checks were completed on 2 October 2026. Provider metadata and current terms can change; the source snapshot identity and processing provenance are retained in this release.
+The earlier provider licence checks were completed on 2 October 2026; this revision retains their recorded terms and attributions without assigning ownership of provider observations. Provider metadata and current terms can change; the source snapshot identity and processing provenance are retained in this release.

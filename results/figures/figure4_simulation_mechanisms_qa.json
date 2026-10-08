@@ -1,0 +1,95 @@
+{
+  "nominal_mm": [
+    180.0,
+    126.0
+  ],
+  "tight_mm": [
+    175.9,
+    115.5
+  ],
+  "tight_growth_mm": -4.1,
+  "tight_within_max": true,
+  "max_width_mm": 183.0,
+  "panel_titles": [
+    {
+      "axis": 0,
+      "loc": "left",
+      "text": "a  Gate crossings"
+    },
+    {
+      "axis": 1,
+      "loc": "left",
+      "text": "b  Final list changes"
+    },
+    {
+      "axis": 2,
+      "loc": "left",
+      "text": "c  Review volume"
+    },
+    {
+      "axis": 3,
+      "loc": "left",
+      "text": "d  Early process coverage"
+    }
+  ],
+  "left_titles_found": 4,
+  "min_font_pt": 7.0,
+  "fonts_under_5pt": [],
+  "pdf_fonttype": 42,
+  "ok": true,
+  "files": {
+    "pdf": "D:\\MLWork\\eu_joint_netload_ASMBI_20261008\\results\\figures\\figure4_simulation_mechanisms.pdf",
+    "png": "D:\\MLWork\\eu_joint_netload_ASMBI_20261008\\results\\figures\\figure4_simulation_mechanisms.png",
+    "svg": "D:\\MLWork\\eu_joint_netload_ASMBI_20261008\\results\\figures\\figure4_simulation_mechanisms.svg",
+    "eps": "D:\\MLWork\\eu_joint_netload_ASMBI_20261008\\results\\figures\\figure4_simulation_mechanisms.eps",
+    "tiff": "D:\\MLWork\\eu_joint_netload_ASMBI_20261008\\results\\figures\\figure4_simulation_mechanisms.tiff"
+  },
+  "preview": "D:\\MLWork\\eu_joint_netload_ASMBI_20261008\\results\\figures\\figure4_simulation_mechanisms_preview.png",
+  "raster_dpi": 1200,
+  "preview_dpi": 150,
+  "all_fonts_at_least_7pt": true,
+  "actual_export_mm": [
+    176.23992187499556,
+    116.72147677950028
+  ],
+  "png_pixel_size": [
+    8328,
+    5515
+  ],
+  "png_dpi": [
+    1199.9976,
+    1199.9976
+  ],
+  "tiff_pixel_size": [
+    8328,
+    5515
+  ],
+  "tiff_compression": "tiff_lzw",
+  "embedded_pdf_fonts": [
+    {
+      "basefont": "/EERAAQ+DejaVuSans-Bold",
+      "subtype": "/Type0"
+    },
+    {
+      "basefont": "/FXVMDV+DejaVuSans",
+      "subtype": "/Type0"
+    }
+  ],
+  "actual_width_height_pass": true,
+  "sources": [
+    {
+      "path": "results\\simulations\\replicates.parquet",
+      "sha256": "c1e241f6e45cbed4890faa3d7e9332be71211dc379d4169793155c9353f51e6b"
+    },
+    {
+      "path": "results\\simulations\\wide_boundary\\replicates.parquet",
+      "sha256": "484ea13e8c03069c5aabb56182c78253abb1b243c21762f8e823aeb0692318ec"
+    },
+    {
+      "path": "results\\simulations\\summary.csv",
+      "sha256": "d1614e6e20abd804763b2fd64696b8f8660e5731c49a904175bcb99ca639741c"
+    }
+  ],
+  "caption": "Known-probability mechanism simulations with 400 paired 120-day replicates per condition. Panels a\u2013b show near-minus-far differences under equal regional marginal perturbation count and magnitude, for the ordinary 0.25 gate with capacity two. Points contrast the primary narrow-boundary negative marginal shift and the exploratory wide-boundary positive shift; these are separate DGP fixtures, not isolated amplitude comparisons. Gate crossings can increase while final list changes decrease. Panels c\u2013d use oracle risks in the primary narrow fixture; priority uses rise ranking plus six-hour cooldown under the same gate 0.25. Solid bars use the baseline weather-state mixture and hatched bars the alternative stationary test mixture, not a within-run change. Error bars are \u00b11.96 Monte Carlo SE (paired for a\u2013b), and describe simulation estimation precision. The figures are synthetic evidence and do not estimate operating-system outcomes.",
+  "visual_inspection": "Actual final 150dpi preview opened with view_image: labels, legends, axes and data are readable; no text-text/text-data/leader-line overlap or clipping observed."
+}

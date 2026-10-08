@@ -1,7 +1,7 @@
 {
-  "title": "Cross-border joint high net load warnings: research code and derived evaluation data",
+  "title": "From joint probability forecasts to selective review: research code and derived evaluation data",
   "upload_type": "software",
-  "description": "Research code and author-derived evaluation data accompanying Joint High Net Load Warnings and Review Allocation under Marginal Uncertainty in Europe, for synchronous high net load monitoring in Germany-Luxembourg, France and Belgium, with DK1/DK2 transfers. Portable reconstruction recomputes evaluation from released hourly probabilities, event indicators and forecast-only review plans, then regenerates block-bootstrap contrasts and publication figures. No raw provider MW series, weather grids, price series, fitted models or credentials are included. Software is MIT licensed; author-derived data and author-written supplemental materials are CC BY 4.0 with retained third-party terms and attribution as detailed in DATA_LICENSES.md. This is delayed historical replay, not independently validated live operational availability. The existing v1.0.0 code/data archive is identified by DOI 10.5281/zenodo.23100589. Supplemental materials subsequently added under supplemental_materials/ on GitHub are not represented as part of that earlier deposit. This hosting update does not create a new release, version or DOI.",
+  "description": "Research code and author-derived evaluation data accompanying the manuscript \"From Joint Probability Forecasts to Selective Review: Decision Value and Calibration Sensitivity in Electricity Monitoring\" (Applied Stochastic Models in Business and Industry). The release covers synchronous high net load monitoring in Germany-Luxembourg, France and Belgium with DK1 and DK2 transfers, and adds the revision analyses: early-target against hourly-target comparison under an identical feature set, daily-cap and process-cost contract analysis, marginal-CDF perturbation of ordinary and stateful selection rules, known-mechanism simulations that separate gate crossings from capacity competition, and Danish-pivotal and price-control transfer checks. The portable reconstruction recomputes evaluation from released hourly probabilities, event indicators and forecast-only review plans, then regenerates the bootstrap contrasts and the published figures. No raw provider MW series, weather grids, price series, fitted models or credentials are included. Software is MIT licensed; author-derived data and author-written documentation are CC BY 4.0 with retained third-party terms and attribution as detailed in DATA_LICENSES.md. The evidence is a delayed historical replay, not independently validated live operational availability. Earlier deposits: version 1.0.0 at 10.5281/zenodo.23100589 and version 1.0.1 at 10.5281/zenodo.23168553.",
   "creators": [
     {
       "name": "Zhang, Junjie",
@@ -9,8 +9,15 @@
       "orcid": "0009-0004-8821-4018"
     }
   ],
-  "version": "1.0.0",
+  "version": "1.1.0",
   "license": "mit",
   "access_right": "open",
-  "keywords": ["probabilistic forecasting", "joint net load events", "cross-border electricity", "forecast-only warning allocation", "reproducibility"]
+  "keywords": [
+    "probabilistic forecasting",
+    "selective review",
+    "joint net load events",
+    "calibration sensitivity",
+    "temporal processes",
+    "reproducibility"
+  ]
 }

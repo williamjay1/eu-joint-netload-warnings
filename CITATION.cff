@@ -1,10 +1,10 @@
 cff-version: 1.2.0
-message: "Please cite the archived software version 1.0.0 using its Zenodo DOI. This DOI does not include the subsequently added supplemental manuscript files."
+message: "Please cite the archived software version 1.1.0 using its Zenodo DOI. Earlier versions remain available under the same concept DOI."
 type: software
-title: "Cross-border joint high net load warnings: research code and derived evaluation data"
-version: 1.0.0
-doi: "10.5281/zenodo.23100589"
-date-released: "2026-10-02"
+title: "From joint probability forecasts to selective review: research code and derived evaluation data"
+version: 1.1.0
+doi: "10.5281/zenodo.23168553"   # version 1.0.1 DOI; the 1.1.0 DOI is minted with this release
+date-released: "2026-10-08"
 authors:
   - family-names: Zhang
     given-names: Junjie
@@ -13,7 +13,7 @@ authors:
     email: junjiezhang2024@shisu.edu.cn
 repository-code: "https://github.com/williamjay1/eu-joint-netload-warnings"
 license: MIT
-abstract: "Code and author-derived evaluation data for cross-border synchronous high net load monitoring. Software is MIT licensed; derived data and retained third-party terms are described in DATA_LICENSES.md. The portable reconstruction verifies issued-forecast scores, forecast-only review plans, intact event processes and block-bootstrap comparisons without refitting models or asserting historical real-time availability."
+abstract: "Code and author-derived evaluation data for cross-border synchronous high net load monitoring, including the selective-review revision analyses. Software is MIT licensed; derived data and retained third-party terms are described in DATA_LICENSES.md. The portable reconstruction verifies issued-forecast scores, forecast-only review plans, intact event processes and block-bootstrap comparisons without refitting models or asserting historical real-time availability."
 keywords:
   - probabilistic forecasting
   - net load

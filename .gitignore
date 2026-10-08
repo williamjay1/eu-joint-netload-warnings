@@ -1,4 +1,4 @@
-__pycache__/
+﻿__pycache__/
 *.py[cod]
 .venv/
 venv/
@@ -26,3 +26,7 @@ results/nature_visual_redesign_20261002/figures3_5_s1/visual_review.json
 results/nature_visual_redesign_20261002/tables/*_manifest.json
 results/nature_visual_redesign_20261002/tables/*_layout.json
 results/nature_visual_redesign_20261002/tables/tables_manifest.json
+# revision package exports and large binary figures (available in the release archive)
+*.zip
+*.tiff
+*.eps

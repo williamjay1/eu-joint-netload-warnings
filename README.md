@@ -56,3 +56,21 @@ Author-written software is under the MIT license; see `LICENSE`. Author-derived 
 
 `CITATION.cff` describes the software; `.zenodo.json` records author-controlled archive metadata. The existing software/data version v1.0.0 is archived at [Zenodo, DOI 10.5281/zenodo.23100589](https://doi.org/10.5281/zenodo.23100589). That DOI identifies the existing code and derived-data deposit. The supplemental document and CSV exports added to the GitHub repository for the ASCE submission are hosted separately in [`supplemental_materials/`](supplemental_materials/README.md); they are not claimed to be included in that earlier Zenodo deposit. No new DOI or software version is assigned by this hosting update.
 
+## Version 1.1.0: selective review revision
+
+Release 1.1.0 accompanies *From Joint Probability Forecasts to Selective Review: Decision Value and
+Calibration Sensitivity in Electricity Monitoring* (Applied Stochastic Models in Business and Industry).
+
+It adds the revision analyses and their outputs:
+
+* early-target against hourly-target model comparison under an identical feature set;
+* daily-cap policy against process-cost contract, including synchronized cost curves and ablations;
+* marginal-CDF perturbation of ordinary selection rules and full-state replay of stateful rules;
+* known-mechanism simulations that separate gate crossings from capacity competition;
+* Danish-pivotal endpoints and assumed-availability price controls.
+
+The manuscript, the supporting information, the twelve result tables and the figures are generated from
+`scripts/` by `scripts/reproduce_revision.py`; `results/` holds the generated outputs, `audit/` holds the
+numerical ledger and the claim maps, and `datasets/` holds the released analysis inputs.
+
+Earlier versions: 1.0.0 (10.5281/zenodo.23100589) and 1.0.1 (10.5281/zenodo.23168553).

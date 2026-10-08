@@ -1,0 +1,12 @@
+{
+  "status": "verified",
+  "label_mutation_selection_identical": true,
+  "label_mutation_rolling_identical": true,
+  "future_forecast_mutation_past_gates_identical": true,
+  "daily_caps_all_plans": true,
+  "category_counts_sum_slots": true,
+  "firstearly_count_equals_C": true,
+  "annual_attribution": "intactprocess counted byonsetyear/quarter, noyearcutreclustering",
+  "inference": "year-quarter synchronousmovingblocks; percurvefixedgridband, noacrosspolicy familywiseclaim",
+  "source_sha256": "1462f3f1887b9f56abc9a33d72af8b9d4e536ef50c6e825b0869afad4e8dee4f"
+}

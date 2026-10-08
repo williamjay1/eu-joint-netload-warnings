@@ -1,0 +1,3 @@
+mode,estimate,MCSE,truth
+independent_occurrence,0.64161,0.0015251997030337157,0.64
+shared_occurrence,0.39683999999999997,0.0016028048488145338,0.4

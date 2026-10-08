@@ -1,0 +1,78 @@
+{
+  "nominal_mm": [
+    179.0,
+    112.0
+  ],
+  "tight_mm": [
+    168.6,
+    103.4
+  ],
+  "tight_growth_mm": -10.4,
+  "tight_within_max": true,
+  "max_width_mm": 181.5,
+  "panel_titles": [
+    {
+      "axis": 0,
+      "loc": "left",
+      "text": "a"
+    },
+    {
+      "axis": 0,
+      "loc": "center",
+      "text": "Native workload and coverage"
+    },
+    {
+      "axis": 1,
+      "loc": "left",
+      "text": "b"
+    },
+    {
+      "axis": 1,
+      "loc": "center",
+      "text": "Where review is spent"
+    }
+  ],
+  "left_titles_found": 2,
+  "min_font_pt": 7.0,
+  "fonts_under_5pt": [],
+  "pdf_fonttype": 42,
+  "ok": true,
+  "figure": "figure1_native_allocation",
+  "dpi_png": 1200,
+  "description": "Executed original-zone M0q90 plus chronologicalearlylogit; nativecounts only, nolinefrontier; categories sum toslots",
+  "formats": [
+    "PDF",
+    "SVG",
+    "EPS",
+    "PNG1200",
+    "TIFF1200LZW",
+    "PNG150preview"
+  ],
+  "eps_alpha": "uncertainty fill colors flattened onto white; vector lines/text retained",
+  "preview_dpi": 150,
+  "visual_inspection": "verified via native view_image, final 2023-contract preview; 2026-10-08",
+  "visual_findings": {
+    "text_overlaps": false,
+    "text_line_crossings": false,
+    "clipped_labels": false,
+    "legends_separate_from_data": true,
+    "print_size_readable": true
+  },
+  "actual_pdf_width_mm": 169.8889518737793,
+  "actual_pdf_height_mm": 104.55932625664605,
+  "pdf_raster_image_count": 0,
+  "embedded_fonts": [
+    "BNYMIX+ArialMT",
+    "MWOAYY+Arial-BoldMT"
+  ],
+  "primary_new_count_contract": "2023 validation-issued forecasts; new early gate .02 and original forecast gate .23, equal rho=.5/day and K=2; actual reanalysis workloads not forced equal",
+  "tiff_dimensions": [
+    8026,
+    4939
+  ],
+  "tiff_dpi": [
+    1200.0,
+    1200.0
+  ],
+  "tiff_compression": "tiff_lzw"
+}

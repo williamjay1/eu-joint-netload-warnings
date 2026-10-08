@@ -1,0 +1,98 @@
+{
+  "nominal_mm": [
+    180.0,
+    111.0
+  ],
+  "tight_mm": [
+    180.7,
+    101.3
+  ],
+  "tight_growth_mm": 0.7,
+  "tight_within_max": true,
+  "max_width_mm": 183.0,
+  "panel_titles": [
+    {
+      "axis": 0,
+      "loc": "left",
+      "text": "a  Selection sensitivity"
+    },
+    {
+      "axis": 1,
+      "loc": "left",
+      "text": "b  Ordinary gate certificates"
+    },
+    {
+      "axis": 2,
+      "loc": "left",
+      "text": "c  Capacity filters ranking changes"
+    }
+  ],
+  "left_titles_found": 3,
+  "min_font_pt": 7.0,
+  "fonts_under_5pt": [],
+  "pdf_fonttype": 42,
+  "ok": true,
+  "files": {
+    "pdf": "D:\\MLWork\\eu_joint_netload_ASMBI_20261008\\results\\figures\\figure3_decision_stability.pdf",
+    "png": "D:\\MLWork\\eu_joint_netload_ASMBI_20261008\\results\\figures\\figure3_decision_stability.png",
+    "svg": "D:\\MLWork\\eu_joint_netload_ASMBI_20261008\\results\\figures\\figure3_decision_stability.svg",
+    "eps": "D:\\MLWork\\eu_joint_netload_ASMBI_20261008\\results\\figures\\figure3_decision_stability.eps",
+    "tiff": "D:\\MLWork\\eu_joint_netload_ASMBI_20261008\\results\\figures\\figure3_decision_stability.tiff"
+  },
+  "preview": "D:\\MLWork\\eu_joint_netload_ASMBI_20261008\\results\\figures\\figure3_decision_stability_preview.png",
+  "raster_dpi": 1200,
+  "preview_dpi": 150,
+  "all_fonts_at_least_7pt": true,
+  "actual_export_mm": [
+    181.08615017362249,
+    102.54647677950194
+  ],
+  "png_pixel_size": [
+    8561,
+    4845
+  ],
+  "png_dpi": [
+    1199.9976,
+    1199.9976
+  ],
+  "tiff_pixel_size": [
+    8561,
+    4845
+  ],
+  "tiff_compression": "tiff_lzw",
+  "embedded_pdf_fonts": [
+    {
+      "basefont": "/ENJUYL+DejaVuSans-Bold",
+      "subtype": "/Type0"
+    },
+    {
+      "basefont": "/ECSWBS+DejaVuSans-Bold",
+      "subtype": "/Type0"
+    },
+    {
+      "basefont": "/DEFFHO+DejaVuSans",
+      "subtype": "/Type0"
+    },
+    {
+      "basefont": "/DQIFZV+DejaVuSans",
+      "subtype": "/Type0"
+    }
+  ],
+  "actual_width_height_pass": true,
+  "sources": [
+    {
+      "path": "results\\stability\\stability_summary.csv",
+      "sha256": "a5de4c8f3702cd80b53ead9771ab5b958534f1bba07788993146eda8c11e51bb"
+    },
+    {
+      "path": "results\\stability\\stability_certificates.csv",
+      "sha256": "0d7268ae3e5ba16b2d59821880ef007e9805de7a47febfb65d615e4bbb72ebf4"
+    },
+    {
+      "path": "results\\stability\\stability_corner_paths.csv",
+      "sha256": "fb5e897b315a959833edc04e30e49741271c2ab69b5341ad8691ad176eab6f89"
+    }
+  ],
+  "caption": "Sensitivity of native decisions to specified marginal-CDF perturbations. Panels a\u2013b use 17,400 complete test hours. Panel a includes the unperturbed centre plus eight full-history constant regional-sign shifts; denominators are all eligible hours or baseline selections. Priority denotes the inherited rise ranking, gate 0.19 and six-hour cooldown; ordinary gate is 0.25. Panel b gives sufficient ordinary-gate threshold/rank certificates from the 3\u03b4 coupling bound or the fixed-copula monotone rectangle envelope. Panel c ranges are minima and maxima across eight signed scenarios, not confidence intervals. Corner invariance does not certify every interior or time-varying stateful perturbation; \u03b4 values are sensitivity scales, not validated error coverage.",
+  "visual_inspection": "Actual final 150dpi preview opened with view_image: labels, legends, axes and data are readable; no text-text/text-data/leader-line overlap or clipping observed."
+}

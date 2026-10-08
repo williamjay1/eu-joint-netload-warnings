@@ -1,0 +1,732 @@
+{
+  "interval_end_maturation_cutoffs_verified": true,
+  "core_maturation_days": 7,
+  "danish_maturation_days": 15,
+  "prediction_checks": [
+    {
+      "file": "prediction_DE_LU_FR_BE_forecast_early_logit.parquet",
+      "n": 17544,
+      "early_positive": 223,
+      "p_min": 4.180058618477673e-06,
+      "p_max": 0.7386583334151726
+    },
+    {
+      "file": "prediction_DE_LU_FR_BE_forecast_hour_logit.parquet",
+      "n": 17544,
+      "early_positive": 223,
+      "p_min": 8.014759251525588e-06,
+      "p_max": 0.9951762044018542
+    },
+    {
+      "file": "prediction_DE_LU_FR_BE_original_M0.parquet",
+      "n": 17544,
+      "early_positive": 223,
+      "p_min": 0.0,
+      "p_max": 0.9999815269656626
+    },
+    {
+      "file": "prediction_DK1_base_early_logit.parquet",
+      "n": 17544,
+      "early_positive": 235,
+      "p_min": 1.0578152524629801e-07,
+      "p_max": 0.853012685818264
+    },
+    {
+      "file": "prediction_DK1_base_hour_logit.parquet",
+      "n": 17544,
+      "early_positive": 235,
+      "p_min": 8.99908959222902e-06,
+      "p_max": 0.9950205069038108
+    },
+    {
+      "file": "prediction_DK1_combined_early_logit.parquet",
+      "n": 17544,
+      "early_positive": 235,
+      "p_min": 5.791829893877326e-07,
+      "p_max": 0.9829576010023122
+    },
+    {
+      "file": "prediction_DK1_combined_hour_logit.parquet",
+      "n": 17544,
+      "early_positive": 235,
+      "p_min": 4.7003128541413765e-06,
+      "p_max": 0.999373363916021
+    },
+    {
+      "file": "prediction_DK1_original_M0.parquet",
+      "n": 17544,
+      "early_positive": 235,
+      "p_min": 0.0,
+      "p_max": 0.999606743124467
+    },
+    {
+      "file": "prediction_DK1_price_early_logit.parquet",
+      "n": 17544,
+      "early_positive": 235,
+      "p_min": 6.074769795880734e-05,
+      "p_max": 0.9637775228783818
+    },
+    {
+      "file": "prediction_DK1_price_hour_logit.parquet",
+      "n": 17544,
+      "early_positive": 235,
+      "p_min": 0.00016810034559836196,
+      "p_max": 0.9955963619589604
+    },
+    {
+      "file": "prediction_DK2_base_early_logit.parquet",
+      "n": 17544,
+      "early_positive": 250,
+      "p_min": 3.7603281659389875e-06,
+      "p_max": 0.8865193102189045
+    },
+    {
+      "file": "prediction_DK2_base_hour_logit.parquet",
+      "n": 17544,
+      "early_positive": 250,
+      "p_min": 1.2979841273372777e-05,
+      "p_max": 0.9970275260463369
+    },
+    {
+      "file": "prediction_DK2_combined_early_logit.parquet",
+      "n": 17544,
+      "early_positive": 250,
+      "p_min": 4.454712921243596e-06,
+      "p_max": 0.941913843757424
+    },
+    {
+      "file": "prediction_DK2_combined_hour_logit.parquet",
+      "n": 17544,
+      "early_positive": 250,
+      "p_min": 6.6322579264161524e-06,
+      "p_max": 0.9993271203523226
+    },
+    {
+      "file": "prediction_DK2_original_M0.parquet",
+      "n": 17544,
+      "early_positive": 250,
+      "p_min": 0.0,
+      "p_max": 0.9997619154118529
+    },
+    {
+      "file": "prediction_DK2_price_early_logit.parquet",
+      "n": 17544,
+      "early_positive": 250,
+      "p_min": 0.0003530557461997713,
+      "p_max": 0.6972685695403665
+    },
+    {
+      "file": "prediction_DK2_price_hour_logit.parquet",
+      "n": 17544,
+      "early_positive": 250,
+      "p_min": 0.00036294763811053356,
+      "p_max": 0.9712189244456895
+    }
+  ],
+  "capacity_checks": [
+    {
+      "file": "review_masks_DE_LU_FR_BE.parquet",
+      "policy": "original_M0__top1",
+      "max_daily_slots": 1
+    },
+    {
+      "file": "review_masks_DE_LU_FR_BE.parquet",
+      "policy": "original_M0__top2",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DE_LU_FR_BE.parquet",
+      "policy": "original_M0__count2022_target05",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DE_LU_FR_BE.parquet",
+      "policy": "original_M0__count2023_target05",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DE_LU_FR_BE.parquet",
+      "policy": "original_M0__fixed025",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DE_LU_FR_BE.parquet",
+      "policy": "original_M0__count2022_cool6",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DE_LU_FR_BE.parquet",
+      "policy": "original_M0__count2023_cool6",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DE_LU_FR_BE.parquet",
+      "policy": "forecast_early_logit__top1",
+      "max_daily_slots": 1
+    },
+    {
+      "file": "review_masks_DE_LU_FR_BE.parquet",
+      "policy": "forecast_early_logit__top2",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DE_LU_FR_BE.parquet",
+      "policy": "forecast_early_logit__count2022_target05",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DE_LU_FR_BE.parquet",
+      "policy": "forecast_early_logit__count2023_target05",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DE_LU_FR_BE.parquet",
+      "policy": "forecast_early_logit__fixed025",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DE_LU_FR_BE.parquet",
+      "policy": "forecast_early_logit__count2022_cool6",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DE_LU_FR_BE.parquet",
+      "policy": "forecast_early_logit__count2023_cool6",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DE_LU_FR_BE.parquet",
+      "policy": "forecast_hour_logit__top1",
+      "max_daily_slots": 1
+    },
+    {
+      "file": "review_masks_DE_LU_FR_BE.parquet",
+      "policy": "forecast_hour_logit__top2",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DE_LU_FR_BE.parquet",
+      "policy": "forecast_hour_logit__count2022_target05",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DE_LU_FR_BE.parquet",
+      "policy": "forecast_hour_logit__count2023_target05",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DE_LU_FR_BE.parquet",
+      "policy": "forecast_hour_logit__fixed025",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DE_LU_FR_BE.parquet",
+      "policy": "forecast_hour_logit__count2022_cool6",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DE_LU_FR_BE.parquet",
+      "policy": "forecast_hour_logit__count2023_cool6",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK1.parquet",
+      "policy": "original_M0__top1",
+      "max_daily_slots": 1
+    },
+    {
+      "file": "review_masks_DK1.parquet",
+      "policy": "original_M0__top2",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK1.parquet",
+      "policy": "original_M0__count2022_target05",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK1.parquet",
+      "policy": "original_M0__count2023_target05",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK1.parquet",
+      "policy": "original_M0__fixed025",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK1.parquet",
+      "policy": "original_M0__count2022_cool6",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK1.parquet",
+      "policy": "original_M0__count2023_cool6",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK1.parquet",
+      "policy": "base_early_logit__top1",
+      "max_daily_slots": 1
+    },
+    {
+      "file": "review_masks_DK1.parquet",
+      "policy": "base_early_logit__top2",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK1.parquet",
+      "policy": "base_early_logit__count2022_target05",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK1.parquet",
+      "policy": "base_early_logit__count2023_target05",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK1.parquet",
+      "policy": "base_early_logit__fixed025",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK1.parquet",
+      "policy": "base_early_logit__count2022_cool6",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK1.parquet",
+      "policy": "base_early_logit__count2023_cool6",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK1.parquet",
+      "policy": "base_hour_logit__top1",
+      "max_daily_slots": 1
+    },
+    {
+      "file": "review_masks_DK1.parquet",
+      "policy": "base_hour_logit__top2",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK1.parquet",
+      "policy": "base_hour_logit__count2022_target05",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK1.parquet",
+      "policy": "base_hour_logit__count2023_target05",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK1.parquet",
+      "policy": "base_hour_logit__fixed025",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK1.parquet",
+      "policy": "base_hour_logit__count2022_cool6",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK1.parquet",
+      "policy": "base_hour_logit__count2023_cool6",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK1.parquet",
+      "policy": "price_early_logit__top1",
+      "max_daily_slots": 1
+    },
+    {
+      "file": "review_masks_DK1.parquet",
+      "policy": "price_early_logit__top2",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK1.parquet",
+      "policy": "price_early_logit__count2022_target05",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK1.parquet",
+      "policy": "price_early_logit__count2023_target05",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK1.parquet",
+      "policy": "price_early_logit__fixed025",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK1.parquet",
+      "policy": "price_early_logit__count2022_cool6",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK1.parquet",
+      "policy": "price_early_logit__count2023_cool6",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK1.parquet",
+      "policy": "price_hour_logit__top1",
+      "max_daily_slots": 1
+    },
+    {
+      "file": "review_masks_DK1.parquet",
+      "policy": "price_hour_logit__top2",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK1.parquet",
+      "policy": "price_hour_logit__count2022_target05",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK1.parquet",
+      "policy": "price_hour_logit__count2023_target05",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK1.parquet",
+      "policy": "price_hour_logit__fixed025",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK1.parquet",
+      "policy": "price_hour_logit__count2022_cool6",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK1.parquet",
+      "policy": "price_hour_logit__count2023_cool6",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK1.parquet",
+      "policy": "combined_early_logit__top1",
+      "max_daily_slots": 1
+    },
+    {
+      "file": "review_masks_DK1.parquet",
+      "policy": "combined_early_logit__top2",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK1.parquet",
+      "policy": "combined_early_logit__count2022_target05",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK1.parquet",
+      "policy": "combined_early_logit__count2023_target05",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK1.parquet",
+      "policy": "combined_early_logit__fixed025",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK1.parquet",
+      "policy": "combined_early_logit__count2022_cool6",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK1.parquet",
+      "policy": "combined_early_logit__count2023_cool6",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK1.parquet",
+      "policy": "combined_hour_logit__top1",
+      "max_daily_slots": 1
+    },
+    {
+      "file": "review_masks_DK1.parquet",
+      "policy": "combined_hour_logit__top2",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK1.parquet",
+      "policy": "combined_hour_logit__count2022_target05",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK1.parquet",
+      "policy": "combined_hour_logit__count2023_target05",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK1.parquet",
+      "policy": "combined_hour_logit__fixed025",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK1.parquet",
+      "policy": "combined_hour_logit__count2022_cool6",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK1.parquet",
+      "policy": "combined_hour_logit__count2023_cool6",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK2.parquet",
+      "policy": "original_M0__top1",
+      "max_daily_slots": 1
+    },
+    {
+      "file": "review_masks_DK2.parquet",
+      "policy": "original_M0__top2",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK2.parquet",
+      "policy": "original_M0__count2022_target05",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK2.parquet",
+      "policy": "original_M0__count2023_target05",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK2.parquet",
+      "policy": "original_M0__fixed025",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK2.parquet",
+      "policy": "original_M0__count2022_cool6",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK2.parquet",
+      "policy": "original_M0__count2023_cool6",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK2.parquet",
+      "policy": "base_early_logit__top1",
+      "max_daily_slots": 1
+    },
+    {
+      "file": "review_masks_DK2.parquet",
+      "policy": "base_early_logit__top2",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK2.parquet",
+      "policy": "base_early_logit__count2022_target05",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK2.parquet",
+      "policy": "base_early_logit__count2023_target05",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK2.parquet",
+      "policy": "base_early_logit__fixed025",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK2.parquet",
+      "policy": "base_early_logit__count2022_cool6",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK2.parquet",
+      "policy": "base_early_logit__count2023_cool6",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK2.parquet",
+      "policy": "base_hour_logit__top1",
+      "max_daily_slots": 1
+    },
+    {
+      "file": "review_masks_DK2.parquet",
+      "policy": "base_hour_logit__top2",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK2.parquet",
+      "policy": "base_hour_logit__count2022_target05",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK2.parquet",
+      "policy": "base_hour_logit__count2023_target05",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK2.parquet",
+      "policy": "base_hour_logit__fixed025",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK2.parquet",
+      "policy": "base_hour_logit__count2022_cool6",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK2.parquet",
+      "policy": "base_hour_logit__count2023_cool6",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK2.parquet",
+      "policy": "price_early_logit__top1",
+      "max_daily_slots": 1
+    },
+    {
+      "file": "review_masks_DK2.parquet",
+      "policy": "price_early_logit__top2",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK2.parquet",
+      "policy": "price_early_logit__count2022_target05",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK2.parquet",
+      "policy": "price_early_logit__count2023_target05",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK2.parquet",
+      "policy": "price_early_logit__fixed025",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK2.parquet",
+      "policy": "price_early_logit__count2022_cool6",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK2.parquet",
+      "policy": "price_early_logit__count2023_cool6",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK2.parquet",
+      "policy": "price_hour_logit__top1",
+      "max_daily_slots": 1
+    },
+    {
+      "file": "review_masks_DK2.parquet",
+      "policy": "price_hour_logit__top2",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK2.parquet",
+      "policy": "price_hour_logit__count2022_target05",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK2.parquet",
+      "policy": "price_hour_logit__count2023_target05",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK2.parquet",
+      "policy": "price_hour_logit__fixed025",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK2.parquet",
+      "policy": "price_hour_logit__count2022_cool6",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK2.parquet",
+      "policy": "price_hour_logit__count2023_cool6",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK2.parquet",
+      "policy": "combined_early_logit__top1",
+      "max_daily_slots": 1
+    },
+    {
+      "file": "review_masks_DK2.parquet",
+      "policy": "combined_early_logit__top2",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK2.parquet",
+      "policy": "combined_early_logit__count2022_target05",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK2.parquet",
+      "policy": "combined_early_logit__count2023_target05",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK2.parquet",
+      "policy": "combined_early_logit__fixed025",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK2.parquet",
+      "policy": "combined_early_logit__count2022_cool6",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK2.parquet",
+      "policy": "combined_early_logit__count2023_cool6",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK2.parquet",
+      "policy": "combined_hour_logit__top1",
+      "max_daily_slots": 1
+    },
+    {
+      "file": "review_masks_DK2.parquet",
+      "policy": "combined_hour_logit__top2",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK2.parquet",
+      "policy": "combined_hour_logit__count2022_target05",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK2.parquet",
+      "policy": "combined_hour_logit__count2023_target05",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK2.parquet",
+      "policy": "combined_hour_logit__fixed025",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK2.parquet",
+      "policy": "combined_hour_logit__count2022_cool6",
+      "max_daily_slots": 2
+    },
+    {
+      "file": "review_masks_DK2.parquet",
+      "policy": "combined_hour_logit__count2023_cool6",
+      "max_daily_slots": 2
+    }
+  ],
+  "future_local_auction_prices_hidden": true,
+  "original_M0_native_counts_match": true,
+  "quarterly_refits": 112,
+  "validation_interval_end_maturation_verified": true,
+  "validation_combinations_checked": 42,
+  "primary_bootstrap_repetitions": 2000,
+  "quarterly_bootstrap_repetitions": 2000,
+  "auxiliary_full_grid_repetitions": 1000,
+  "auxiliary_cooldown_initialization": "empty state at2024 start"
+}

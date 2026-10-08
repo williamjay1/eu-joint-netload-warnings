@@ -1,0 +1,9 @@
+model,rule,symmetric_difference_test
+M0,gate,0
+M0,priority,0
+M1,gate,0
+M1,priority,0
+M2,gate,0
+M2,priority,0
+M3,gate,0
+M3,priority,0

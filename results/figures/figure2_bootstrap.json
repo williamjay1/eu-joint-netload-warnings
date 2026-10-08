@@ -1,0 +1,11 @@
+{
+  "reps": 2000,
+  "block": 14,
+  "seed": 20261022,
+  "synchronous": true,
+  "inference": "fixedstreams fixedrules andboundaries; yearquartercalendarblocks",
+  "process_rewards": "onsetday",
+  "slot_costs": "targetday",
+  "bands": "pointwise95percent",
+  "no_familywise_or_testselected_frontier": true
+}

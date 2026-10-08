@@ -1,0 +1,13 @@
+rule,year,model,N,H,C,processes,coverage
+top2,2024,original_M0,726,216,18,39,46.15384615384615
+top2,2025,original_M0,724,125,17,32,53.125
+top2,2024,forecast_hour_logit,726,222,20,39,51.282051282051285
+top2,2025,forecast_hour_logit,724,127,18,32,56.25
+top2,2024,forecast_early_logit,726,218,27,39,69.23076923076923
+top2,2025,forecast_early_logit,724,122,16,32,50.0
+count2023_target05,2024,original_M0,366,204,15,39,38.46153846153846
+count2023_target05,2025,original_M0,276,120,17,32,53.125
+count2023_target05,2024,forecast_hour_logit,437,216,19,39,48.717948717948715
+count2023_target05,2025,forecast_hour_logit,386,125,18,32,56.25
+count2023_target05,2024,forecast_early_logit,397,207,25,39,64.1025641025641
+count2023_target05,2025,forecast_early_logit,338,117,16,32,50.0

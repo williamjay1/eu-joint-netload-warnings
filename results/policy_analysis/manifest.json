@@ -1,0 +1,57 @@
+{
+  "status": "completed",
+  "analysis_status": "post hoc reanalysis of previously inspected 2024-2025",
+  "protocol_date": "2026-10-08",
+  "sources": {
+    "DE_LU_FR_BE": "ad6bd2e97194daf2f3ffd4d40d662c7a1c4c3f4c96a5f2c8c02db07aeb090953",
+    "DK1": "e0e1d5e61bb0cd8922f1cdfa1c45151240c440fc0c3b15057d1cf3babf741201",
+    "DK2": "d4e8e7bb8748ae2fb1c4e332e9f9a40cad6b01f5ca2b8223f70a3024e2d6819f"
+  },
+  "script_sha256": "1462f3f1887b9f56abc9a33d72af8b9d4e536ef50c6e825b0869afad4e8dee4f",
+  "gates_selected_on": "2022 forecast-only capped counts; 2023 development validation",
+  "rolling": "preceding90forecastcomplete targetdays;min30warmup;pastissued probabilities only;gridcountcalibration;rho0.5",
+  "cooldown_state": "planned before labels; full2022-25 context carried to score2024",
+  "primary_endpoint": "native firstsixhour coverage of active-day spells with oneobservedinactiveday bridge",
+  "cost_inference": "synchronous14calendar-day year-quarter bootstrap; processrewards ononsetday costs ontargetday; fixedstreams rules andboundaries",
+  "curve_bands": "pointwisepercentile and perpolicy/contrast maxdeviationbands overdeclaredcostgrid; no acrosspolicy familywiseclaim",
+  "original_reproduction": {
+    "removed_slots": 832,
+    "removed_event_hours": 19,
+    "removed_nonevent_hours": 813,
+    "top2": {
+      "N": 1450,
+      "hits": 341,
+      "false": 1109,
+      "C": 35,
+      "processes": 71,
+      "coverage": 0.49295774647887325,
+      "event_hours": 2105,
+      "complete_days": 725
+    },
+    "gate": {
+      "N": 618,
+      "hits": 322,
+      "false": 296,
+      "C": 32,
+      "processes": 71,
+      "coverage": 0.4507042253521127,
+      "event_hours": 2105,
+      "complete_days": 725
+    },
+    "priority": {
+      "N": 572,
+      "hits": 259,
+      "false": 313,
+      "C": 34,
+      "processes": 71,
+      "coverage": 0.4788732394366197,
+      "event_hours": 2105,
+      "complete_days": 725
+    }
+  },
+  "danish_subset_status": "completed; see danish_subset_manifest.json and two explicit endpoint scopes",
+  "replicates": 2000,
+  "elapsed_seconds": 43.628061400027946,
+  "annual_process_attribution": "Onset-year and onset-quarter of intact parent process; do not truncate/reform at annual boundary.",
+  "verification": "policy_verification.json"
+}

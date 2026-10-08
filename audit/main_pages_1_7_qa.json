@@ -1,0 +1,139 @@
+{
+  "scope": "Main manuscript rendered pages 1 through 7; no manuscript edits",
+  "method": "All assigned pages inspected individually with native view_image at original detail; changed final pages reinspected natively and unchanged final pages confirmed identical by deterministic RGB pixel comparison",
+  "status": "pass",
+  "exact_numeric_verification": "Separate deterministic reproducibility checks; visual inspection is not used to establish numerical correctness",
+  "pages": [
+    {
+      "page": 1,
+      "path": "temp/main_final_delivery_render/page-1.png",
+      "status": "pass",
+      "notes": "Final page 1 was reopened with native view_image at original detail. Title, affiliations, abstract, keywords and introduction remain legible with no overlap, cropping or missing glyphs.",
+      "sha256": "10c85483790fba51bdda150e7c2a0b9df9500a7ebde12388f6677e39538f56f3",
+      "image_pixels": [
+        1020,
+        1320
+      ],
+      "inspected_original_path": "temp/main_delivery_render/page-1.png",
+      "inspected_original_sha256": "d5d8a50d6481e4595ffb136d3e817acd33290e83303f2f34c8f90bbc27bcc23c",
+      "pixel_identical_to_inspected_render": true,
+      "previous_render_path": "temp/main_release_render/page-1.png",
+      "previous_render_sha256": "d5d8a50d6481e4595ffb136d3e817acd33290e83303f2f34c8f90bbc27bcc23c",
+      "pixel_identical_to_previous_render": false,
+      "final_native_reinspection": true
+    },
+    {
+      "page": 2,
+      "path": "temp/main_final_delivery_render/page-2.png",
+      "status": "pass",
+      "notes": "Introduction continuation and Methods heading are separated cleanly. Body and footer do not overlap; the decision-contract paragraph continues normally to page 3.",
+      "sha256": "2a68a5e22003717cddbbe435c4362dae5d2c50e57827a045b95365aac56d6564",
+      "image_pixels": [
+        1020,
+        1320
+      ],
+      "inspected_original_path": "temp/main_delivery_render/page-2.png",
+      "inspected_original_sha256": "2a68a5e22003717cddbbe435c4362dae5d2c50e57827a045b95365aac56d6564",
+      "pixel_identical_to_inspected_render": true,
+      "previous_render_path": "temp/main_release_render/page-2.png",
+      "previous_render_sha256": "2a68a5e22003717cddbbe435c4362dae5d2c50e57827a045b95365aac56d6564",
+      "pixel_identical_to_previous_render": true,
+      "final_native_reinspection": false
+    },
+    {
+      "page": 3,
+      "path": "temp/main_final_delivery_render/page-3.png",
+      "status": "pass",
+      "notes": "Displayed equations 1 through 4 are complete and separated from body text. In equation 3, T_s, tau_s, the six-hour half-open endpoint and E_t=1 are visible. No formula glyph loss, collision or cropping observed.",
+      "sha256": "6e7ac600173e655a834429aefa3dca6cc6c200203672ec3c648af59c89831079",
+      "image_pixels": [
+        1020,
+        1320
+      ],
+      "inspected_original_path": "temp/main_delivery_render/page-3.png",
+      "inspected_original_sha256": "6e7ac600173e655a834429aefa3dca6cc6c200203672ec3c648af59c89831079",
+      "pixel_identical_to_inspected_render": true,
+      "previous_render_path": "temp/main_release_render/page-3.png",
+      "previous_render_sha256": "6e7ac600173e655a834429aefa3dca6cc6c200203672ec3c648af59c89831079",
+      "pixel_identical_to_previous_render": true,
+      "final_native_reinspection": false
+    },
+    {
+      "page": 4,
+      "path": "temp/main_final_delivery_render/page-4.png",
+      "status": "pass",
+      "notes": "Section 2.2, model-map superscripts, correlation notation and degrees-of-freedom list are legible. Paragraphs and footer are separated; final paragraph continues to page 5 without clipping.",
+      "sha256": "5bb0fc62acbbea63cf78bc3d850d2ad4531f67e520ad494054e782e6c0caa65b",
+      "image_pixels": [
+        1020,
+        1320
+      ],
+      "inspected_original_path": "temp/main_delivery_render/page-4.png",
+      "inspected_original_sha256": "5bb0fc62acbbea63cf78bc3d850d2ad4531f67e520ad494054e782e6c0caa65b",
+      "pixel_identical_to_inspected_render": true,
+      "previous_render_path": "temp/main_release_render/page-4.png",
+      "previous_render_sha256": "5bb0fc62acbbea63cf78bc3d850d2ad4531f67e520ad494054e782e6c0caa65b",
+      "pixel_identical_to_previous_render": true,
+      "final_native_reinspection": false
+    },
+    {
+      "page": 5,
+      "path": "temp/main_final_delivery_render/page-5.png",
+      "status": "pass",
+      "notes": "Equations 5 and 6 are readable with all sums, indices and copula symbols visible. Section 2.3 and subsequent body paragraphs show no overlap; classifier paragraph continues normally to page 6.",
+      "sha256": "e6f6f71fa211660366f6bbebf126bad7ad4b7a086262694bddc4f62dc488360e",
+      "image_pixels": [
+        1020,
+        1320
+      ],
+      "inspected_original_path": "temp/main_delivery_render/page-5.png",
+      "inspected_original_sha256": "e6f6f71fa211660366f6bbebf126bad7ad4b7a086262694bddc4f62dc488360e",
+      "pixel_identical_to_inspected_render": true,
+      "previous_render_path": "temp/main_release_render/page-5.png",
+      "previous_render_sha256": "e6f6f71fa211660366f6bbebf126bad7ad4b7a086262694bddc4f62dc488360e",
+      "pixel_identical_to_previous_render": true,
+      "final_native_reinspection": false
+    },
+    {
+      "page": 6,
+      "path": "temp/main_final_delivery_render/page-6.png",
+      "status": "pass",
+      "notes": "Section 2.4 and equations 7 and 8 render completely. Coupling-bound sum and the selected-hour rank condition are legible. Superscripts/subscripts do not collide with lines or adjacent body text.",
+      "sha256": "6609af060b38df1e60138484dc7dd2065fd48ad6b864cb68994b7afb7eace64f",
+      "image_pixels": [
+        1020,
+        1320
+      ],
+      "inspected_original_path": "temp/main_delivery_render/page-6.png",
+      "inspected_original_sha256": "6609af060b38df1e60138484dc7dd2065fd48ad6b864cb68994b7afb7eace64f",
+      "pixel_identical_to_inspected_render": true,
+      "previous_render_path": "temp/main_release_render/page-6.png",
+      "previous_render_sha256": "6609af060b38df1e60138484dc7dd2065fd48ad6b864cb68994b7afb7eace64f",
+      "pixel_identical_to_previous_render": true,
+      "final_native_reinspection": false
+    },
+    {
+      "page": 7,
+      "path": "temp/main_final_delivery_render/page-7.png",
+      "status": "pass",
+      "notes": "Section 2.5, binomial-ratio equation 9, Section 2.6 and simulation equation 10 are readable. No caption, body, formula or footer collision; the final sentence continues normally to the next page.",
+      "sha256": "a0b2ad8500c81d7c6aae6442c43766c32f89dc3649a77854defe64527fecc43e",
+      "image_pixels": [
+        1020,
+        1320
+      ],
+      "inspected_original_path": "temp/main_delivery_render/page-7.png",
+      "inspected_original_sha256": "a0b2ad8500c81d7c6aae6442c43766c32f89dc3649a77854defe64527fecc43e",
+      "pixel_identical_to_inspected_render": true,
+      "previous_render_path": "temp/main_release_render/page-7.png",
+      "previous_render_sha256": "a0b2ad8500c81d7c6aae6442c43766c32f89dc3649a77854defe64527fecc43e",
+      "pixel_identical_to_previous_render": true,
+      "final_native_reinspection": false
+    }
+  ],
+  "table1": {
+    "status": "outside_assigned_page_range",
+    "note": "No Table 1 appears on pages 1 through 7; no claim is made about its row alignment here."
+  },
+  "issues": []
+}

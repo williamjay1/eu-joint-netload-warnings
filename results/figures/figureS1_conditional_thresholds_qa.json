@@ -1,0 +1,43 @@
+{
+  "nominal_mm": [
+    178.0,
+    88.0
+  ],
+  "tight_mm": [
+    166.7,
+    75.0
+  ],
+  "tight_growth_mm": -11.3,
+  "tight_within_max": "True",
+  "max_width_mm": 183.0,
+  "panel_titles": [
+    {
+      "axis": 0,
+      "loc": "left",
+      "text": "a  Seasonal q90"
+    },
+    {
+      "axis": 1,
+      "loc": "left",
+      "text": "b  Seasonal q95"
+    }
+  ],
+  "left_titles_found": 2,
+  "min_font_pt": 7.0,
+  "fonts_under_5pt": [],
+  "pdf_fonttype": 42,
+  "ok": true,
+  "dpi": 1200,
+  "source": "results/figures/figureS1_source.csv",
+  "source_sha256": "3c237ecac4ccdae567a45c619e9f20cc140584491b1ec2d83c818efa61016f87",
+  "visual_inspection": "Actual native view_image preview opened; no text overlaps, clipping or legend collisions observed.",
+  "vector_formats": [
+    "pdf",
+    "svg",
+    "eps"
+  ],
+  "raster_formats": [
+    "png",
+    "tiff"
+  ]
+}

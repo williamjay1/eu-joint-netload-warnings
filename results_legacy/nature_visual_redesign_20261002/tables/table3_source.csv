@@ -1,0 +1,7 @@
+﻿Model,Specification,Development Brier,Reanalysis Brier
+M0,F0 + Gaussian,0.029064,0.060191
+M1,F1 + same Gaussian,0.028552,0.060598
+M2,F0 + selected t,0.029071,0.060186
+M3,F1 + same selected t,0.028557,0.060579
+Reference,Independence,0.028965,0.061084
+Reference,Direct logistic,0.040411,0.071668

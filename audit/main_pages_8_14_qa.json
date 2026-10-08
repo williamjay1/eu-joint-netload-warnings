@@ -1,0 +1,97 @@
+{
+  "audit_time": "2026-10-08T02:31:45.804457+08:00",
+  "method": "Actual native view_image inspection of all seven final main page PNGs after decorative Title-border removal",
+  "scope": "Main manuscript final release render pages 8 through 14",
+  "source_docx_sha256": "6cc16bc69915abd12073c1fd93583645f910b82106cf29bc0ec456b490514af6",
+  "status": "passed",
+  "pages": [
+    {
+      "page": 8,
+      "image": "D:/MLWork/eu_joint_netload_ASMBI_20261008/temp/main_final_delivery_render/page-8.png",
+      "sha256": "8e11697254ad7e17064508eef7d1175a78f5e5e6e5bdb014d934d9b6050d99a9",
+      "actually_viewed": true,
+      "text_overlap": false,
+      "missing_glyphs": false,
+      "plot_text_line_crossing": false,
+      "notes": "Clean substantive text; deliberate whitespace before complete table on next page."
+    },
+    {
+      "page": 9,
+      "image": "D:/MLWork/eu_joint_netload_ASMBI_20261008/temp/main_final_delivery_render/page-9.png",
+      "sha256": "6630c61e0554e8092da41a38bbd6adf1417fd79cfba8b063c5ca1fdc55e27a41",
+      "actually_viewed": true,
+      "text_overlap": false,
+      "missing_glyphs": false,
+      "plot_text_line_crossing": false,
+      "notes": "Table1 caption/header/all14 data rows together; readable cells and digits, no orphan final row."
+    },
+    {
+      "page": 10,
+      "image": "D:/MLWork/eu_joint_netload_ASMBI_20261008/temp/main_final_delivery_render/page-10.png",
+      "sha256": "7f47316bb00be6debf255f58b3b3bd4db9f616d8cf4f8afaaa5944c13e3ffdd5",
+      "actually_viewed": true,
+      "text_overlap": false,
+      "missing_glyphs": false,
+      "plot_text_line_crossing": false,
+      "notes": "Figure1 entire plot and complete caption together; separated legends, no overlaps or labels crossed by data lines."
+    },
+    {
+      "page": 11,
+      "image": "D:/MLWork/eu_joint_netload_ASMBI_20261008/temp/main_final_delivery_render/page-11.png",
+      "sha256": "888571dc7e90899f0f74d9b2e35bd0dbc464a77118f10368888ee773b0d5efb4",
+      "actually_viewed": true,
+      "text_overlap": false,
+      "missing_glyphs": false,
+      "plot_text_line_crossing": false,
+      "notes": "Native early-target comparisons and final confidence intervals readable; no missing glyphs or collisions."
+    },
+    {
+      "page": 12,
+      "image": "D:/MLWork/eu_joint_netload_ASMBI_20261008/temp/main_final_delivery_render/page-12.png",
+      "sha256": "c4fb386ece867e42b9dcf64189caed3c227e4fc818622a9afc0297bb32a995d0",
+      "actually_viewed": true,
+      "text_overlap": false,
+      "missing_glyphs": false,
+      "plot_text_line_crossing": false,
+      "notes": "Figure2 all three panels, complete caption and legends clean; no clipping or text-line overlap."
+    },
+    {
+      "page": 13,
+      "image": "D:/MLWork/eu_joint_netload_ASMBI_20261008/temp/main_final_delivery_render/page-13.png",
+      "sha256": "64476f0939dbf08bed8779eb1fc86a0446b76b26afa59192321b2ac86d340c0e",
+      "actually_viewed": true,
+      "text_overlap": false,
+      "missing_glyphs": false,
+      "plot_text_line_crossing": false,
+      "notes": "Table2 complete on page and all four model rows readable; numerical powers and inequalities legible."
+    },
+    {
+      "page": 14,
+      "image": "D:/MLWork/eu_joint_netload_ASMBI_20261008/temp/main_final_delivery_render/page-14.png",
+      "sha256": "c7823dfa4d80a02914d9f8be61aa9b6dbbaf666426dfcb52ced7fca4a2d13983",
+      "actually_viewed": true,
+      "text_overlap": false,
+      "missing_glyphs": false,
+      "plot_text_line_crossing": false,
+      "notes": "Figure3 all panels, complete caption and text clean; no labels crossed by data or missing glyphs."
+    }
+  ],
+  "scientific_number_check": "Final early Top2 contrasts read 5[-3,13] and 8[-1,17] on page11; Tables1/2 agree with final saved results. Native numerical superscripts and equations in inspected pages are legible.",
+  "resolved_repairs": [
+    {
+      "priority": "P2",
+      "location": "Table1, page8-page9",
+      "issue": "Final Early target:Top2 row alone on following page, with repeated table header",
+      "suggestion": "Keep entire table together where possible; start caption/table on new page",
+      "resolved": true
+    },
+    {
+      "priority": "P2",
+      "location": "Figure1 caption, page9-page10",
+      "issue": "Figure1 caption final two lines split to next page",
+      "suggestion": "Keep image paragraph with next and caption together",
+      "resolved": true
+    }
+  ],
+  "decorative_change_note": "Final pages8-14 were all actually re-inspected. Layout and text remain unchanged from the passing release render."
+}

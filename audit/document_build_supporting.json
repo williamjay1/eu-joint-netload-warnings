@@ -1,0 +1,9 @@
+[
+  {
+    "source": "manuscript\\asmbi_supporting_information.md",
+    "output": "submission\\ASMBI_supporting_information.docx",
+    "native_equations": 0,
+    "tables": 15,
+    "figures": 2
+  }
+]

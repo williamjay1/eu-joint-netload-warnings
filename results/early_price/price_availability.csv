@@ -1,0 +1,3 @@
+zone,rows,exposed,future_local_day_excluded,first_release_availability,auction_local_timezone,unavailable_price_handling
+DK1,35064,32749,2315,assumed; no historical publication snapshots,Europe/Copenhagen,training median plus missing indicators
+DK2,35064,32749,2315,assumed; no historical publication snapshots,Europe/Copenhagen,training median plus missing indicators

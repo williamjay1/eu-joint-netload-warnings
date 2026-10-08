@@ -1,0 +1,43 @@
+{
+  "nominal_mm": [
+    178.0,
+    95.0
+  ],
+  "tight_mm": [
+    166.9,
+    76.6
+  ],
+  "tight_growth_mm": -11.1,
+  "tight_within_max": "True",
+  "max_width_mm": 183.0,
+  "panel_titles": [
+    {
+      "axis": 0,
+      "loc": "left",
+      "text": "a  Equal daily Top2 workload"
+    },
+    {
+      "axis": 1,
+      "loc": "left",
+      "text": "b  Common development count target"
+    }
+  ],
+  "left_titles_found": 2,
+  "min_font_pt": 7.0,
+  "fonts_under_5pt": [],
+  "pdf_fonttype": 42,
+  "ok": true,
+  "dpi": 1200,
+  "source": "results/early_price/annual_policy_metrics.csv",
+  "source_sha256": "faca01f9ea0924d6a6ae57708aa383b2312f42c47dc3afbd580edc8c0a161a3b",
+  "visual_inspection": "Actual native view_image preview opened; no text overlaps, clipping or legend collisions observed.",
+  "vector_formats": [
+    "pdf",
+    "svg",
+    "eps"
+  ],
+  "raster_formats": [
+    "png",
+    "tiff"
+  ]
+}

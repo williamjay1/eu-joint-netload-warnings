@@ -1,0 +1,6 @@
+{
+  "analysis": "post hoc fixed-stream diagnostics",
+  "bootstrap": "2000 synchronized 14-calendar-day within year/quarter; conditional on fitted probabilities",
+  "marginal_residual": "cell mean only, not hourly confidence or calibration certificate",
+  "reliability_bin_support": "count of event days supplied; fine-bin results descriptive"
+}

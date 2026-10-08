@@ -1,0 +1,105 @@
+{
+  "status": "completed",
+  "source_sha256": "a13102575bb490a114f51a8dabab893a58729752f96ae09ad7d471ccb6d5cc33",
+  "full_q90_hours": 17400,
+  "tolerances": [
+    1e-09,
+    1e-11
+  ],
+  "randomized_reference_maxpts": 524288,
+  "randomized_reference_seeds": 3,
+  "reference_cases": 96,
+  "maximum_reference_mean_difference": 2.56015535016218e-07,
+  "mean_reference_mean_difference": 3.6381236828571086e-08,
+  "maximum_reference_replicate_sd": 6.522111385798018e-07,
+  "stored_M1_minus_M3_Brier": 1.926489609480747e-05,
+  "tight_M1_minus_M3_Brier": 1.9264896093267037e-05,
+  "change_in_M1_minus_M3_Brier": -1.5404344466674047e-15,
+  "maximum_Brier_change_under_tightening": 2.033095913844818e-15,
+  "list_comparisons": [
+    {
+      "model": "M0",
+      "rule": "gate",
+      "symmetric_difference_test": 0
+    },
+    {
+      "model": "M0",
+      "rule": "priority",
+      "symmetric_difference_test": 0
+    },
+    {
+      "model": "M1",
+      "rule": "gate",
+      "symmetric_difference_test": 0
+    },
+    {
+      "model": "M1",
+      "rule": "priority",
+      "symmetric_difference_test": 0
+    },
+    {
+      "model": "M2",
+      "rule": "gate",
+      "symmetric_difference_test": 0
+    },
+    {
+      "model": "M2",
+      "rule": "priority",
+      "symmetric_difference_test": 0
+    },
+    {
+      "model": "M3",
+      "rule": "gate",
+      "symmetric_difference_test": 0
+    },
+    {
+      "model": "M3",
+      "rule": "priority",
+      "symmetric_difference_test": 0
+    }
+  ],
+  "seconds": 259.46548350004014,
+  "interpretation": "Independent numerical validation of frozen three-dimensional same-R calculations; not a mathematical error certificate or proof of statistical equivalence.",
+  "diagnostics": [
+    {
+      "model": "M0",
+      "roundoff_corrected_hours": 318.0,
+      "maximum_reported_convergence_proxy": 4.996003610813204e-16,
+      "maximum_legendre_order": 64.0,
+      "maximum_normalised_count_sum_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "model": "M1",
+      "roundoff_corrected_hours": 273.0,
+      "maximum_reported_convergence_proxy": 4.996003610813204e-16,
+      "maximum_legendre_order": 64.0,
+      "maximum_normalised_count_sum_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "model": "M2",
+      "roundoff_corrected_hours": 0.0,
+      "maximum_reported_convergence_proxy": 6.560773774749965e-12,
+      "maximum_legendre_order": 64.0,
+      "maximum_normalised_count_sum_discrepancy": 2.220446049250313e-16
+    },
+    {
+      "model": "M3",
+      "roundoff_corrected_hours": 0.0,
+      "maximum_reported_convergence_proxy": 6.655217418356958e-12,
+      "maximum_legendre_order": 64.0,
+      "maximum_normalised_count_sum_discrepancy": 2.220446049250313e-16
+    }
+  ],
+  "reference_weather_cells": [
+    "cool_higher_wind",
+    "cool_low_wind_cold",
+    "cool_low_wind_other",
+    "warm_higher_wind",
+    "warm_low_wind_cold",
+    "warm_low_wind_other"
+  ],
+  "reference_minimum_R_eigenvalue_range": [
+    0.1888477800488663,
+    0.8395435562591439
+  ]
+}

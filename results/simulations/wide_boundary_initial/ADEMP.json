@@ -1,0 +1,29 @@
+{
+  "seed": 20261008,
+  "replications_per_primary_DGP": 400,
+  "days": 120,
+  "mechanism": "shared-uniform mixture w=.30, true q=w*z+(1-w)*(3*z^2-2*z^3)",
+  "weather_state_stationary_weights_baseline": [
+    0.74,
+    0.21,
+    0.05
+  ],
+  "drift_weights": [
+    0.56,
+    0.32,
+    0.12
+  ],
+  "persistence": [
+    0,
+    0.65,
+    0.9
+  ],
+  "marginal_shift": 0.035,
+  "perturbation_location": "near gate abs(q-.25)<.025 versus abs(q-.25)>.12, equal number of changed regional marginal probabilities",
+  "spatial_threshold": "abstract regional exceedance probability z, not an actual European q90 threshold",
+  "process": "active-day clusters bridging one empty day; first six actual hours",
+  "MCSE": "between-replicate SD / sqrt(replications); synchronized paired replicate identifiers",
+  "temporal_fixture_reps": 1000,
+  "phase_fixture": "illustrative known latent phase versus randomized phase; does not demonstrate a phase signal in real data",
+  "elapsed_seconds": 63.691279000020586
+}

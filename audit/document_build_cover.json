@@ -1,0 +1,9 @@
+[
+  {
+    "source": "manuscript\\asmbi_cover_letter.md",
+    "output": "submission\\ASMBI_cover_letter.docx",
+    "native_equations": 0,
+    "tables": 0,
+    "figures": 0
+  }
+]

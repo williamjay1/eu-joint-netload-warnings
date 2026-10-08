@@ -1,0 +1,19 @@
+panel,delta,rule,metric,value,source,field,minimum,maximum
+a,0.01,ordinary_gate,All eligible hours,0.35057471264367,results/stability/stability_summary.csv,scenario_critical_fraction,,
+a,0.01,ordinary_gate,Baseline selections,4.36893203883495,results/stability/stability_summary.csv,baseline_selected_scenario_critical_fraction,,
+a,0.01,rise_cooldown,All eligible hours,0.6666666666666601,results/stability/stability_summary.csv,scenario_critical_fraction,,
+a,0.01,rise_cooldown,Baseline selections,9.79020979020979,results/stability/stability_summary.csv,baseline_selected_scenario_critical_fraction,,
+a,0.03,ordinary_gate,All eligible hours,1.25862068965517,results/stability/stability_summary.csv,scenario_critical_fraction,,
+a,0.03,ordinary_gate,Baseline selections,16.18122977346278,results/stability/stability_summary.csv,baseline_selected_scenario_critical_fraction,,
+a,0.03,rise_cooldown,All eligible hours,1.9137931034482698,results/stability/stability_summary.csv,scenario_critical_fraction,,
+a,0.03,rise_cooldown,Baseline selections,27.97202797202797,results/stability/stability_summary.csv,baseline_selected_scenario_critical_fraction,,
+b,0.01,ordinary_gate,union_bound,42.71844660194174,results/stability/stability_certificates.csv,baseline_selected_certified_fraction,,
+b,0.01,ordinary_gate,monotone_probability_envelope,72.33009708737865,results/stability/stability_certificates.csv,baseline_selected_certified_fraction,,
+b,0.03,ordinary_gate,union_bound,8.7378640776699,results/stability/stability_certificates.csv,baseline_selected_certified_fraction,,
+b,0.03,ordinary_gate,monotone_probability_envelope,34.3042071197411,results/stability/stability_certificates.csv,baseline_selected_certified_fraction,,
+c,0.01,Raw Top-2,eight-corner min/max,418.0,results/stability/stability_corner_paths.csv,probability_top2_symmetric_difference,366.0,470.0
+c,0.03,Raw Top-2,eight-corner min/max,581.0,results/stability/stability_corner_paths.csv,probability_top2_symmetric_difference,462.0,700.0
+c,0.01,Gate,eight-corner min/max,21.0,results/stability/stability_corner_paths.csv,list_symmetric_difference,14.0,28.0
+c,0.03,Gate,eight-corner min/max,68.0,results/stability/stability_corner_paths.csv,list_symmetric_difference,51.0,85.0
+c,0.01,Priority + cooldown,eight-corner min/max,39.5,results/stability/stability_corner_paths.csv,list_symmetric_difference,20.0,59.0
+c,0.03,Priority + cooldown,eight-corner min/max,113.0,results/stability/stability_corner_paths.csv,list_symmetric_difference,76.0,150.0

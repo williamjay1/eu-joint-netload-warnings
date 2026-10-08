@@ -1,0 +1,88 @@
+{
+  "nominal_mm": [
+    179.0,
+    155.0
+  ],
+  "tight_mm": [
+    172.2,
+    146.0
+  ],
+  "tight_growth_mm": -6.8,
+  "tight_within_max": true,
+  "max_width_mm": 181.5,
+  "panel_titles": [
+    {
+      "axis": 0,
+      "loc": "left",
+      "text": "a"
+    },
+    {
+      "axis": 0,
+      "loc": "center",
+      "text": "Quarterly workload; development target = 0.5 windows per day"
+    },
+    {
+      "axis": 1,
+      "loc": "left",
+      "text": "b"
+    },
+    {
+      "axis": 1,
+      "loc": "center",
+      "text": "Cost scenarios for fixed review rules"
+    },
+    {
+      "axis": 2,
+      "loc": "left",
+      "text": "c"
+    },
+    {
+      "axis": 2,
+      "loc": "center",
+      "text": "Paired contrasts to original: 2023 gate"
+    }
+  ],
+  "left_titles_found": 3,
+  "min_font_pt": 7.0,
+  "fonts_under_5pt": [],
+  "pdf_fonttype": 42,
+  "ok": true,
+  "figure": "figure2_workload_and_cost",
+  "dpi_png": 1200,
+  "description": "Quarterly counts and scenario utility C-rN; 2023 held-out forecast count contract for new logit; pointwise 95 percent paired calendar bootstrap bands for early count and rolling contrasts relative to original forecast 2023 gate; not optimal frontier",
+  "formats": [
+    "PDF",
+    "SVG",
+    "EPS",
+    "PNG1200",
+    "TIFF1200LZW",
+    "PNG150preview"
+  ],
+  "eps_alpha": "uncertainty fill colors flattened onto white; vector lines/text retained",
+  "preview_dpi": 150,
+  "visual_inspection": "verified via native view_image, final 2023-contract preview; 2026-10-08",
+  "visual_findings": {
+    "text_overlaps": false,
+    "text_line_crossings": false,
+    "clipped_labels": false,
+    "legends_separate_from_data": true,
+    "print_size_readable": true
+  },
+  "actual_pdf_width_mm": 173.45053465101452,
+  "actual_pdf_height_mm": 147.16976369222004,
+  "pdf_raster_image_count": 0,
+  "embedded_fonts": [
+    "BKOTJP+ArialMT",
+    "EYIZPP+Arial-BoldMT"
+  ],
+  "primary_new_count_contract": "2023 validation-issued forecasts; new early gate .02 and original forecast gate .23, equal rho=.5/day and K=2; actual reanalysis workloads not forced equal",
+  "tiff_dimensions": [
+    8196,
+    6952
+  ],
+  "tiff_dpi": [
+    1200.0,
+    1200.0
+  ],
+  "tiff_compression": "tiff_lzw"
+}

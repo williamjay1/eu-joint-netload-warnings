@@ -1,0 +1,71 @@
+{
+  "audit_time": "2026-10-08T02:31:45.815350+08:00",
+  "method": "Actual native view_image pages1-5 from original final-content render; final-render pages1-4 are pixel-identical, final page5 additionally actually re-inspected",
+  "scope": "Supporting Information final render pages1 through5",
+  "source_docx_sha256": "a198d87125beb41597af9723419580f1bf850cbe529b1c96abc9c6c31bf25cf9",
+  "status": "passed",
+  "pages": [
+    {
+      "page": 1,
+      "image": "D:/MLWork/eu_joint_netload_ASMBI_20261008/temp/supporting_delivery_render/page-1.png",
+      "sha256": "a3d3f775001129272320b576dfadbdaa06ec947beec6c88063975ea56ccd2610",
+      "actually_viewed": true,
+      "text_overlap": false,
+      "missing_glyphs": false,
+      "plot_text_line_crossing": false,
+      "notes": "Title and supplementary scope/readable methods paragraphs; no clipped text or missing glyphs.",
+      "inspection_basis": "Actual previous-content image view plus verified pixel-identical final image",
+      "pixel_identical_to_actual_inspected_image": true
+    },
+    {
+      "page": 2,
+      "image": "D:/MLWork/eu_joint_netload_ASMBI_20261008/temp/supporting_delivery_render/page-2.png",
+      "sha256": "d204a9d480d89e1942acb50c4c8c6cefa5302fc4c8a4257fddeda297cbdecf48",
+      "actually_viewed": true,
+      "text_overlap": false,
+      "missing_glyphs": false,
+      "plot_text_line_crossing": false,
+      "notes": "Conditional-CDF positions table readable, all three region rows complete; no overlap.",
+      "inspection_basis": "Actual previous-content image view plus verified pixel-identical final image",
+      "pixel_identical_to_actual_inspected_image": true
+    },
+    {
+      "page": 3,
+      "image": "D:/MLWork/eu_joint_netload_ASMBI_20261008/temp/supporting_delivery_render/page-3.png",
+      "sha256": "5a0b8031cf38c7b58bda1676ee79f2a1bbba908a256084fa0872918c7dc51a3d",
+      "actually_viewed": true,
+      "text_overlap": false,
+      "missing_glyphs": false,
+      "plot_text_line_crossing": false,
+      "notes": "Both score/contrast tables complete and numerically readable; integration expressions and powers render as literal text without collisions.",
+      "inspection_basis": "Actual previous-content image view plus verified pixel-identical final image",
+      "pixel_identical_to_actual_inspected_image": true
+    },
+    {
+      "page": 4,
+      "image": "D:/MLWork/eu_joint_netload_ASMBI_20261008/temp/supporting_delivery_render/page-4.png",
+      "sha256": "6f9c7df886b02210255876b34a8f584efcb73edd2fb57a1edd6a8dbc896eedf0",
+      "actually_viewed": true,
+      "text_overlap": false,
+      "missing_glyphs": false,
+      "plot_text_line_crossing": false,
+      "notes": "Policy/utility/mechanism paragraphs and formulas readable; no missing glyphs or text overlap.",
+      "inspection_basis": "Actual previous-content image view plus verified pixel-identical final image",
+      "pixel_identical_to_actual_inspected_image": true
+    },
+    {
+      "page": 5,
+      "image": "D:/MLWork/eu_joint_netload_ASMBI_20261008/temp/supporting_delivery_render/page-5.png",
+      "sha256": "aa874efd27b6e4010015c1c188f995e183798f00ced0ee1f253c05a36ef3c70a",
+      "actually_viewed": true,
+      "text_overlap": false,
+      "missing_glyphs": false,
+      "plot_text_line_crossing": false,
+      "notes": "Native q90/q95 policy table fully on page, all twelve data rows legible; slots-per-day header wraps without collision; S5 heading stays with its paragraph.",
+      "inspection_basis": "Actual native view_image of final page5"
+    }
+  ],
+  "required_repairs": [],
+  "scientific_number_check": "Core q90 native1450/341/35,618/322/32,572/259/34 and rolling358/234/24 agree with main and saved policy counts; four-model scores/contrasts agree with final CSV. Threshold-CDF positions are legible, not relabeled as calibration.",
+  "final_delivery_note": "References-only Markdown-marker cleanup: all pages1-14 are pixel-identical to the actual inspected previous final render."
+}

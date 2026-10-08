@@ -1,0 +1,48 @@
+{
+  "audit_time": "2026-10-08T02:27:42.736073+08:00",
+  "rows": 72,
+  "closed_verified": 47,
+  "closed_with_stated_boundary": 24,
+  "public_archive_pending": 1,
+  "files": {
+    "manuscript/asmbi_manuscript.md": {
+      "sha256": "3324f74cac6b0bb4aa32c726a48d5fa482a6a53b58a17297b74dec4bc4b6f492",
+      "bytes": 57646
+    },
+    "manuscript/asmbi_supporting_information.md": {
+      "sha256": "c0f226e27950ade251bcf600e3568d74ceee7834abb91fd3c445cbd733e0ff44",
+      "bytes": 49477
+    },
+    "audit/requirements_matrix.csv": {
+      "sha256": "052138cdb57cfda1c60110e4e6ddea2571b13b63b766395a6d5961b5aa1e2771",
+      "bytes": 35776
+    },
+    "results/supporting_tables/Table_S10.csv": {
+      "sha256": "5f7500d5d4877052b2af89ed49269fbf3a41c55627b3740927b9341266aba8e3",
+      "bytes": 246072
+    },
+    "submission/ASMBI_manuscript.docx": {
+      "sha256": "6cc16bc69915abd12073c1fd93583645f910b82106cf29bc0ec456b490514af6",
+      "bytes": 3163980
+    },
+    "submission/ASMBI_supporting_information.docx": {
+      "sha256": "a198d87125beb41597af9723419580f1bf850cbe529b1c96abc9c6c31bf25cf9",
+      "bytes": 856376
+    },
+    "audit/main_pages_8_14_qa.json": {
+      "sha256": "1f55817b5b6bcc29510caa54ffe7d3f1d63724fd689e4c61c21c10e23d948ac7",
+      "bytes": 4675
+    },
+    "audit/supporting_pages_1_5_qa.json": {
+      "sha256": "47b5a2c22b1b1677d27961474865c6411363e4e7bad3c929d34b613b05ab64e5",
+      "bytes": 4049
+    }
+  },
+  "verification_record": {
+    "path": "audit/reproducibility_checks.json",
+    "status": "passed",
+    "checks": 195,
+    "failures": 0,
+    "hash_scope_note": "Final package manifest records this report; omitting its hash here prevents a circular audit manifest."
+  }
+}

@@ -1,0 +1,5 @@
+delta_each_region,bound,test_hours,certified_selected,certified_unselected,unresolved,unresolved_fraction,baseline_selected_certified_fraction,baseline_early_coverage_with_at_least_one_certified_selection
+0.01,union_bound,17400,264,16196,940,0.054022988505747126,0.42718446601941745,19
+0.01,monotone_probability_envelope,17400,447,16552,401,0.023045977011494252,0.7233009708737864,28
+0.03,union_bound,17400,54,15121,2225,0.1278735632183908,0.08737864077669903,5
+0.03,monotone_probability_envelope,17400,212,16071,1117,0.06419540229885057,0.343042071197411,16

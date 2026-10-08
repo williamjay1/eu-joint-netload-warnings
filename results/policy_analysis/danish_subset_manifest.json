@@ -1,0 +1,22 @@
+{
+  "status": "completed",
+  "overlap": [
+    {
+      "level": "q90",
+      "DK1_shared_hours": 924,
+      "DK2_shared_hours": 924,
+      "shared_identical": true,
+      "common_hours": 924
+    },
+    {
+      "level": "q95",
+      "DK1_shared_hours": 408,
+      "DK2_shared_hours": 408,
+      "shared_identical": true,
+      "common_hours": 408
+    }
+  ],
+  "endpoints": "parentonset nested primary; separatelyreclustered pivotal onset secondary",
+  "cost_scope": "allslots originalwatchlist; no retrospectiveregionalfilter",
+  "replicates": 2000
+}

@@ -1,0 +1,94 @@
+{
+  "scope": "Supporting information rendered pages 6 through 10",
+  "method": "All assigned pages inspected individually with native view_image at original detail; changed final pages reinspected natively and unchanged final pages confirmed identical by deterministic RGB pixel comparison",
+  "status": "pass",
+  "exact_numeric_verification": "Visual review checks readability only; exact numerical claims are established from source tables and reproducibility checks",
+  "pages": [
+    {
+      "page": 6,
+      "path": "temp/supporting_final_render/page-6.png",
+      "status": "pass",
+      "notes": "Repaired five-column table displays all Brier and log-loss decimals completely on single lines. Shared C, sample counts and maturity cutoff are stated in adjacent text. No text overlap, cropping or row loss observed in the final native reinspection.",
+      "sha256": "0e6d1dff7713b4011979712ae60ccabb5bdbac9f20dda1930475b2eb1bb475bb",
+      "image_pixels": [
+        1020,
+        1320
+      ],
+      "previous_render_path": "temp/supporting_render/page-6.png",
+      "previous_render_sha256": "3cc2a49ec35b21e20f8bc82f9086a2c74515523664c60bdb74daf35ea3c338d4",
+      "pixel_identical_to_previous_render": false,
+      "final_native_reinspection": true
+    },
+    {
+      "page": 7,
+      "path": "temp/supporting_final_render/page-7.png",
+      "status": "pass",
+      "notes": "Annual support and native selection tables are complete, numeric cells fit on one line, and paragraphs are separated. No overlap or page-boundary row loss observed.",
+      "sha256": "cfe00d112443c6be94d3901df41b4e9039b7ca5bb8090e71f0238c84a6b18bf4",
+      "image_pixels": [
+        1020,
+        1320
+      ],
+      "previous_render_path": "temp/supporting_render/page-7.png",
+      "previous_render_sha256": "cfe00d112443c6be94d3901df41b4e9039b7ca5bb8090e71f0238c84a6b18bf4",
+      "pixel_identical_to_previous_render": true,
+      "final_native_reinspection": false
+    },
+    {
+      "page": 8,
+      "path": "temp/supporting_final_render/page-8.png",
+      "status": "pass",
+      "notes": "Annual count-gate table and all body text are readable; row boundaries and decimals are intact. Section S8 begins cleanly with no clipping or overlap.",
+      "sha256": "1123b8a134a11a25159bde613b9957e0d51d552893dee1cf33c19ab7ff8a633c",
+      "image_pixels": [
+        1020,
+        1320
+      ],
+      "previous_render_path": "temp/supporting_render/page-8.png",
+      "previous_render_sha256": "1123b8a134a11a25159bde613b9957e0d51d552893dee1cf33c19ab7ff8a633c",
+      "pixel_identical_to_previous_render": true,
+      "final_native_reinspection": false
+    },
+    {
+      "page": 9,
+      "path": "temp/supporting_final_render/page-9.png",
+      "status": "pass",
+      "notes": "Certificate table contains all four rows and intact integer counts. The long final column header wraps over several lines but remains inside its cell. No overlap, clipping or row loss observed.",
+      "sha256": "8c29527daff346a61c38d9abd25d01c2672ce467ccece0fcb2bb37bb929e6352",
+      "image_pixels": [
+        1020,
+        1320
+      ],
+      "previous_render_path": "temp/supporting_render/page-9.png",
+      "previous_render_sha256": "8c29527daff346a61c38d9abd25d01c2672ce467ccece0fcb2bb37bb929e6352",
+      "pixel_identical_to_previous_render": true,
+      "final_native_reinspection": false
+    },
+    {
+      "page": 10,
+      "path": "temp/supporting_final_render/page-10.png",
+      "status": "pass",
+      "notes": "Both simulation tables are complete; all six-decimal numerical values fit in single lines and model/rule rows are distinct. No table splitting, cropping or text overlap observed.",
+      "sha256": "f6854b50aa5f927d15b36d89d7ec6aa6b73b6a5b623d68c489ce8f6209c17278",
+      "image_pixels": [
+        1020,
+        1320
+      ],
+      "previous_render_path": "temp/supporting_render/page-10.png",
+      "previous_render_sha256": "f6854b50aa5f927d15b36d89d7ec6aa6b73b6a5b623d68c489ce8f6209c17278",
+      "pixel_identical_to_previous_render": true,
+      "final_native_reinspection": false
+    }
+  ],
+  "issues": [],
+  "resolved_issues": [
+    {
+      "page": 6,
+      "severity": "repair",
+      "type": "decimal_line_break",
+      "action": "Use short display headers and widen score columns, or another display preserving a complete decimal in each cell; retain full precision in source CSV"
+    }
+  ],
+  "source_docx_sha256": "a198d87125beb41597af9723419580f1bf850cbe529b1c96abc9c6c31bf25cf9",
+  "final_delivery_note": "References-only Markdown-marker cleanup: all pages1-14 are pixel-identical to the actual inspected previous final render."
+}

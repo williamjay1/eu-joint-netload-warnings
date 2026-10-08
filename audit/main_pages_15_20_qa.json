@@ -1,0 +1,39 @@
+{
+  "status": "passed",
+  "method": "Actual native view_image inspection of each full page",
+  "pages": [
+    {
+      "page": 15,
+      "sha256": "98badcb354e5579ee4d84efb362646d20f30ee87d4b74515a46e9b8ef68e5c56",
+      "passed": true
+    },
+    {
+      "page": 16,
+      "sha256": "45ae7345c0ddb20be974cba605c4c3eb5ade14445318c5f9e697633f3830d658",
+      "passed": true
+    },
+    {
+      "page": 17,
+      "sha256": "dd1ac830e6643f65820ded9608ed290eb858801c7c4bdd1bfa817323fa21391a",
+      "passed": true
+    },
+    {
+      "page": 18,
+      "sha256": "0b2ab2c0c25fd2fcacec413b7401741f2d3ac7d8310b7037f316183c49445240",
+      "passed": true
+    },
+    {
+      "page": 19,
+      "sha256": "f47fc45620ea8ec3e4dc41641254a05cb2ccffffa9830929e2a4336cab469d25",
+      "passed": true
+    },
+    {
+      "page": 20,
+      "sha256": "e376d63fc1bde70a72fbbd5a212c58eb9b76d1309df722615655a467ba432d04",
+      "passed": true
+    }
+  ],
+  "source_docx_sha256": "6cc16bc69915abd12073c1fd93583645f910b82106cf29bc0ec456b490514af6",
+  "render_dir": "temp/main_final_delivery_render",
+  "final_delivery_note": "Pages15-20 pixel-identical to previously actual native-inspected images."
+}

@@ -1,0 +1,61 @@
+{
+  "status": "passed",
+  "method": "Actual native view_image inspection of pages11-16; pages11-14 inspected before references-only cleanup and verified pixel-identical; pages15-16 actually re-inspected after cleanup.",
+  "source_docx_sha256": "a198d87125beb41597af9723419580f1bf850cbe529b1c96abc9c6c31bf25cf9",
+  "pages": [
+    {
+      "page": 11,
+      "image": "D:\\MLWork\\eu_joint_netload_ASMBI_20261008\\temp\\supporting_delivery_render\\page-11.png",
+      "sha256": "3fc0d6fe22b1c20ad4c70404f3947a713945f92d1b07708d22953ed45407d9be",
+      "passed": true,
+      "text_overlap": false,
+      "missing_glyphs": false,
+      "plot_text_line_crossing": false
+    },
+    {
+      "page": 12,
+      "image": "D:\\MLWork\\eu_joint_netload_ASMBI_20261008\\temp\\supporting_delivery_render\\page-12.png",
+      "sha256": "5233eebc8e417bea5b31fd0b8e2cde9dd42c1dbc880f59897a273d24dfc10611",
+      "passed": true,
+      "text_overlap": false,
+      "missing_glyphs": false,
+      "plot_text_line_crossing": false
+    },
+    {
+      "page": 13,
+      "image": "D:\\MLWork\\eu_joint_netload_ASMBI_20261008\\temp\\supporting_delivery_render\\page-13.png",
+      "sha256": "4abf3bb80edd5634084f354a2e512a0dea25678bf715737a66cd4c5212a056f6",
+      "passed": true,
+      "text_overlap": false,
+      "missing_glyphs": false,
+      "plot_text_line_crossing": false
+    },
+    {
+      "page": 14,
+      "image": "D:\\MLWork\\eu_joint_netload_ASMBI_20261008\\temp\\supporting_delivery_render\\page-14.png",
+      "sha256": "ba1570818413de73004370c20df06799826e38cea18101c5ecc0232605d9c16a",
+      "passed": true,
+      "text_overlap": false,
+      "missing_glyphs": false,
+      "plot_text_line_crossing": false
+    },
+    {
+      "page": 15,
+      "image": "D:\\MLWork\\eu_joint_netload_ASMBI_20261008\\temp\\supporting_delivery_render\\page-15.png",
+      "sha256": "ce98c797359a05c8d35d4a2799eb3424319d7b2d0f51cfb5b8d29916d8602f0c",
+      "passed": true,
+      "text_overlap": false,
+      "missing_glyphs": false,
+      "plot_text_line_crossing": false
+    },
+    {
+      "page": 16,
+      "image": "D:\\MLWork\\eu_joint_netload_ASMBI_20261008\\temp\\supporting_delivery_render\\page-16.png",
+      "sha256": "8378fc28bc1ea8ca72fe87d8f0b7eb9adc5371fce510aa53a4e6d230dadc1eaa",
+      "passed": true,
+      "text_overlap": false,
+      "missing_glyphs": false,
+      "plot_text_line_crossing": false
+    }
+  ]
+}
