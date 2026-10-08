@@ -1,5 +1,7 @@
 # Cross-border joint high net load warnings
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23229890.svg)](https://doi.org/10.5281/zenodo.23229890)
+
 Research code, derived evaluation data and externally hosted supplemental materials accompanying *Joint High Net Load Warnings and Review Allocation under Marginal Uncertainty in Europe*.
 
 Author: **Junjie Zhang**, Shanghai International Studies University. [ORCID](https://orcid.org/0009-0004-8821-4018). Contact: junjiezhang2024@shisu.edu.cn.
@@ -74,3 +76,8 @@ The manuscript, the supporting information, the twelve result tables and the fig
 numerical ledger and the claim maps, and `datasets/` holds the released analysis inputs.
 
 Earlier versions: 1.0.0 (10.5281/zenodo.23100589) and 1.0.1 (10.5281/zenodo.23168553).
+
+## Version 1.1.0 archive
+
+Version 1.1.0 is archived at DOI 10.5281/zenodo.23229890; the concept DOI 10.5281/zenodo.23100588 resolves to the newest version.
+Version 1.0.1 remains at 10.5281/zenodo.23168553 and version 1.0.0 at 10.5281/zenodo.23100589.
